@@ -1,0 +1,373 @@
+Age,Country,CountryCode,Player,Position
+12 June 1926  ,Argentina,ARG,Amadeo CARRIZO,Goalkeeper
+9 July 1926  ,Argentina,ARG,Pedro DELLACHA,Midfielder
+27 January 1930  ,Argentina,ARG,Federico VAIRO,Defender
+11 June 1925  ,Argentina,ARG,Juan Francesco LOMBARDO,Defender
+10 May 1925  ,Argentina,ARG,Nestor ROSSI,Midfielder
+27 May 1932  ,Argentina,ARG,Jose VARACKA,Midfielder
+11 March 1936  ,Argentina,ARG,Oreste Omar CORBATTA,Forward
+17 September 1929  ,Argentina,ARG,Eliseo PRADO,Forward
+14 December 1936  ,Argentina,ARG,Norberto MENENDEZ,Forward
+20 February 1937  ,Argentina,ARG,Alfredo ROJAS,Forward
+28 September 1918  ,Argentina,ARG,Angel LABRUNA,Forward
+9 July 1923  ,Argentina,ARG,Julio MUSSIMESI,Goalkeeper
+10 April 1929  ,Argentina,ARG,Alfredo PEREZ,Midfielder
+27 January 1931  ,Argentina,ARG,Federico EDWARDS,Defender
+20 February 1937  ,Argentina,ARG,David ACEVEDO,Defender
+2 June 1927  ,Argentina,ARG,Eliseo MOURINO,Midfielder
+26 August 1935  ,Argentina,ARG,Jose RAMOS DELGADO,Defender
+11 August 1931  ,Argentina,ARG,Norberto BOGGIO,Forward
+6 October 1931  ,Argentina,ARG,Ludovico AVIO,Forward
+21 June 1924  ,Argentina,ARG,Ricardo INFANTE,Forward
+4 May 1935  ,Argentina,ARG,Jose SANFILIPPO,Forward
+29 May 1931  ,Argentina,ARG,Osvaldo CRUZ,Forward
+17 January 1906  ,Argentina,ARG,STABILE Guillermo,Coach
+6 July 1931  ,Austria,AUT,Rudolf SZANWALD,Goalkeeper
+10 April 1931  ,Austria,AUT,Paul HALLA,Defender
+29 November 1925  ,Austria,AUT,Ernst HAPPEL,Defender
+15 February 1933  ,Austria,AUT,Franz SWOBODA,Defender
+16 February 1929  ,Austria,AUT,Gerhard HANAPPI,Defender
+9 February 1929  ,Austria,AUT,Karl KOLLER,Midfielder
+1 June 1931  ,Austria,AUT,Walter HORAK,Forward
+22 July 1937  ,Austria,AUT,Paul KOZLICEK,Forward
+22 May 1938  ,Austria,AUT,Hans BUZEK,Forward
+14 February 1926  ,Austria,AUT,Alfred KOERNER,Forward
+22 October 1933  ,Austria,AUT,Helmut SENEKOWITSCH,Forward
+14 June 1926  ,Austria,AUT,Kurt SCHMIED,Goalkeeper
+19 September 1929  ,Austria,AUT,Walter SCHLEGER,Forward
+22 January 1931  ,Austria,AUT,Pepi HAMMERL,Forward
+17 June 1932  ,Austria,AUT,Walter KOLLMANN,Defender
+27 March 1927  ,Austria,AUT,Karl STOTZ,Midfielder
+27 January 1931  ,Austria,AUT,Ernst KOZLICEK,Midfielder
+12 August 1925  ,Austria,AUT,Leopold BARSCHANDT,Defender
+1 March 1928  ,Austria,AUT,Robert DIENST,Forward
+31 March 1937  ,Austria,AUT,Herbert NINAUS,Forward
+5 February 1934  ,Austria,AUT,Ignaz PUSCHNIK,Midfielder
+5 September 1927  ,Austria,AUT,Bruno ENGELMEIER,Goalkeeper
+15 November 1910  ,Austria,AUT,ARGAUER Josef,Coach
+27 November 1927  ,Brazil,BRA,CASTILHO,Goalkeeper
+7 June 1930  ,Brazil,BRA,BELLINI,Defender
+22 August 1930  ,Brazil,BRA,GILMAR (Gilmar Dos Santos Neves),Goalkeeper
+27 February 1929  ,Brazil,BRA,DJALMA SANTOS,Defender
+23 May 1932  ,Brazil,BRA,DINO SANI,Midfielder
+8 October 1928  ,Brazil,BRA,DIDI,Midfielder
+9 August 1931  ,Brazil,BRA,Mario ZAGALLO,Forward
+13 June 1932  ,Brazil,BRA,ORECO,Defender
+19 June 1932  ,Brazil,BRA,ZOZIMO,Defender
+23 October 1940  ,Brazil,BRA,PELÃ (Edson Arantes do Nascimento),Forward
+28 October 1933  ,Brazil,BRA,GARRINCHA,Forward
+16 May 1925  ,Brazil,BRA,NILTON SANTOS,Defender
+18 May 1936  ,Brazil,BRA,MOACIR,Midfielder
+14 February 1931  ,Brazil,BRA,DE SORDI,Defender
+20 September 1935  ,Brazil,BRA,ORLANDO,Defender
+30 August 1930  ,Brazil,BRA,MAURO RAMOS,Defender
+23 November 1931  ,Brazil,BRA,JOEL,Forward
+24 July 1938  ,Brazil,BRA,Jose ALTAFINI,Forward
+8 August 1932  ,Brazil,BRA,ZITO,Midfielder
+12 November 1934  ,Brazil,BRA,VAVA,Forward
+16 March 1934  ,Brazil,BRA,DIDA,Forward
+25 February 1935  ,Brazil,BRA,PEPE,Forward
+1 November 1909  ,Brazil,BRA,FEOLA Vicente,Coach
+4 November 1931  ,Czechoslovakia,TCH,Imrich STACHO,Goalkeeper
+11 September 1934  ,Czechoslovakia,TCH,Gustav MRAZ,Defender
+7 December 1935  ,Czechoslovakia,TCH,Jiri CADEK,Midfielder
+5 December 1931  ,Czechoslovakia,TCH,Ladislav NOVAK,Defender
+9 February 1931  ,Czechoslovakia,TCH,Josef MASOPUST,Midfielder
+28 October 1930  ,Czechoslovakia,TCH,Svatopluk PLUSKAL,Midfielder
+28 March 1934  ,Czechoslovakia,TCH,Kazimir GAJDOS,Forward
+19 November 1934  ,Czechoslovakia,TCH,Milan DVORAK,Forward
+13 February 1936  ,Czechoslovakia,TCH,Pavol MOLNAR,Forward
+26 January 1931  ,Czechoslovakia,TCH,Jaroslav BOROVICKA,Forward
+22 October 1932  ,Czechoslovakia,TCH,Tadeas KRAUS,Forward
+10 November 1937  ,Czechoslovakia,TCH,Zdenek ZIKAN,Forward
+19 September 1931  ,Czechoslovakia,TCH,Vaclav HOVORKA,Forward
+3 October 1931  ,Czechoslovakia,TCH,Jiri FEUREISL,Forward
+23 January 1929  ,Czechoslovakia,TCH,Jan HERTL,Midfielder
+12 August 1935  ,Czechoslovakia,TCH,Jan POPLUHAR,Defender
+12 October 1933  ,Czechoslovakia,TCH,Titus BUBERNIK,Defender
+5 May 1938  ,Czechoslovakia,TCH,Adolf SCHERER,Forward
+29 September 1928  ,Czechoslovakia,TCH,Bretislav DOLEJSI,Goalkeeper
+3 June 1931  ,Czechoslovakia,TCH,Anton MORAVCIK,Midfielder
+2 January 1931  ,Czechoslovakia,TCH,Frantisek SAFRANEK,Defender
+2 August 1931  ,Czechoslovakia,TCH,Viliam SCHROJF,Goalkeeper
+21 September 1914  ,Czechoslovakia,TCH,KOLSKY Karel,Coach
+15 October 1930  ,England,ENG,Colin MC DONALD,Goalkeeper
+12 October 1935  ,England,ENG,Don HOWE,Defender
+10 November 1929  ,England,ENG,Tommy BANKS,Defender
+14 September 1934  ,England,ENG,Eddie CLAMP,Defender
+6 February 1924  ,England,ENG,Billy WRIGHT,Defender
+29 April 1927  ,England,ENG,William SLATER,Midfielder
+27 May 1934  ,England,ENG,Bryan DOUGLAS,Forward
+18 February 1933  ,England,ENG,Bobby ROBSON,Forward
+6 March 1935  ,England,ENG,Derek KEVAN,Forward
+17 October 1934  ,England,ENG,John HAYNES,Forward
+5 April 1922  ,England,ENG,Tom FINNEY,Forward
+29 October 1935  ,England,ENG,Eddie HOPKINSON,Goalkeeper
+16 August 1936  ,England,ENG,Alan HODGKINSON,Goalkeeper
+1 February 1933  ,England,ENG,Peter SILLETT,Defender
+5 August 1934  ,England,ENG,Ronald CLAYTON,Midfielder
+8 May 1934  ,England,ENG,Maurice NORMAN,Defender
+8 November 1937  ,England,ENG,Peter BRABROOK,Forward
+15 May 1933  ,England,ENG,Peter BROADBENT,Forward
+22 February 1933  ,England,ENG,Bobby SMITH,Forward
+11 October 1937  ,England,ENG,Bobby CHARLTON,Forward
+30 September 1934  ,England,ENG,Alan A COURT,Forward
+16 December 1936  ,England,ENG,Maurice SETTERS,Forward
+31 March 1913  ,England,ENG,WINTERBOTTOM Walter,Coach
+24 May 1927  ,France,FRA,Claude ABBES,Goalkeeper
+4 September 1928  ,France,FRA,Dominique COLONNA,Goalkeeper
+8 August 1928  ,France,FRA,Francois REMETTER,Goalkeeper
+31 January 1932  ,France,FRA,Raymond KAELBEL,Defender
+6 December 1930  ,France,FRA,Andre LEROND,Defender
+5 March 1924  ,France,FRA,Roger MARCHE,Defender
+25 March 1930  ,France,FRA,Robert MOUYNET,Defender
+24 February 1934  ,France,FRA,Bernard CHIARELLI,Midfielder
+9 January 1929  ,France,FRA,Kazimir HNATOW,Midfielder
+3 May 1925  ,France,FRA,Robert JONQUET,Midfielder
+13 September 1927  ,France,FRA,Maurice LAFONT,Midfielder
+13 June 1931  ,France,FRA,Jean-Jacques MARCEL,Midfielder
+26 November 1926  ,France,FRA,Armand PENVERNE,Midfielder
+6 September 1929  ,France,FRA,Raymond BELLOT,Forward
+1 December 1932  ,France,FRA,Stephan BRUEY,Forward
+16 May 1935  ,France,FRA,Yvon DOUIS,Forward
+18 August 1933  ,France,FRA,Just FONTAINE,Forward
+13 October 1931  ,France,FRA,Raymond KOPA,Forward
+12 July 1930  ,France,FRA,Celestin OLIVER,Midfielder
+26 December 1931  ,France,FRA,Roger PIANTONI,Forward
+29 November 1930  ,France,FRA,Jean VINCENT,Forward
+1 February 1937  ,France,FRA,Maryan WISNIESKI,Forward
+2 July 1919  ,France,FRA,BATTEAUX Albert,Coach
+4 November 1899  ,France,FRA,NICOLAS Paul,Coach
+9 September 1928  ,Germany FR,FRG,Fritz HERKENRATH,Goalkeeper
+6 July 1930  ,Germany FR,FRG,Herbert ERHARDT,Defender
+7 September 1926  ,Germany FR,FRG,Erich JUSKOWIAK,Defender
+8 February 1932  ,Germany FR,FRG,Horst ECKEL,Midfielder
+27 July 1927  ,Germany FR,FRG,Heinz WEWERS,Defender
+29 August 1934  ,Germany FR,FRG,Horst SZYMANIAK,Midfielder
+19 December 1930  ,Germany FR,FRG,Georg STOLLENWERK,Defender
+16 August 1929  ,Germany FR,FRG,Helmut RAHN,Forward
+31 October 1920  ,Germany FR,FRG,Fritz WALTER,Midfielder
+5 September 1935  ,Germany FR,FRG,Alfred SCHMIDT,Midfielder
+19 October 1927  ,Germany FR,FRG,Hans SCHAEFER,Forward
+5 November 1936  ,Germany FR,FRG,Uwe SEELER,Forward
+26 October 1926  ,Germany FR,FRG,Berni KLODT,Forward
+3 May 1937  ,Germany FR,FRG,Hans CIESCLARCZYK,Forward
+21 April 1925  ,Germany FR,FRG,Alfred KELBASSA,Forward
+3 September 1935  ,Germany FR,FRG,Hans STURM,Forward
+31 March 1939  ,Germany FR,FRG,Karl-Heinz SCHNELLINGER,Defender
+11 February 1935  ,Germany FR,FRG,Rudi HOFFMANN,Defender
+8 January 1929  ,Germany FR,FRG,Wolfgang PETERS,Forward
+10 October 1935  ,Germany FR,FRG,Hermann NUBER,Defender
+22 November 1932  ,Germany FR,FRG,Gunter SAWITZKI,Goalkeeper
+16 July 1926  ,Germany FR,FRG,Heinz KWIATKOWSKI,Goalkeeper
+28 March 1897  ,Germany FR,FRG,HERBERGER Sepp,Coach
+4 February 1926  ,Hungary,HUN,Gyula GROSICS,Goalkeeper
+20 November 1932  ,Hungary,HUN,Sandor MATRAI,Defender
+13 December 1932  ,Hungary,HUN,Ferenc SIPOS,Defender
+27 February 1932  ,Hungary,HUN,Laszlo SAROSI,Defender
+28 November 1925  ,Hungary,HUN,Jozsef BOZSIK,Midfielder
+30 November 1932  ,Hungary,HUN,Pal BERENDY,Midfielder
+19 July 1928  ,Hungary,HUN,Laszlo BUDAI,Forward
+21 March 1935  ,Hungary,HUN,Lajos TICHY,Forward
+3 March 1922  ,Hungary,HUN,Nandor HIDEGKUTI,Forward
+3 May 1928  ,Hungary,HUN,Dezso BUNDZSAK,Forward
+29 November 1928  ,Hungary,HUN,Karoly SANDOR,Forward
+30 September 1929  ,Hungary,HUN,Bela KARPATI,Defender
+1 January 1933  ,Hungary,HUN,Oszkar SZIGETI,Defender
+7 April 1931  ,Hungary,HUN,Ferenc SZOJKA,Defender
+9 September 1929  ,Hungary,HUN,Antal KOTASZ,Midfielder
+1 January 1900  ,Hungary,HUN,Laszlo LACHOS,Forward
+1 January 1933  ,Hungary,HUN,Mihaly VASAS,Forward
+24 March 1936  ,Hungary,HUN,Tivadar MONOSTORI,Forward
+22 October 1934  ,Hungary,HUN,Zoltan FRIEDMANSZKY,Forward
+6 August 1933  ,Hungary,HUN,Jozsef BENCSIS,Forward
+20 September 1933  ,Hungary,HUN,Mate FENYVESI,Forward
+6 March 1933  ,Hungary,HUN,Istvan ILKU,Goalkeeper
+19 August 1914  ,Hungary,HUN,BAROTI Lajos,Coach
+7 June 1929  ,Mexico,MEX,Antonio CARBAJAL,Goalkeeper
+30 November 1937  ,Mexico,MEX,Jesus DEL MURO,Defender
+20 April 1923  ,Mexico,MEX,Jorge ROMO,Defender
+20 June 1934  ,Mexico,MEX,Jose VILLEGAS,Defender
+21 January 1934  ,Mexico,MEX,Alfonso PORTUGAL,Midfielder
+12 February 1926  ,Mexico,MEX,Francisco FLORES,Midfielder
+18 June 1935  ,Mexico,MEX,Alfredo HERNANDEZ,Midfielder
+20 September 1936  ,Mexico,MEX,Salvador REYES,Forward
+2 October 1934  ,Mexico,MEX,Carlos CALDERON DE LA BARCA,Forward
+26 October 1933  ,Mexico,MEX,Crescencio GUTIERREZ,Forward
+22 April 1927  ,Mexico,MEX,Enrique SESMA,Forward
+29 April 1929  ,Mexico,MEX,Manuel CAMACHO,Goalkeeper
+29 December 1929  ,Mexico,MEX,Jaime GOMEZ,Goalkeeper
+7 May 1931  ,Mexico,MEX,Miguel GUTIERREZ,Defender
+28 February 1934  ,Mexico,MEX,Guillermo SEPULVEDA,Defender
+24 May 1928  ,Mexico,MEX,Jose ROCA,Defender
+30 October 1928  ,Mexico,MEX,Raul CARDENAS,Midfielder
+6 February 1931  ,Mexico,MEX,Jaime SALAZAR,Midfielder
+8 October 1934  ,Mexico,MEX,Jaime BELMONTE,Forward
+5 March 1927  ,Mexico,MEX,Carlos BLANCO,Midfielder
+3 July 1933  ,Mexico,MEX,Ligorio LOPEZ,Forward
+12 April 1935  ,Mexico,MEX,Carlos GONZALEZ,Forward
+4 May 1913  ,Mexico,MEX,LOPEZ Antonio,Coach
+25 October 1932  ,Northern Ireland,NIR,Harry GREGG,Goalkeeper
+20 February 1930  ,Northern Ireland,NIR,Willie CUNNINGHAM,Defender
+1 October 1927  ,Northern Ireland,NIR,Alfred McMICHAEL,Defender
+10 February 1926  ,Northern Ireland,NIR,Danny BLANCHFLOWER,Midfielder
+15 May 1933  ,Northern Ireland,NIR,Richard KEITH,Defender
+29 September 1928  ,Northern Ireland,NIR,Bertie PEACOCK,Midfielder
+5 August 1931  ,Northern Ireland,NIR,Billy BINGHAM,Forward
+10 June 1928  ,Northern Ireland,NIR,Wilbur CUSH,Forward
+12 December 1929  ,Northern Ireland,NIR,Billy SIMPSON,Forward
+25 October 1931  ,Northern Ireland,NIR,Jimmy McILROY,Midfielder
+25 April 1934  ,Northern Ireland,NIR,Peter McPARLAND,Forward
+20 April 1928  ,Northern Ireland,NIR,Norman UPRICHARD,Goalkeeper
+11 March 1930  ,Northern Ireland,NIR,Tommy CASEY,Forward
+22 December 1933  ,Northern Ireland,NIR,Jackie SCOTT,Forward
+1 January 1900  ,Northern Ireland,NIR,Sammy McCRORY,Forward
+20 January 1938  ,Northern Ireland,NIR,Derek DOUGAN,Forward
+1 April 1924  ,Northern Ireland,NIR,Fay COYLE,Forward
+1 January 1933  ,Northern Ireland,NIR,Roy REA,Goalkeeper
+17 October 1925  ,Northern Ireland,NIR,Len GRAHAM,Defender
+16 February 1938  ,Northern Ireland,NIR,Sammy CHAPMAN,Midfielder
+1 January 1900  ,Northern Ireland,NIR,Tommy HAMILL,Defender
+1 January 1900  ,Northern Ireland,NIR,Bobby TRAINOR,Forward
+5 June 1913  ,Northern Ireland,NIR,DOHERTY Peter,Coach
+19 February 1934  ,Paraguay,PAR,Ramon MAYEREGGER,Goalkeeper
+7 January 1929  ,Paraguay,PAR,Edelmiro AREVALO,Defender
+5 April 1937  ,Paraguay,PAR,Juan Vicente LEZCANO,Defender
+31 July 1936  ,Paraguay,PAR,Ignacio ACHUCARRO,Defender
+29 August 1924  ,Paraguay,PAR,Salvador VILLALBA,Midfielder
+1 January 1931  ,Paraguay,PAR,Eligio ECHAGUE,Defender
+24 June 1935  ,Paraguay,PAR,Juan AGUERO,Forward
+30 August 1932  ,Paraguay,PAR,Jose PARODI,Forward
+23 September 1937  ,Paraguay,PAR,Jorge ROMERO,Forward
+11 March 1935  ,Paraguay,PAR,Oscar AGUILERA,Forward
+3 January 1935  ,Paraguay,PAR,Florencio AMARILLA,Forward
+1 January 1934  ,Paraguay,PAR,Samuel AGUILAR,Goalkeeper
+1 January 1900  ,Paraguay,PAR,Luis GINI,Defender
+1 January 1900  ,Paraguay,PAR,Dario SEGOVIA,Defender
+1 January 1900  ,Paraguay,PAR,Luis SILVA,Midfielder
+1 January 1900  ,Paraguay,PAR,Claudio LEZCANO,Forward
+1 January 1930  ,Paraguay,PAR,Agustin MIRANDA,Defender
+3 April 1933  ,Paraguay,PAR,Benigno Gilberto PENAYO,Forward
+1 January 1900  ,Paraguay,PAR,Eliseo INSFRAN,Forward
+18 July 1936  ,Paraguay,PAR,Jose Raul AVEIRO,Forward
+7 February 1938  ,Paraguay,PAR,Cayetano RE,Forward
+1 January 1900  ,Paraguay,PAR,Eligio Antonio INSFRAN,Forward
+  ,Paraguay,PAR,GONZALEZ Aurelio,Coach
+25 September 1905  ,Paraguay,PAR,GONZALES Aurelio,Coach
+10 April 1930  ,Scotland,SCO,Tommy YOUNGER,Goalkeeper
+8 October 1931  ,Scotland,SCO,Bill BROWN,Goalkeeper
+2 August 1935  ,Scotland,SCO,Alex PARKER,Defender
+14 May 1934  ,Scotland,SCO,Eric CALDOW,Defender
+12 December 1928  ,Scotland,SCO,John HEWIE,Defender
+26 July 1925  ,Scotland,SCO,Harry HADDOCK,Defender
+7 June 1927  ,Scotland,SCO,Ian McCOLL,Defender
+12 April 1923  ,Scotland,SCO,Eddie TURNBULL,Forward
+16 July 1927  ,Scotland,SCO,Bobby EVANS,Defender
+24 April 1928  ,Scotland,SCO,Tommy DOCHERTY,Midfielder
+14 November 1934  ,Scotland,SCO,Dave MACKAY,Midfielder
+1 May 1926  ,Scotland,SCO,Doug COWIE,Midfielder
+13 May 1930  ,Scotland,SCO,Sammy BAIRD,Midfielder
+20 June 1934  ,Scotland,SCO,Graham LEGGATT,Forward
+22 November 1937  ,Scotland,SCO,Alex SCOTT,Forward
+4 February 1933  ,Scotland,SCO,Jimmy MURRAY,Forward
+10 April 1930  ,Scotland,SCO,Jackie MUDIE,Forward
+28 September 1932  ,Scotland,SCO,John COYLE,Forward
+16 February 1931  ,Scotland,SCO,Bobby COLLINS,Forward
+15 September 1929  ,Scotland,SCO,Archie ROBERTSON,Forward
+6 January 1932  ,Scotland,SCO,Stuart IMLACH,Forward
+22 November 1928  ,Scotland,SCO,Willie FERNIE,Forward
+14 March 1916  ,Scotland,SCO,WALKER Dawson,Coach
+  ,Soviet Union,URS,Nikita SIMONYAN,unspecified
+20 February 1926  ,Soviet Union,URS,Konstantin KRIZHEVSKI,unspecified
+22 October 1929  ,Soviet Union,URS,Lev YASHIN,Goalkeeper
+26 February 1930  ,Soviet Union,URS,Vladimir KESAREV,Defender
+20 February 1926  ,Soviet Union,URS,Konstantin KRIZHEVSKI,Defender
+14 July 1928  ,Soviet Union,URS,Boris KUZNETSOV,Defender
+29 November 1931  ,Soviet Union,URS,Juri VOINOV,Midfielder
+9 January 1930  ,Soviet Union,URS,Igor NETTO,Midfielder
+12 June 1936  ,Soviet Union,URS,German APUKTHIN,Forward
+19 November 1934  ,Soviet Union,URS,Valentin IVANOV,Forward
+12 October 1926  ,Soviet Union,URS,Nikita SIMONIAN,Forward
+13 September 1925  ,Soviet Union,URS,Sergei SALNIKOV,Forward
+27 June 1931  ,Soviet Union,URS,Anatoli ILYIN,Forward
+5 March 1936  ,Soviet Union,URS,Vladimir MASLACHENKO,Goalkeeper
+1 January 1900  ,Soviet Union,URS,Vladimir BELYAYEV,Goalkeeper
+17 January 1936  ,Soviet Union,URS,Leonid OSTROVSKI,Defender
+26 June 1930  ,Soviet Union,URS,Anatoli MASLYONKIN,Defender
+2 June 1931  ,Soviet Union,URS,Viktor TSARYOV,Midfielder
+14 April 1928  ,Soviet Union,URS,Aleksandr IVANOV,Forward
+23 April 1933  ,Soviet Union,URS,Valentin BUBUKIN,Forward
+11 March 1937  ,Soviet Union,URS,Gennadi GUSAROV,Forward
+2 April 1937  ,Soviet Union,URS,Yuri FALIN,Forward
+6 December 1932  ,Soviet Union,URS,Genrikh FEDOSOV,Forward
+10 April 1930  ,Soviet Union,URS,Vladimir YEROKHIN,Defender
+17 January 1911  ,Soviet Union,URS,KACHALIN Gavril,Coach
+11 November 1925  ,Sweden,SWE,Kalle SVENSSON,Goalkeeper
+16 November 1930  ,Sweden,SWE,Orvar BERGMARK,Defender
+15 October 1926  ,Sweden,SWE,Sven AXBOM,Defender
+8 October 1922  ,Sweden,SWE,Nils LIEDHOLM,Midfielder
+19 March 1928  ,Sweden,SWE,Ake JOHANSSON,Defender
+26 March 1930  ,Sweden,SWE,Sigge PARLING,Midfielder
+19 November 1934  ,Sweden,SWE,Kurt HAMRIN,Forward
+31 October 1920  ,Sweden,SWE,Gunnar GREN,Midfielder
+19 October 1935  ,Sweden,SWE,Agne SIMONSSON,Forward
+29 March 1931  ,Sweden,SWE,Arne SELMONSSON,Forward
+24 December 1929  ,Sweden,SWE,Lennart SKOGLUND,Forward
+6 December 1927  ,Sweden,SWE,Tore SVENSSON,Goalkeeper
+16 November 1930  ,Sweden,SWE,Prawitz OBERG,Defender
+13 January 1928  ,Sweden,SWE,Bengt GUSTAVSSON,Midfielder
+4 February 1929  ,Sweden,SWE,Reino BORJESSON,Midfielder
+3 February 1928  ,Sweden,SWE,Ingemar HARALDSSON,Goalkeeper
+22 February 1927  ,Sweden,SWE,Olle HAKANSSON,Midfielder
+29 August 1923  ,Sweden,SWE,Gosta LOFGREN,Forward
+13 March 1931  ,Sweden,SWE,Henry KALLGREN,Forward
+9 December 1923  ,Sweden,SWE,Bror MELLBERG,Forward
+26 January 1933  ,Sweden,SWE,Bengt BERNDTSSON,Forward
+19 August 1938  ,Sweden,SWE,Ove OHLSSON,Forward
+13 January 1907  ,Sweden,SWE,RAYNOR George,Coach
+19 November 1929  ,Wales,WAL,Jack KELSEY,Goalkeeper
+9 July 1930  ,Wales,WAL,Stuart WILLIAMS,Defender
+7 November 1934  ,Wales,WAL,Mel HOPKINS,Defender
+10 August 1930  ,Wales,WAL,Derek SULLIVAN,Defender
+14 May 1935  ,Wales,WAL,Mel CHARLES,Midfielder
+7 June 1928  ,Wales,WAL,David BOWEN,Midfielder
+25 September 1932  ,Wales,WAL,Terry MEDWIN,Forward
+21 June 1928  ,Wales,WAL,Ron HEWITT,Forward
+27 December 1931  ,Wales,WAL,John CHARLES,Forward
+16 October 1929  ,Wales,WAL,Ivor ALLCHURCH,Forward
+7 February 1935  ,Wales,WAL,Cliff JONES,Forward
+2 January 1936  ,Wales,WAL,Ken JONES,Goalkeeper
+28 March 1934  ,Wales,WAL,Gerald VEARNCOMBE,Goalkeeper
+24 January 1937  ,Wales,WAL,Trevor EDWARDS,Defender
+18 December 1934  ,Wales,WAL,Colin BAKER,Midfielder
+31 January 1932  ,Wales,WAL,Vic CROWE,Midfielder
+26 July 1935  ,Wales,WAL,Ken LEEK,Forward
+14 April 1937  ,Wales,WAL,Roy VERNON,Forward
+17 July 1932  ,Wales,WAL,Colin WEBSTER,Forward
+26 July 1931  ,Wales,WAL,John ELSWORTHY,Midfielder
+12 September 1933  ,Wales,WAL,Len ALLCHURCH,Forward
+6 April 1936  ,Wales,WAL,Tom BAKER,Midfielder
+8 August 1910  ,Wales,WAL,MURPHY James,Coach
+2 November 1928  ,Yugoslavia,YUG,Vladimir BEARA,Goalkeeper
+14 March 1928  ,Yugoslavia,YUG,Srboljub KRIVOKUCA,Goalkeeper
+31 July 1929  ,Yugoslavia,YUG,Vasilije SIJAKOVIC,Defender
+17 June 1929  ,Yugoslavia,YUG,Tomislav CRNKOVIC,Defender
+7 January 1936  ,Yugoslavia,YUG,Novak TOMIC,Defender
+17 May 1929  ,Yugoslavia,YUG,Branko ZEBEC,Midfielder
+5 February 1933  ,Yugoslavia,YUG,Milos MILUTINOVIC,Forward
+5 February 1934  ,Yugoslavia,YUG,Dobrosav KRSTIC,Midfielder
+16 May 1931  ,Yugoslavia,YUG,Vujadin BOSKOV,Midfielder
+23 April 1932  ,Yugoslavia,YUG,Ivan SANTEK,Midfielder
+17 March 1935  ,Yugoslavia,YUG,Vlada POPOVIC,Midfielder
+6 February 1930  ,Yugoslavia,YUG,Aleksandar PETAKOVIC,Forward
+22 October 1930  ,Yugoslavia,YUG,Toza VESELINOVIC,Forward
+1 January 1900  ,Yugoslavia,YUG,Milorad MILUTINOVIC,Midfielder
+30 November 1937  ,Yugoslavia,YUG,Dragoslav SEKULARAC,Midfielder
+10 May 1934  ,Yugoslavia,YUG,Ilijas PASIC,Forward
+5 December 1927  ,Yugoslavia,YUG,Zdravko RAJKOV,Forward
+12 May 1933  ,Yugoslavia,YUG,Luka LIPOSINOVIC,Forward
+1 July 1938  ,Yugoslavia,YUG,Radivoje OGNJANOVIC,Forward
+1 January 1900  ,Yugoslavia,YUG,Gordan IROVIC,Goalkeeper
+20 October 1933  ,Yugoslavia,YUG,Nikola RADOVIC,Defender
+6 August 1936  ,Yugoslavia,YUG,Drazen JERKOVIC,Forward
+15 July 1911  ,Yugoslavia,YUG,TIRNANIC Aleksandar,Coach

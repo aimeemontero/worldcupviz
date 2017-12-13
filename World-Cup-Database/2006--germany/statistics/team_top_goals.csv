@@ -1,0 +1,33 @@
+Country,CountryCode,Goals,GoalsAgainst,MatchesPlayed
+Germany,GER,14,6,7
+Italy,ITA,12,2,7
+Argentina,ARG,11,3,5
+Brazil,BRA,10,2,5
+Spain,ESP,9,4,4
+France,FRA,9,3,7
+Portugal,POR,7,5,7
+England,ENG,6,2,5
+Ivory Coast,CIV,5,6,3
+Mexico,MEX,5,5,4
+Ecuador,ECU,5,4,4
+Australia,AUS,5,6,4
+Ukraine,UKR,5,7,5
+Switzerland,SUI,4,0,4
+Ghana,GHA,4,6,4
+Tunisia,TUN,3,6,3
+Costa Rica,CRC,3,9,3
+Korea Republic,KOR,3,4,3
+Czech Republic,CZE,3,4,3
+Sweden,SWE,3,4,4
+Netherlands,NED,3,2,4
+Poland,POL,2,4,3
+Serbia and Montenegro,SCG,2,10,3
+Saudi Arabia,KSA,2,7,3
+Iran,IRN,2,6,3
+Japan,JPN,2,7,3
+Paraguay,PAR,2,2,3
+Croatia,CRO,2,3,3
+USA,USA,2,6,3
+Angola,ANG,1,2,3
+Togo,TOG,1,6,3
+Trinidad and Tobago,TRI,0,4,3

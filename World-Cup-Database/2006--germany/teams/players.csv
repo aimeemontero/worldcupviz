@@ -1,0 +1,770 @@
+Age,Country,CountryCode,Player,Position
+7 January 1970  ,Angola,ANG,JOAO RICARDO,Goalkeeper
+6 August 1984  ,Angola,ANG,MARCOS AIROSA,Defender
+10 July 1977  ,Angola,ANG,JAMBA,Defender
+29 May 1977  ,Angola,ANG,LEBO LEBO,Defender
+11 October 1978  ,Angola,ANG,KALI,Defender
+27 May 1981  ,Angola,ANG,MILOY,Midfielder
+28 November 1972  ,Angola,ANG,FIGUEIREDO,Midfielder
+14 May 1978  ,Angola,ANG,ANDRE,Midfielder
+18 March 1982  ,Angola,ANG,MANTORRAS,Forward
+30 May 1977  ,Angola,ANG,AKWA,Forward
+18 June 1984  ,Angola,ANG,Mateus,Midfielder
+1 February 1981  ,Angola,ANG,LAMA,Goalkeeper
+2 March 1980  ,Angola,ANG,EDSON,Midfielder
+9 October 1982  ,Angola,ANG,MENDONCA,Midfielder
+3 September 1977  ,Angola,ANG,RUI MARQUES,Defender
+30 December 1979  ,Angola,ANG,ABOU TARIKA,Forward
+30 December 1979  ,Angola,ANG,FLAVIO,Forward
+12 October 1983  ,Angola,ANG,ZE KALANGA,Midfielder
+14 March 1979  ,Angola,ANG,LOVE,Forward
+11 February 1980  ,Angola,ANG,ANDRE TITI BUENGO,Forward
+25 December 1984  ,Angola,ANG,LOCO,Defender
+1 November 1979  ,Angola,ANG,DELGADO,Defender
+1 June 1985  ,Angola,ANG,MÃRIO,Goalkeeper
+8 December 1974  ,Angola,ANG,MARCO ABREU,Defender
+22 June 1960  ,Angola,ANG,GONCALVES Luis,Coach
+19 August 1972  ,Argentina,ARG,Roberto ABBONDANZIERI,Goalkeeper
+14 April 1973  ,Argentina,ARG,Roberto AYALA,Defender
+5 May 1976  ,Argentina,ARG,Juan SORIN,Defender
+22 January 1982  ,Argentina,ARG,Fabricio COLOCCINI,Defender
+18 August 1980  ,Argentina,ARG,Esteban CAMBIASSO,Midfielder
+19 April 1978  ,Argentina,ARG,Gabriel HEINZE,Defender
+11 December 1981  ,Argentina,ARG,Javier SAVIOLA,Forward
+8 June 1984  ,Argentina,ARG,Javier MASCHERANO,Midfielder
+5 July 1975  ,Argentina,ARG,Hernan CRESPO,Forward
+24 June 1978  ,Argentina,ARG,Juan RIQUELME,Midfielder
+5 February 1984  ,Argentina,ARG,Carlos TEVEZ,Forward
+20 May 1977  ,Argentina,ARG,Leonardo FRANCO,Goalkeeper
+16 May 1978  ,Argentina,ARG,Lionel SCALONI,Defender
+5 February 1982  ,Argentina,ARG,Rodrigo PALACIO,Forward
+7 September 1980  ,Argentina,ARG,Gabriel MILITO,Defender
+3 November 1979  ,Argentina,ARG,Pablo AIMAR,Midfielder
+9 May 1978  ,Argentina,ARG,Leandro CUFRE,Defender
+2 January 1981  ,Argentina,ARG,Maxi RODRIGUEZ,Midfielder
+24 June 1987  ,Argentina,ARG,Lionel MESSI,Forward
+10 October 1974  ,Argentina,ARG,Julio CRUZ,Forward
+12 April 1981  ,Argentina,ARG,Nicolas BURDISSO,Defender
+19 January 1981  ,Argentina,ARG,Luis GONZALEZ,Midfielder
+3 July 1986  ,Argentina,ARG,Oscar USTARI,Goalkeeper
+3 September 1949  ,Argentina,ARG,PEKERMAN Jose,Coach
+6 October 1972  ,Australia,AUS,Mark SCHWARZER,Goalkeeper
+9 March 1978  ,Australia,AUS,Lucas NEILL,Defender
+12 December 1975  ,Australia,AUS,Craig MOORE,Defender
+6 December 1979  ,Australia,AUS,Tim CAHILL,Midfielder
+5 August 1980  ,Australia,AUS,Jason CULINA,Midfielder
+4 July 1973  ,Australia,AUS,Tony POPOVIC,Defender
+22 February 1979  ,Australia,AUS,Brett EMERTON,Midfielder
+10 December 1975  ,Australia,AUS,Josip SKOKO,Midfielder
+9 October 1975  ,Australia,AUS,Mark VIDUKA,Forward
+22 September 1978  ,Australia,AUS,Harry KEWELL,Forward
+16 August 1972  ,Australia,AUS,Stan LAZARIDIS,Midfielder
+13 June 1975  ,Australia,AUS,Ante COVIC,Goalkeeper
+5 October 1979  ,Australia,AUS,Vince GRELLA,Midfielder
+30 December 1975  ,Australia,AUS,Scott CHIPPERFIELD,Defender
+5 February 1976  ,Australia,AUS,John ALOISI,Forward
+8 March 1981  ,Australia,AUS,Michael BEAUCHAMP,Defender
+23 October 1978  ,Australia,AUS,Archie THOMPSON,Forward
+16 December 1972  ,Australia,AUS,Zeljko KALAC,Goalkeeper
+20 August 1982  ,Australia,AUS,Joshua KENNEDY,Forward
+2 October 1981  ,Australia,AUS,Luke WILKSHIRE,Midfielder
+27 May 1979  ,Australia,AUS,Mile STERJOVSKI,Midfielder
+4 August 1985  ,Australia,AUS,Mark MILLIGAN,Defender
+11 February 1980  ,Australia,AUS,Mark BRESCIANO,Midfielder
+8 November 1946  ,Australia,AUS,Guus HIDDINK,Coach
+7 October 1973  ,Brazil,BRA,DIDA,Goalkeeper
+7 June 1970  ,Brazil,BRA,CAFU,Defender
+8 May 1978  ,Brazil,BRA,LUCIO,Defender
+1 February 1979  ,Brazil,BRA,JUAN,Defender
+4 April 1976  ,Brazil,BRA,EMERSON,Midfielder
+10 April 1973  ,Brazil,BRA,ROBERTO CARLOS,Defender
+17 February 1982  ,Brazil,BRA,ADRIANO,Forward
+22 April 1982  ,Brazil,BRA,KAKA,Midfielder
+22 September 1976  ,Brazil,BRA,RONALDO,Forward
+21 March 1980  ,Brazil,BRA,RONALDINHO,Midfielder
+6 July 1974  ,Brazil,BRA,ZE ROBERTO,Midfielder
+22 January 1973  ,Brazil,BRA,ROGERIO CENI,Goalkeeper
+24 June 1980  ,Brazil,BRA,CICINHO,Defender
+13 February 1981  ,Brazil,BRA,LUISAO,Defender
+3 June 1977  ,Brazil,BRA,CRIS,Defender
+25 April 1976  ,Brazil,BRA,GILBERTO MELO,Defender
+7 October 1976  ,Brazil,BRA,GILBERTO SILVA,Midfielder
+2 August 1975  ,Brazil,BRA,MINEIRO,Midfielder
+30 January 1975  ,Brazil,BRA,JUNINHO PERNAMBUCANO,Midfielder
+23 May 1976  ,Brazil,BRA,RICARDINHO,Midfielder
+3 October 1983  ,Brazil,BRA,Fred,Forward
+3 September 1979  ,Brazil,BRA,JULIO CESAR,Goalkeeper
+25 January 1984  ,Brazil,BRA,ROBINHO,Forward
+27 February 1943  ,Brazil,BRA,PARREIRA Carlos Alberto,Coach
+24 December 1972  ,Costa Rica,CRC,Alvaro MESEN,Goalkeeper
+8 September 1976  ,Costa Rica,CRC,Jervis DRUMMOND,Defender
+10 August 1974  ,Costa Rica,CRC,Luis MARIN,Defender
+16 July 1982  ,Costa Rica,CRC,Michael UMANA,Defender
+1 October 1979  ,Costa Rica,CRC,Gilberto MARTINEZ,Defender
+7 November 1979  ,Costa Rica,CRC,Danny FONSECA,Midfielder
+17 May 1984  ,Costa Rica,CRC,Christian BOLANOS,Midfielder
+13 December 1972  ,Costa Rica,CRC,Mauricio SOLIS,Midfielder
+31 July 1976  ,Costa Rica,CRC,Paulo WANCHOPE,Forward
+6 October 1974  ,Costa Rica,CRC,Walter CENTENO,Midfielder
+24 January 1975  ,Costa Rica,CRC,Ronald GOMEZ,Forward
+21 November 1980  ,Costa Rica,CRC,Leonardo GonzÃ¡les,Defender
+8 December 1977  ,Costa Rica,CRC,Kurt BERNARD,Forward
+30 December 1984  ,Costa Rica,CRC,Randall AZOFEIFA,Midfielder
+7 September 1975  ,Costa Rica,CRC,Harold WALLACE,Defender
+9 April 1982  ,Costa Rica,CRC,Carlos HERNANDEZ,Midfielder
+30 June 1984  ,Costa Rica,CRC,Gabriel BADILLA,Defender
+8 November 1970  ,Costa Rica,CRC,Jose PORRAS,Goalkeeper
+25 March 1982  ,Costa Rica,CRC,Alvaro SABORIO,Forward
+23 August 1977  ,Costa Rica,CRC,Douglas SEQUEIRA,Midfielder
+15 April 1980  ,Costa Rica,CRC,VÃ­ctor NÃºÃ±ez,Forward
+30 December 1981  ,Costa Rica,CRC,Michael RODRIGUEZ,Defender
+31 December 1977  ,Costa Rica,CRC,Wardy ALFARO,Goalkeeper
+7 November 1959  ,Costa Rica,CRC,GUIMARAES Alexandre,Coach
+7 September 1972  ,Ivory Coast,CIV,Jean-Jacques TIZIE,Goalkeeper
+7 March 1981  ,Ivory Coast,CIV,Kanga AKALE,Midfielder
+2 April 1983  ,Ivory Coast,CIV,Arthur BOKA,Defender
+19 March 1981  ,Ivory Coast,CIV,Kolo TourÃ©,Defender
+14 December 1980  ,Ivory Coast,CIV,Didier ZOKORA,Midfielder
+2 February 1975  ,Ivory Coast,CIV,Blaise KOUASSI,Defender
+24 January 1984  ,Ivory Coast,CIV,Emmers FAE,Midfielder
+12 January 1978  ,Ivory Coast,CIV,Bonaventure KALOU,Forward
+11 November 1983  ,Ivory Coast,CIV,Arouna KONE,Forward
+30 January 1982  ,Ivory Coast,CIV,Gilles Yapi Yapo,Midfielder
+11 March 1978  ,Ivory Coast,CIV,Didier Drogba,Forward
+6 October 1980  ,Ivory Coast,CIV,Abdoulaye MÃITÃ,Defender
+27 December 1983  ,Ivory Coast,CIV,Marc ZORO,Defender
+17 September 1981  ,Ivory Coast,CIV,Bakari KonÃ©,Forward
+26 November 1980  ,Ivory Coast,CIV,Aruna DINDANE,Forward
+12 February 1979  ,Ivory Coast,CIV,Gerard GNANHOUAN,Goalkeeper
+22 July 1971  ,Ivory Coast,CIV,Cyrille DOMORAUD,Defender
+6 August 1981  ,Ivory Coast,CIV,Kader KEITA,Midfielder
+13 May 1983  ,Ivory Coast,CIV,Yaya TOURE,Midfielder
+13 June 1981  ,Ivory Coast,CIV,Guy Demel,Midfielder
+4 June 1983  ,Ivory Coast,CIV,Emmanuel EBOUE,Defender
+4 June 1983  ,Ivory Coast,CIV,ROMARIC,Midfielder
+30 December 1979  ,Ivory Coast,CIV,Boubacar BARRY,Goalkeeper
+28 October 1947  ,Ivory Coast,CIV,MICHEL Henri,Coach
+8 January 1979  ,Croatia,CRO,Stipe PLETIKOSA,Goalkeeper
+1 May 1982  ,Croatia,CRO,Darijo Srna,Midfielder
+18 February 1978  ,Croatia,CRO,Josip SIMUNIC,Defender
+6 April 1974  ,Croatia,CRO,Robert KOVAC,Defender
+16 April 1978  ,Croatia,CRO,Igor TUDOR,Defender
+31 January 1980  ,Croatia,CRO,Jurica VRANJES,Midfielder
+12 November 1975  ,Croatia,CRO,Dario SIMIC,Defender
+28 January 1981  ,Croatia,CRO,Marko BABIC,Midfielder
+5 November 1974  ,Croatia,CRO,Dado PRSO,Forward
+15 October 1971  ,Croatia,CRO,Niko KOVAC,Midfielder
+23 July 1975  ,Croatia,CRO,Mario TOKIC,Defender
+14 October 1977  ,Croatia,CRO,Joe DIDULICA,Goalkeeper
+6 March 1976  ,Croatia,CRO,Stjepan TOMAS,Defender
+9 September 1985  ,Croatia,CRO,Luka MODRIC,Midfielder
+7 February 1978  ,Croatia,CRO,Ivan LEKO,Midfielder
+9 April 1980  ,Croatia,CRO,Jerko LEKO,Midfielder
+29 January 1980  ,Croatia,CRO,Ivan KLASNIC,Forward
+14 September 1979  ,Croatia,CRO,Ivica OLIC,Forward
+13 August 1984  ,Croatia,CRO,Niko KRANJCAR,Midfielder
+15 January 1979  ,Croatia,CRO,Anthony SERIC,Midfielder
+15 October 1978  ,Croatia,CRO,Bosko BALABAN,Forward
+6 February 1979  ,Croatia,CRO,Ivan BOSNJAK,Forward
+30 March 1974  ,Croatia,CRO,Tomislav BUTINA,Goalkeeper
+15 November 1956  ,Croatia,CRO,KRANJCAR Zlatko,Coach
+20 May 1982  ,Czech Republic,CZE,Petr CECH,Goalkeeper
+14 May 1980  ,Czech Republic,CZE,Zdenek GRYGERA,Defender
+18 January 1976  ,Czech Republic,CZE,Pavel MARES,Defender
+15 January 1973  ,Czech Republic,CZE,Tomas GALASEK,Midfielder
+27 November 1979  ,Czech Republic,CZE,Radoslav KOVAC,Midfielder
+9 May 1977  ,Czech Republic,CZE,Marek JANKULOVSKI,Defender
+1 February 1977  ,Czech Republic,CZE,Libor SIONKO,Forward
+30 March 1972  ,Czech Republic,CZE,Karel POBORSKY,Midfielder
+30 March 1973  ,Czech Republic,CZE,Jan KOLLER,Forward
+4 October 1980  ,Czech Republic,CZE,Tomas ROSICKY,Midfielder
+30 August 1972  ,Czech Republic,CZE,Pavel NEDVED,Midfielder
+27 September 1973  ,Czech Republic,CZE,Vratislav LOKVENC,Forward
+25 May 1979  ,Czech Republic,CZE,Martin JIRANEK,Defender
+17 May 1979  ,Czech Republic,CZE,David JAROLIM,Midfielder
+28 October 1981  ,Czech Republic,CZE,Milan BAROS,Forward
+29 December 1972  ,Czech Republic,CZE,Jaromir BLAZEK,Goalkeeper
+27 May 1976  ,Czech Republic,CZE,Jiri STAJNER,Midfielder
+4 August 1977  ,Czech Republic,CZE,Marek HEINZ,Forward
+14 March 1981  ,Czech Republic,CZE,Jan POLAK,Midfielder
+5 January 1982  ,Czech Republic,CZE,Jaroslav PLASIL,Midfielder
+24 March 1978  ,Czech Republic,CZE,Tomas UJFALUSI,Defender
+5 July 1980  ,Czech Republic,CZE,David ROZEHNAL,Defender
+31 May 1975  ,Czech Republic,CZE,Antonin KINSKY,Goalkeeper
+13 November 1939  ,Czech Republic,CZE,BRUCKNER Karel,Coach
+12 March 1979  ,Ecuador,ECU,Edwin VILLAFUERTE,Goalkeeper
+28 September 1981  ,Ecuador,ECU,Jorge GUAGUA,Defender
+16 August 1974  ,Ecuador,ECU,Ivan HURTADO,Defender
+8 February 1974  ,Ecuador,ECU,Ulises DE LA CRUZ,Defender
+6 October 1981  ,Ecuador,ECU,JosÃ© Luis Perlaza,Defender
+15 October 1977  ,Ecuador,ECU,Patricio URRUTIA,Midfielder
+27 April 1980  ,Ecuador,ECU,Christian Lara,Midfielder
+16 March 1979  ,Ecuador,ECU,Edison MENDEZ,Midfielder
+2 April 1983  ,Ecuador,ECU,Felix BORJA,Forward
+24 October 1977  ,Ecuador,ECU,Ivan KAVIEDES,Forward
+23 December 1974  ,Ecuador,ECU,Agustin DELGADO,Forward
+26 August 1979  ,Ecuador,ECU,Cristian MORA,Goalkeeper
+14 October 1980  ,Ecuador,ECU,Paul AMBROSI,Defender
+15 May 1982  ,Ecuador,ECU,Segundo CASTILLO,Midfielder
+27 September 1971  ,Ecuador,ECU,Marlon AYOVI,Midfielder
+4 August 1985  ,Ecuador,ECU,Antonio VALENCIA,Midfielder
+12 April 1977  ,Ecuador,ECU,Giovanny ESPINOZA,Defender
+23 July 1977  ,Ecuador,ECU,NÃ©icer REASCO,Defender
+20 October 1983  ,Ecuador,ECU,Luis SARITAMA,Midfielder
+16 June 1976  ,Ecuador,ECU,Edwin TENORIO,Midfielder
+14 May 1979  ,Ecuador,ECU,TENORIO,Forward
+10 April 1982  ,Ecuador,ECU,Damian LANZA,Goalkeeper
+1 May 1986  ,Ecuador,ECU,Cristian BENITEZ,Forward
+23 December 1959  ,Ecuador,ECU,Luis FERNANDO SUÃREZ,Coach
+15 October 1979  ,England,ENG,Paul ROBINSON,Goalkeeper
+18 February 1975  ,England,ENG,Gary NEVILLE,Defender
+20 December 1980  ,England,ENG,Ashley COLE,Defender
+30 May 1980  ,England,ENG,Steven Gerrard,Midfielder
+7 November 1978  ,England,ENG,Rio FERDINAND,Defender
+7 December 1980  ,England,ENG,John TERRY,Defender
+2 May 1975  ,England,ENG,David BECKHAM,Midfielder
+20 June 1978  ,England,ENG,Frank Lampard,Midfielder
+24 October 1985  ,England,ENG,Wayne ROONEY,Forward
+14 December 1979  ,England,ENG,Michael OWEN,Forward
+8 November 1981  ,England,ENG,Joe COLE,Midfielder
+18 September 1974  ,England,ENG,Sol CAMPBELL,Defender
+1 August 1970  ,England,ENG,David JAMES,Goalkeeper
+5 August 1980  ,England,ENG,Wayne BRIDGE,Defender
+28 January 1978  ,England,ENG,Jamie CARRAGHER,Defender
+20 January 1981  ,England,ENG,Owen HARGREAVES,Midfielder
+18 February 1983  ,England,ENG,Jermaine JENAS,Midfielder
+28 July 1981  ,England,ENG,Michael CARRICK,Midfielder
+16 April 1987  ,England,ENG,Aaron Lennon,Midfielder
+22 July 1984  ,England,ENG,Stewart Downing,Midfielder
+30 January 1981  ,England,ENG,Peter CROUCH,Forward
+3 September 1985  ,England,ENG,Scott CARSON,Goalkeeper
+16 March 1989  ,England,ENG,Theo Walcott,Forward
+5 February 1948  ,England,ENG,Sven-GÃ¶ran ERIKSSON,Coach
+14 May 1979  ,France,FRA,Mickael LANDREAU,Goalkeeper
+14 December 1979  ,France,FRA,Jean-Alain BOUMSONG,Defender
+11 September 1979  ,France,FRA,Eric ABIDAL,Defender
+23 June 1976  ,France,FRA,Patrick VIEIRA,Midfielder
+17 August 1977  ,France,FRA,William GALLAS,Defender
+18 February 1973  ,France,FRA,Claude MAKELELE,Midfielder
+13 June 1980  ,France,FRA,Florent Malouda,Midfielder
+10 October 1973  ,France,FRA,Vikash DHORASOO,Midfielder
+27 July 1979  ,France,FRA,Sidney GOVOU,Forward
+23 June 1972  ,France,FRA,Zinedine ZIDANE,Midfielder
+10 May 1974  ,France,FRA,Sylvain WILTORD,Forward
+17 August 1977  ,France,FRA,Thierry HENRY,Forward
+9 August 1977  ,France,FRA,Mikael SILVESTRE,Defender
+8 August 1978  ,France,FRA,Louis SAHA,Forward
+1 January 1972  ,France,FRA,Lilian THURAM,Defender
+28 June 1971  ,France,FRA,Fabien BARTHEZ,Goalkeeper
+9 October 1981  ,France,FRA,Gael GIVET,Defender
+15 July 1981  ,France,FRA,Alou DIARRA,Midfielder
+18 March 1977  ,France,FRA,Willy SAGNOL,Defender
+15 October 1977  ,France,FRA,David TREZEGUET,Forward
+21 February 1979  ,France,FRA,Pascal CHIMBONDA,Defender
+7 April 1983  ,France,FRA,Franck RibÃ©ry,Midfielder
+31 December 1972  ,France,FRA,Gregory COUPET,Goalkeeper
+24 January 1952  ,France,FRA,DOMENECH Raymond,Coach
+10 November 1969  ,Germany,GER,Jens LEHMANN,Goalkeeper
+4 November 1985  ,Germany,GER,Marcell JANSEN,Defender
+29 May 1979  ,Germany,GER,Arne FRIEDRICH,Defender
+18 August 1984  ,Germany,GER,Robert HUTH,Defender
+13 February 1980  ,Germany,GER,Sebastian KEHL,Midfielder
+11 January 1974  ,Germany,GER,Jens NOWOTNY,Defender
+1 August 1984  ,Germany,GER,Bastian SCHWEINSTEIGER,Midfielder
+22 November 1976  ,Germany,GER,Torsten FRINGS,Midfielder
+5 November 1983  ,Germany,GER,Mike HANKE,Forward
+1 May 1973  ,Germany,GER,Oliver NEUVILLE,Forward
+9 June 1978  ,Germany,GER,Miroslav KLOSE,Forward
+15 June 1969  ,Germany,GER,Oliver KAHN,Goalkeeper
+26 September 1976  ,Germany,GER,Michael BALLACK,Midfielder
+3 October 1978  ,Germany,GER,Gerald ASAMOAH,Forward
+5 April 1982  ,Germany,GER,Thomas HITZLSPERGER,Midfielder
+11 November 1983  ,Germany,GER,Philipp LAHM,Defender
+29 September 1984  ,Germany,GER,Per MERTESACKER,Defender
+2 May 1980  ,Germany,GER,Tim BOROWSKI,Midfielder
+17 November 1973  ,Germany,GER,Bernd SCHNEIDER,Midfielder
+4 June 1985  ,Germany,GER,Lukas PODOLSKI,Forward
+5 November 1980  ,Germany,GER,Christoph METZELDER,Defender
+21 February 1984  ,Germany,GER,David ODONKOR,Midfielder
+5 April 1979  ,Germany,GER,Timo HILDEBRAND,Goalkeeper
+30 July 1964  ,Germany,GER,KLINSMANN Juergen,Coach
+1 September 1980  ,Ghana,GHA,Sammy ADJEI,Goalkeeper
+28 June 1976  ,Ghana,GHA,Hans SARPEI,Defender
+22 November 1985  ,Ghana,GHA,Asamoah Gyan,Forward
+3 September 1976  ,Ghana,GHA,Samuel KUFFOUR,Defender
+29 November 1982  ,Ghana,GHA,John MENSAH,Defender
+3 March 1981  ,Ghana,GHA,Emmanuel PAPPOE,Defender
+26 October 1982  ,Ghana,GHA,Illiasu SHILLA,Defender
+3 December 1982  ,Ghana,GHA,Michael ESSIEN,Midfielder
+2 May 1983  ,Ghana,GHA,Derek BOATENG,Midfielder
+24 December 1980  ,Ghana,GHA,Stephen APPIAH,Midfielder
+27 August 1984  ,Ghana,GHA,Sulley MUNTARI,Midfielder
+15 February 1977  ,Ghana,GHA,Alex TACHIE-MENSAH,Forward
+10 December 1983  ,Ghana,GHA,Habib MOHAMED,Defender
+24 October 1980  ,Ghana,GHA,Matthew AMOAH,Forward
+15 June 1981  ,Ghana,GHA,John PANTSIL,Defender
+7 July 1982  ,Ghana,GHA,George OWU,Goalkeeper
+25 December 1980  ,Ghana,GHA,Daniel QUAYE,Defender
+12 November 1978  ,Ghana,GHA,Eric ADDO,Midfielder
+30 December 1982  ,Ghana,GHA,Razak PIMPONG,Forward
+9 June 1975  ,Ghana,GHA,Otto ADDO,Midfielder
+24 May 1982  ,Ghana,GHA,Ahmed ISSAH,Defender
+13 June 1978  ,Ghana,GHA,Richard KINGSON,Goalkeeper
+1 April 1986  ,Ghana,GHA,Haminu Dramani,Midfielder
+24 February 1946  ,Ghana,GHA,DUJKOVIC Ratomir,Coach
+16 September 1978  ,Iran,IRN,Ebrahim MIRZAPOUR,Goalkeeper
+24 July 1977  ,Iran,IRN,Mehdi MAHDAVIKIA,Midfielder
+11 September 1977  ,Iran,IRN,Sohrab BAKHTIARIZADEH,Defender
+19 March 1971  ,Iran,IRN,Yahya GOLMOHAMMADI,Defender
+20 February 1975  ,Iran,IRN,Rahman REZAEI,Defender
+7 September 1980  ,Iran,IRN,Javad NEKOUNAM,Midfielder
+26 April 1979  ,Iran,IRN,Ferydoon ZANDI,Midfielder
+8 November 1978  ,Iran,IRN,Ali KARIMI,Midfielder
+21 July 1976  ,Iran,IRN,Vahid Hashemian,Forward
+21 March 1969  ,Iran,IRN,Ali DAEI,Forward
+22 September 1978  ,Iran,IRN,Rasoul KHATIBI,Forward
+6 July 1978  ,Iran,IRN,Hassan ROUDBARIAN,Goalkeeper
+23 September 1985  ,Iran,IRN,Hossein KAEBI,Defender
+6 March 1983  ,Iran,IRN,Andranik TIMOTIAN,Midfielder
+14 September 1983  ,Iran,IRN,Arash Borhani,Forward
+23 September 1976  ,Iran,IRN,Reza Enayati,Forward
+23 April 1981  ,Iran,IRN,Javad KAZEMEIAN,Forward
+1 November 1982  ,Iran,IRN,Moharram NAVIDKIA,Midfielder
+6 September 1981  ,Iran,IRN,Amir Hossein Sadeghi,Defender
+11 January 1982  ,Iran,IRN,Mohammad NOSRATI,Defender
+10 January 1985  ,Iran,IRN,Mehrzad MADANCHI,Midfielder
+26 May 1982  ,Iran,IRN,Vahid TALEBLOO,Goalkeeper
+9 June 1984  ,Iran,IRN,Masoud SHOJAEI,Midfielder
+28 February 1954  ,Iran,IRN,IVANKOVIC Branko,Coach
+28 January 1978  ,Italy,ITA,Gianluigi BUFFON,Goalkeeper
+21 December 1981  ,Italy,ITA,Cristian Zaccardo,Defender
+28 November 1977  ,Italy,ITA,Fabio GROSSO,Defender
+24 July 1983  ,Italy,ITA,Daniele DE ROSSI,Midfielder
+13 September 1973  ,Italy,ITA,Fabio CANNAVARO,Defender
+8 May 1981  ,Italy,ITA,Andrea BARZAGLI,Defender
+9 November 1974  ,Italy,ITA,Alessandro DEL PIERO,Forward
+9 January 1978  ,Italy,ITA,Gennaro GATTUSO,Midfielder
+26 May 1977  ,Italy,ITA,Luca Toni,Forward
+27 September 1976  ,Italy,ITA,Francesco TOTTI,Midfielder
+5 July 1982  ,Italy,ITA,Alberto GILARDINO,Forward
+16 February 1970  ,Italy,ITA,Angelo PERUZZI,Goalkeeper
+19 March 1976  ,Italy,ITA,Alessandro NESTA,Defender
+2 April 1982  ,Italy,ITA,Marco AMELIA,Goalkeeper
+21 November 1979  ,Italy,ITA,Vincenzo IAQUINTA,Forward
+4 October 1976  ,Italy,ITA,Mauro CAMORANESI,Midfielder
+30 April 1978  ,Italy,ITA,Simone BARONE,Midfielder
+9 August 1973  ,Italy,ITA,Filippo INZAGHI,Forward
+19 February 1977  ,Italy,ITA,Gianluca ZAMBROTTA,Defender
+17 September 1977  ,Italy,ITA,Simone PERROTTA,Midfielder
+19 May 1979  ,Italy,ITA,Andrea PIRLO,Midfielder
+14 June 1976  ,Italy,ITA,Massimo ODDO,Defender
+19 August 1973  ,Italy,ITA,Marco MATERAZZI,Defender
+12 April 1948  ,Italy,ITA,LIPPI Marcello,Coach
+15 April 1976  ,Japan,JPN,Seigo NARAZAKI,Goalkeeper
+8 September 1981  ,Japan,JPN,Teruyuki MONIWA,Defender
+25 July 1981  ,Japan,JPN,Yuichi KOMANO,Defender
+28 January 1980  ,Japan,JPN,Yasuhito ENDO,Midfielder
+7 February 1977  ,Japan,JPN,Tsuneyasu MIYAMOTO,Defender
+9 July 1979  ,Japan,JPN,Koji NAKATA,Defender
+22 January 1977  ,Japan,JPN,Hidetoshi NAKATA,Midfielder
+5 April 1979  ,Japan,JPN,Mitsuo OGASAWARA,Midfielder
+4 June 1979  ,Japan,JPN,Naohiro TAKAHARA,Forward
+24 June 1978  ,Japan,JPN,Shunsuke NAKAMURA,Midfielder
+7 August 1980  ,Japan,JPN,Seiichiro MAKI,Forward
+25 July 1973  ,Japan,JPN,Yoichi DOI,Goalkeeper
+27 May 1977  ,Japan,JPN,Atsushi YANAGISAWA,Forward
+20 July 1977  ,Japan,JPN,Alessandro SANTOS,Defender
+1 September 1976  ,Japan,JPN,Takashi FUKUNISHI,Midfielder
+4 May 1980  ,Japan,JPN,Masashi OGURO,Forward
+18 September 1979  ,Japan,JPN,Junichi INAMOTO,Midfielder
+27 September 1979  ,Japan,JPN,Shinji ONO,Midfielder
+16 September 1979  ,Japan,JPN,Keisuke TSUBOI,Defender
+11 April 1980  ,Japan,JPN,Keiji TAMADA,Forward
+13 January 1980  ,Japan,JPN,Akira KAJI,Defender
+25 February 1978  ,Japan,JPN,Yuji NAKAZAWA,Defender
+15 August 1975  ,Japan,JPN,Yoshikatsu KAWAGUCHI,Goalkeeper
+3 March 1953  ,Japan,JPN,ZICO,Coach
+26 April 1973  ,Korea Republic,KOR,LEE Woon Jae,Goalkeeper
+30 June 1976  ,Korea Republic,KOR,KIM Young Chul,Defender
+29 January 1982  ,Korea Republic,KOR,KIM Dong Jin,Defender
+26 March 1971  ,Korea Republic,KOR,CHOI Jin Cheul,Defender
+14 March 1977  ,Korea Republic,KOR,KIM Nam Il,Midfielder
+16 February 1985  ,Korea Republic,KOR,KIM Jin Kyu,Defender
+25 February 1981  ,Korea Republic,KOR,PARK Ji Sung,Midfielder
+14 July 1982  ,Korea Republic,KOR,KIM Do Heon,Midfielder
+27 January 1976  ,Korea Republic,KOR,AHN Jung Hwan,Forward
+10 July 1985  ,Korea Republic,KOR,PARK Chuyoung,Forward
+8 January 1979  ,Korea Republic,KOR,SEOL Ki Hyeon,Forward
+23 April 1977  ,Korea Republic,KOR,LEE Young Pyo,Defender
+8 September 1975  ,Korea Republic,KOR,LEE Eul Yong,Midfielder
+9 July 1981  ,Korea Republic,KOR,LEE Chun Soo,Forward
+28 February 1985  ,Korea Republic,KOR,BAEK Ji Hoon,Midfielder
+22 May 1980  ,Korea Republic,KOR,CHUNG Kyung Ho,Forward
+22 October 1984  ,Korea Republic,KOR,LEE Ho,Midfielder
+17 December 1976  ,Korea Republic,KOR,KIM Sang Sik,Defender
+9 July 1981  ,Korea Republic,KOR,CHO Jae Jin,Forward
+11 October 1979  ,Korea Republic,KOR,KIM Yong Dae,Goalkeeper
+28 June 1983  ,Korea Republic,KOR,KIM Youngkwang,Goalkeeper
+20 February 1979  ,Korea Republic,KOR,SONG Chong Gug,Defender
+17 April 1983  ,Korea Republic,KOR,CHO Won Hee,Defender
+27 September 1947  ,Korea Republic,KOR,Dick ADVOCAAT,Coach
+21 September 1973  ,Mexico,MEX,Oswaldo SANCHEZ,Goalkeeper
+17 December 1968  ,Mexico,MEX,Claudio SUAREZ,Defender
+2 April 1980  ,Mexico,MEX,Carlos SALCIDO,Defender
+13 February 1979  ,Mexico,MEX,Rafael MARQUEZ,Defender
+30 March 1980  ,Mexico,MEX,Ricardo OSORIO,Defender
+30 April 1979  ,Mexico,MEX,Gerardo TORRADO,Midfielder
+23 May 1976  ,Mexico,MEX,ZINHA,Midfielder
+26 July 1976  ,Mexico,MEX,Pavel PARDO,Midfielder
+14 August 1973  ,Mexico,MEX,Jared BORGETTI,Forward
+3 November 1976  ,Mexico,MEX,Guillermo FRANCO,Forward
+10 October 1975  ,Mexico,MEX,Ramon MORALES,Forward
+26 January 1981  ,Mexico,MEX,Jose CORONA,Goalkeeper
+13 July 1985  ,Mexico,MEX,Guillermo OCHOA,Goalkeeper
+19 October 1982  ,Mexico,MEX,Gonzalo PINEDA,Defender
+11 August 1980  ,Mexico,MEX,Jose CASTRO,Defender
+1 June 1979  ,Mexico,MEX,Mario MENDEZ,Defender
+2 October 1979  ,Mexico,MEX,Jose FONSECA,Forward
+28 September 1986  ,Mexico,MEX,Andres GUARDADO,Defender
+4 March 1980  ,Mexico,MEX,Omar BRAVO,Forward
+14 August 1974  ,Mexico,MEX,Rafael GARCIA,Midfielder
+8 May 1973  ,Mexico,MEX,Jesus ARELLANO,Forward
+20 October 1981  ,Mexico,MEX,Francisco RODRIGUEZ,Defender
+12 January 1981  ,Mexico,MEX,Luis PEREZ,Midfielder
+6 February 1952  ,Mexico,MEX,LA VOLPE Ricardo,Coach
+29 October 1970  ,Netherlands,NED,Edwin VAN DER SAR,Goalkeeper
+15 September 1978  ,Netherlands,NED,Kew JALIENS,Defender
+28 December 1981  ,Netherlands,NED,Khalid BOULAHROUZ,Defender
+5 April 1980  ,Netherlands,NED,Joris MATHIJSEN,Defender
+5 February 1975  ,Netherlands,NED,Giovanni VAN BRONCKHORST,Defender
+6 May 1976  ,Netherlands,NED,Denny LANDZAAT,Midfielder
+22 July 1980  ,Netherlands,NED,Dirk KUYT,Forward
+29 October 1970  ,Netherlands,NED,Phillip COCU,Midfielder
+1 July 1976  ,Netherlands,NED,Ruud VAN NISTELROOIJ,Forward
+11 February 1983  ,Netherlands,NED,Rafael VAN DER VAART,Midfielder
+23 January 1984  ,Netherlands,NED,Arjen ROBBEN,Forward
+17 August 1980  ,Netherlands,NED,Jan KROMKAMP,Defender
+11 July 1974  ,Netherlands,NED,Andre OOIJER,Defender
+15 November 1983  ,Netherlands,NED,John HEITINGA,Defender
+8 November 1978  ,Netherlands,NED,Tim DE CLER,Defender
+13 February 1985  ,Netherlands,NED,Hedwiges MADURO,Midfielder
+6 August 1983  ,Netherlands,NED,Robin VAN PERSIE,Forward
+22 April 1977  ,Netherlands,NED,Mark VAN BOMMEL,Midfielder
+7 November 1978  ,Netherlands,NED,Jan VENNEGOOR OF HESSELINK,Forward
+9 June 1984  ,Netherlands,NED,Wesley SNEIJDER,Midfielder
+19 December 1986  ,Netherlands,NED,Ryan BABEL,Forward
+3 December 1971  ,Netherlands,NED,Henk TIMMER,Goalkeeper
+22 September 1982  ,Netherlands,NED,Maarten STEKELENBURG,Goalkeeper
+31 October 1964  ,Netherlands,NED,VAN BASTEN Marco,Coach
+30 June 1977  ,Paraguay,PAR,Justo VILLAR,Goalkeeper
+22 January 1978  ,Paraguay,PAR,Jorge NUNEZ,Defender
+10 February 1976  ,Paraguay,PAR,Delio TOLEDO,Defender
+17 February 1971  ,Paraguay,PAR,Carlos GAMARRA,Defender
+5 October 1979  ,Paraguay,PAR,Julio CÃSAR CÃCERES,Defender
+2 October 1977  ,Paraguay,PAR,Carlos BONET,Midfielder
+5 August 1980  ,Paraguay,PAR,Salvador CABANAS,Midfielder
+15 July 1984  ,Paraguay,PAR,Edgar BARRETO,Midfielder
+16 August 1981  ,Paraguay,PAR,Roque SANTA CRUZ,Forward
+25 March 1972  ,Paraguay,PAR,Roberto ACUNA,Midfielder
+1 March 1980  ,Paraguay,PAR,Diego GAVILAN,Midfielder
+2 November 1972  ,Paraguay,PAR,Derlis GOMEZ,Goalkeeper
+16 July 1976  ,Paraguay,PAR,Carlos PAREDES,Midfielder
+1 February 1980  ,Paraguay,PAR,Paulo DA SILVA,Defender
+22 January 1981  ,Paraguay,PAR,Julio MANZUR,Defender
+16 October 1982  ,Paraguay,PAR,Cristian RIVEROS,Midfielder
+19 March 1988  ,Paraguay,PAR,JosÃ© Montiel,Midfielder
+28 November 1983  ,Paraguay,PAR,Nelson VALDEZ,Forward
+7 May 1983  ,Paraguay,PAR,Julio DOS SANTOS,Midfielder
+16 August 1983  ,Paraguay,PAR,Dante LOPEZ,Forward
+29 August 1974  ,Paraguay,PAR,Denis CANIZA,Defender
+20 April 1976  ,Paraguay,PAR,Aldo BOBADILLA,Goalkeeper
+10 January 1980  ,Paraguay,PAR,Nelson CUEVAS,Forward
+1 January 1941  ,Paraguay,PAR,RUIZ LEITES Anibal,Coach
+20 February 1980  ,Poland,POL,Artur BORUC,Goalkeeper
+3 August 1978  ,Poland,POL,Mariusz JOP,Defender
+22 November 1981  ,Poland,POL,Seweryn GANCARCZYK,Defender
+7 June 1977  ,Poland,POL,Marcin BASZCZYNSKI,Defender
+30 August 1977  ,Poland,POL,Kamil KOSOWSKI,Midfielder
+24 March 1973  ,Poland,POL,Jacek BAK,Defender
+13 December 1976  ,Poland,POL,Radoslaw SOBOLEWSKI,Midfielder
+15 May 1976  ,Poland,POL,Jacek KRZYNOWEK,Midfielder
+12 September 1976  ,Poland,POL,Maciej ZURAWSKI,Forward
+12 November 1976  ,Poland,POL,Miroslav SZYMKOWIAK,Midfielder
+12 January 1979  ,Poland,POL,Grzegorz RASIAK,Forward
+20 March 1982  ,Poland,POL,Tomasz KUSZCZAK,Goalkeeper
+10 July 1982  ,Poland,POL,Sebastian MILA,Midfielder
+22 April 1976  ,Poland,POL,Michal ZEWLAKOW,Defender
+9 January 1981  ,Poland,POL,Ebi SMOLAREK,Midfielder
+27 June 1977  ,Poland,POL,Arkadiusz RADOMSKI,Midfielder
+9 December 1983  ,Poland,POL,Dariusz DUDKA,Defender
+18 May 1979  ,Poland,POL,Mariusz LEWANDOWSKI,Defender
+20 December 1975  ,Poland,POL,Bartosz BOSACKI,Defender
+28 February 1980  ,Poland,POL,Piotr GIZA,Midfielder
+9 April 1981  ,Poland,POL,Ireneusz JELEN,Forward
+18 April 1985  ,Poland,POL,Lukasz FABIANSKI,Goalkeeper
+21 April 1983  ,Poland,POL,Pawel BROZEK,Forward
+4 March 1953  ,Poland,POL,JANAS Pawel,Coach
+11 February 1976  ,Portugal,POR,RICARDO,Goalkeeper
+18 January 1979  ,Portugal,POR,PAULO FERREIRA,Defender
+9 February 1979  ,Portugal,POR,MARCO CANEIRA,Defender
+16 May 1981  ,Portugal,POR,Ricardo Costa,Defender
+5 June 1978  ,Portugal,POR,FERNANDO MEIRA,Defender
+1 December 1974  ,Portugal,POR,COSTINHA,Midfielder
+4 November 1972  ,Portugal,POR,LUIS FIGO,Forward
+25 September 1976  ,Portugal,POR,PETIT,Midfielder
+28 April 1973  ,Portugal,POR,PAULETA,Forward
+15 January 1983  ,Portugal,POR,Hugo Viana,Midfielder
+31 October 1979  ,Portugal,POR,SIMAO,Forward
+13 November 1975  ,Portugal,POR,QUIM,Goalkeeper
+4 January 1980  ,Portugal,POR,MIGUEL,Defender
+12 September 1974  ,Portugal,POR,NUNO VALENTE,Defender
+4 August 1977  ,Portugal,POR,BOA MORTE,Forward
+18 May 1978  ,Portugal,POR,Ricardo Carvalho,Defender
+5 February 1985  ,Portugal,POR,CRISTIANO RONALDO,Forward
+11 November 1977  ,Portugal,POR,MANICHE,Midfielder
+2 May 1981  ,Portugal,POR,Tiago,Midfielder
+27 August 1977  ,Portugal,POR,DECO,Midfielder
+5 July 1976  ,Portugal,POR,NUNO GOMES,Forward
+11 December 1972  ,Portugal,POR,PAULO SANTOS,Goalkeeper
+2 August 1982  ,Portugal,POR,HELDER POSTIGA,Forward
+9 November 1948  ,Portugal,POR,SCOLARI Luiz Felipe,Coach
+2 August 1972  ,Saudi Arabia,KSA,Mohammed AL DEAYEA,Goalkeeper
+25 October 1976  ,Saudi Arabia,KSA,Ahmed AL DOSARI,Defender
+29 November 1975  ,Saudi Arabia,KSA,Redha TUKAR,Defender
+22 June 1982  ,Saudi Arabia,KSA,Hamad AL MONTASHARI,Defender
+3 April 1979  ,Saudi Arabia,KSA,Naif AL QADI,Defender
+11 April 1979  ,Saudi Arabia,KSA,Omar AL GHAMDI,Midfielder
+29 April 1980  ,Saudi Arabia,KSA,Mohammed AMEEN,Midfielder
+26 February 1978  ,Saudi Arabia,KSA,Mohammed NOOR,Midfielder
+11 December 1972  ,Saudi Arabia,KSA,Sami AL JABER,Forward
+8 December 1980  ,Saudi Arabia,KSA,Mohammad AL SHALHOUB,Midfielder
+3 February 1984  ,Saudi Arabia,KSA,Saad Al Harthi,Forward
+31 July 1973  ,Saudi Arabia,KSA,Abdulaziz KHATHRAN,Defender
+21 January 1977  ,Saudi Arabia,KSA,Hussein AL SULAIMANI,Defender
+8 July 1980  ,Saudi Arabia,KSA,SAUD KARIRI,Midfielder
+18 September 1980  ,Saudi Arabia,KSA,Ahmed AL BAHRI,Defender
+14 July 1981  ,Saudi Arabia,KSA,Khaled AZIZ,Midfielder
+3 May 1987  ,Saudi Arabia,KSA,Mohamed AL BISHI,Defender
+28 June 1976  ,Saudi Arabia,KSA,Nawaf AL TEMIYAT,Midfielder
+17 February 1983  ,Saudi Arabia,KSA,Mohammed AL MOWALLAD,Midfielder
+10 October 1982  ,Saudi Arabia,KSA,Yasser AL KAHTANI,Forward
+11 February 1979  ,Saudi Arabia,KSA,Mabrouk ZAID,Goalkeeper
+15 March 1982  ,Saudi Arabia,KSA,Mohammad KHOJAH,Goalkeeper
+10 August 1981  ,Saudi Arabia,KSA,Malek AL HAWSAWI,Forward
+27 August 1958  ,Saudi Arabia,KSA,MARCOS PAQUETA,Coach
+30 December 1977  ,Serbia and Montenegro,SCG,Sasa ILIC,unspecified
+8 July 1974  ,Serbia and Montenegro,SCG,Dragoslav JEVRIC,Goalkeeper
+21 January 1981  ,Serbia and Montenegro,SCG,Ivan ERGIC,Midfielder
+13 November 1975  ,Serbia and Montenegro,SCG,Ivica DRAGUTINOVIC,Defender
+29 October 1979  ,Serbia and Montenegro,SCG,Igor DULJAJ,Midfielder
+21 October 1981  ,Serbia and Montenegro,SCG,Nemanja Vidic,Defender
+2 August 1978  ,Serbia and Montenegro,SCG,Goran GAVRANCIC,Defender
+19 September 1978  ,Serbia and Montenegro,SCG,Ognjen KOROMAN,Midfielder
+12 April 1979  ,Serbia and Montenegro,SCG,Mateja KEZMAN,Forward
+2 September 1973  ,Serbia and Montenegro,SCG,Savo MILOSEVIC,Forward
+11 September 1978  ,Serbia and Montenegro,SCG,Dejan STANKOVIC,Midfielder
+4 August 1972  ,Serbia and Montenegro,SCG,Predrag DJORDJEVIC,Midfielder
+29 October 1974  ,Serbia and Montenegro,SCG,Oliver KOVACEVIC,Goalkeeper
+18 August 1984  ,Serbia and Montenegro,SCG,Dusan BASTA,Defender
+7 August 1979  ,Serbia and Montenegro,SCG,Nenad DJORDJEVIC,Defender
+1 November 1979  ,Serbia and Montenegro,SCG,Milan DUDIC,Defender
+13 June 1974  ,Serbia and Montenegro,SCG,Dusan PETKOVIC,Defender
+29 October 1974  ,Serbia and Montenegro,SCG,Albert NADJ,Midfielder
+19 July 1979  ,Serbia and Montenegro,SCG,Zvonimir VUKIC,Midfielder
+25 September 1980  ,Serbia and Montenegro,SCG,Nikola ZIGIC,Forward
+4 March 1974  ,Serbia and Montenegro,SCG,Mladen KRSTAJIC,Defender
+4 September 1978  ,Serbia and Montenegro,SCG,Danijel LJUBOJA,Forward
+28 July 1983  ,Serbia and Montenegro,SCG,Vladimir STOJKOVIC,Goalkeeper
+22 September 1945  ,Serbia and Montenegro,SCG,PETKOVIC Ilija,Coach
+20 May 1981  ,Spain,ESP,Iker CASILLAS,Goalkeeper
+22 October 1975  ,Spain,ESP,Michel SALGADO,Defender
+4 May 1977  ,Spain,ESP,Mariano PERNIA,Defender
+31 July 1979  ,Spain,ESP,Carlos MARCHENA,Defender
+13 April 1978  ,Spain,ESP,Carles PUYOL,Defender
+1 September 1977  ,Spain,ESP,David ALBELDA,Midfielder
+27 June 1977  ,Spain,ESP,RAUL,Forward
+25 January 1980  ,Spain,ESP,Xavi HERNANDEZ,Midfielder
+20 March 1984  ,Spain,ESP,Fernando TORRES,Forward
+1 September 1983  ,Spain,ESP,Jose Antonio REYES,Midfielder
+24 June 1978  ,Spain,ESP,Luis GARCIA,Forward
+13 September 1981  ,Spain,ESP,Antonio LOPEZ,Defender
+11 May 1984  ,Spain,ESP,Andres INIESTA,Midfielder
+25 November 1981  ,Spain,ESP,Xabi ALONSO,Midfielder
+30 March 1986  ,Spain,ESP,Sergio RAMOS,Defender
+17 July 1976  ,Spain,ESP,Marcos SENNA,Midfielder
+21 July 1981  ,Spain,ESP,JoaquÃ­n,Midfielder
+4 May 1987  ,Spain,ESP,Cesc FABREGAS,Midfielder
+18 December 1969  ,Spain,ESP,Santiago CANIZARES,Goalkeeper
+23 July 1976  ,Spain,ESP,JUANITO,Defender
+3 December 1981  ,Spain,ESP,David Villa,Forward
+3 August 1981  ,Spain,ESP,PABLO,Defender
+31 August 1982  ,Spain,ESP,Pepe REINA,Goalkeeper
+28 July 1938  ,Spain,ESP,ARAGONES Luis,Coach
+3 October 1981  ,Sweden,SWE,Andreas ISAKSSON,Goalkeeper
+24 June 1978  ,Sweden,SWE,Mikael NILSSON,Defender
+3 September 1977  ,Sweden,SWE,Olof MELLBERG,Defender
+15 April 1973  ,Sweden,SWE,Teddy LUCIC,Defender
+11 November 1978  ,Sweden,SWE,Erik EDMAN,Defender
+21 April 1979  ,Sweden,SWE,Tobias LINDEROTH,Midfielder
+29 December 1971  ,Sweden,SWE,Niclas ALEXANDERSSON,Midfielder
+17 July 1976  ,Sweden,SWE,Anders SVENSSON,Midfielder
+16 April 1977  ,Sweden,SWE,Fredrik LJUNGBERG,Midfielder
+3 October 1981  ,Sweden,SWE,Zlatan IBRAHIMOVIC,Forward
+20 September 1971  ,Sweden,SWE,Henrik LARSSON,Forward
+10 August 1982  ,Sweden,SWE,John ALVBAGE,Goalkeeper
+14 December 1976  ,Sweden,SWE,Petter HANSSON,Defender
+2 June 1983  ,Sweden,SWE,Fredrik STENMAN,Defender
+21 March 1984  ,Sweden,SWE,Karl SVENSSON,Defender
+24 August 1982  ,Sweden,SWE,Kim KALLSTROM,Midfielder
+27 May 1981  ,Sweden,SWE,Johan ELMANDER,Forward
+16 January 1974  ,Sweden,SWE,Mattias JONSON,Forward
+28 August 1977  ,Sweden,SWE,Daniel ANDERSSON,Midfielder
+5 July 1973  ,Sweden,SWE,Marcus ALLBACK,Forward
+8 December 1979  ,Sweden,SWE,Christian WILHELMSSON,Midfielder
+27 September 1982  ,Sweden,SWE,Markus Rosenberg,Forward
+30 June 1975  ,Sweden,SWE,Rami SHAABAN,Goalkeeper
+16 July 1948  ,Sweden,SWE,LAGERBACK Lars,Coach
+8 January 1971  ,Switzerland,SUI,Pascal ZUBERBUEHLER,Goalkeeper
+18 January 1987  ,Switzerland,SUI,Johan DJOUROU,Defender
+20 April 1979  ,Switzerland,SUI,Ludovic MAGNIN,Defender
+14 February 1985  ,Switzerland,SUI,Philippe SENDEROS,Defender
+7 January 1984  ,Switzerland,SUI,Xavier MARGAIRAZ,Midfielder
+8 March 1977  ,Switzerland,SUI,Johann VOGEL,Midfielder
+17 January 1979  ,Switzerland,SUI,Ricardo CABANAS,Midfielder
+26 April 1977  ,Switzerland,SUI,Raphael WICKY,Midfielder
+15 July 1979  ,Switzerland,SUI,Alexander FREI,Forward
+28 August 1981  ,Switzerland,SUI,Daniel GYGAX,Forward
+18 June 1981  ,Switzerland,SUI,Marco Streller,Forward
+8 September 1983  ,Switzerland,SUI,Diego BENAGLIO,Goalkeeper
+30 March 1979  ,Switzerland,SUI,StÃ©phane GRICHTING,Defender
+15 February 1983  ,Switzerland,SUI,David DEGEN,Forward
+12 April 1986  ,Switzerland,SUI,Blerim DZEMAILI,Midfielder
+22 May 1985  ,Switzerland,SUI,Tranquillo BARNETTA,Midfielder
+30 March 1978  ,Switzerland,SUI,Christoph SPYCHER,Defender
+26 February 1976  ,Switzerland,SUI,Mauro LUSTRINELLI,Forward
+19 April 1985  ,Switzerland,SUI,Valon BEHRAMI,Midfielder
+17 December 1976  ,Switzerland,SUI,Patrick MUELLER,Defender
+3 December 1980  ,Switzerland,SUI,Fabio COLTORTI,Goalkeeper
+22 February 1977  ,Switzerland,SUI,Hakan YAKIN,Midfielder
+15 February 1983  ,Switzerland,SUI,Philipp DEGEN,Defender
+12 October 1943  ,Switzerland,SUI,KUHN Koebi,Coach
+31 December 1977  ,Togo,TOG,Ouro-Nimini TCHAGNIROU,Goalkeeper
+16 June 1980  ,Togo,TOG,Dare NIBOMBE,Defender
+26 June 1975  ,Togo,TOG,Jean-Paul ABALO,Defender
+26 February 1984  ,Togo,TOG,Emmanuel Adebayor,Forward
+8 August 1978  ,Togo,TOG,Massamasso TCHANGAI,Defender
+30 November 1979  ,Togo,TOG,Yao AZIAWONOU,Midfielder
+1 June 1983  ,Togo,TOG,Moustapha SALIFOU,Forward
+28 December 1977  ,Togo,TOG,Kuami AGBOH,Midfielder
+6 March 1979  ,Togo,TOG,Thomas DOSSEVI,Midfielder
+13 January 1983  ,Togo,TOG,Cherif Toure MAMAM,Midfielder
+21 August 1973  ,Togo,TOG,Robert MALM,Forward
+20 July 1980  ,Togo,TOG,Eric AKOTO,Defender
+23 May 1980  ,Togo,TOG,Richmond FORSON,Forward
+7 January 1980  ,Togo,TOG,Adekanmi OLUFADE,Forward
+18 January 1984  ,Togo,TOG,Alaixys ROMAO,Midfielder
+2 July 1978  ,Togo,TOG,Kossi AGASSA,Goalkeeper
+8 April 1979  ,Togo,TOG,MOHAMED KADER,Forward
+19 April 1984  ,Togo,TOG,Yao Junior SENAYA,Forward
+18 September 1980  ,Togo,TOG,Ludovic ASSEMOASSA,Defender
+19 February 1983  ,Togo,TOG,Affo ERASSA,Midfielder
+1 August 1978  ,Togo,TOG,Franck ATSOU,Midfielder
+8 October 1984  ,Togo,TOG,Kodjovi OBILALE,Goalkeeper
+1 January 1988  ,Togo,TOG,Assimiou TOURE,Defender
+24 November 1937  ,Togo,TOG,PFISTER Otto,Coach
+22 February 1969  ,Trinidad and Tobago,TRI,Shaka HISLOP,Goalkeeper
+25 March 1971  ,Trinidad and Tobago,TRI,Ian COX,Defender
+18 June 1975  ,Trinidad and Tobago,TRI,Avery JOHN,Defender
+22 December 1975  ,Trinidad and Tobago,TRI,Marvin ANDREWS,Defender
+13 March 1977  ,Trinidad and Tobago,TRI,Brent SANCHO,Defender
+1 August 1974  ,Trinidad and Tobago,TRI,Dennis LAWRENCE,Defender
+5 May 1984  ,Trinidad and Tobago,TRI,Christopher BIRCHALL,Midfielder
+21 November 1976  ,Trinidad and Tobago,TRI,Cyd GRAY,Defender
+1 May 1977  ,Trinidad and Tobago,TRI,Aurtis WHITLEY,Midfielder
+2 August 1968  ,Trinidad and Tobago,TRI,Russell LATAPY,Forward
+24 October 1978  ,Trinidad and Tobago,TRI,Carlos EDWARDS,Midfielder
+27 August 1981  ,Trinidad and Tobago,TRI,Collin SAMUEL,Forward
+21 October 1980  ,Trinidad and Tobago,TRI,Cornell Glen,Forward
+30 October 1976  ,Trinidad and Tobago,TRI,Stern JOHN,Forward
+5 October 1984  ,Trinidad and Tobago,TRI,Kenwyne JONES,Forward
+23 November 1973  ,Trinidad and Tobago,TRI,Evans WISE,Forward
+29 September 1977  ,Trinidad and Tobago,TRI,Atiba CHARLES,Defender
+27 June 1982  ,Trinidad and Tobago,TRI,Densill Theobald,Midfielder
+3 November 1971  ,Trinidad and Tobago,TRI,Dwight YORKE,Forward
+18 February 1979  ,Trinidad and Tobago,TRI,Jason Scotland,Forward
+29 April 1976  ,Trinidad and Tobago,TRI,Kelvin JACK,Goalkeeper
+13 July 1972  ,Trinidad and Tobago,TRI,Clayton INCE,Goalkeeper
+23 December 1983  ,Trinidad and Tobago,TRI,Anthony Wolfe,Midfielder
+2 August 1942  ,Trinidad and Tobago,TRI,BEENHAKKER Leo,Coach
+13 April 1966  ,Tunisia,TUN,Ali BOUMNIJEL,Goalkeeper
+29 July 1979  ,Tunisia,TUN,Karim ESSEDIRI,Forward
+20 January 1984  ,Tunisia,TUN,Karim HAGGUI,Defender
+26 September 1981  ,Tunisia,TUN,Alaeddine YAHIA,Defender
+12 July 1978  ,Tunisia,TUN,Zied JAZIRI,Forward
+25 January 1977  ,Tunisia,TUN,Hatem TRABELSI,Defender
+22 December 1981  ,Tunisia,TUN,Haykel GUEMAMDIA,Forward
+28 November 1978  ,Tunisia,TUN,Mehdi NAFTI,Midfielder
+22 September 1986  ,Tunisia,TUN,Yasin Chikhaoui,Forward
+7 January 1976  ,Tunisia,TUN,Kais GHODHBANE,Midfielder
+20 March 1979  ,Tunisia,TUN,SANTOS,Forward
+8 November 1976  ,Tunisia,TUN,Jaouhar MNARI,Midfielder
+8 April 1973  ,Tunisia,TUN,Riadh BOUAZIZI,Midfielder
+16 September 1976  ,Tunisia,TUN,Adel CHEDLI,Midfielder
+30 August 1975  ,Tunisia,TUN,Radhi JAIDI,Defender
+16 March 1974  ,Tunisia,TUN,Adel NEFZI,Goalkeeper
+1 July 1984  ,Tunisia,TUN,Chaouki BEN SAADA,Forward
+13 December 1974  ,Tunisia,TUN,David JEMMALI,Defender
+16 February 1982  ,Tunisia,TUN,Anis AYARI,Defender
+14 February 1984  ,Tunisia,TUN,Hamed NAMOUCHI,Midfielder
+24 March 1983  ,Tunisia,TUN,Karim SAIDI,Defender
+18 January 1983  ,Tunisia,TUN,Hamdi KASRAOUI,Goalkeeper
+18 August 1978  ,Tunisia,TUN,Sofiane MELLITI,Midfielder
+18 June 1941  ,Tunisia,TUN,LEMERRE Roger,Coach
+2 January 1975  ,Ukraine,UKR,Oleksandr SHOVKOVSKI,Goalkeeper
+28 February 1979  ,Ukraine,UKR,Andriy NESMACHNYI,Defender
+24 February 1985  ,Ukraine,UKR,Oleksandr IATSENKO,Defender
+30 March 1979  ,Ukraine,UKR,Anatoli Timoshchuk,Midfielder
+15 November 1976  ,Ukraine,UKR,Vladimir YEZERSKYI,Defender
+16 January 1983  ,Ukraine,UKR,Andriy RUSOL,Defender
+29 September 1976  ,Ukraine,UKR,Andriy SHEVCHENKO,Forward
+5 November 1976  ,Ukraine,UKR,Oleg SHELAYEV,Midfielder
+25 April 1983  ,Ukraine,UKR,Oleg Husyev,Midfielder
+21 July 1979  ,Ukraine,UKR,Andriy VORONIN,Forward
+3 June 1974  ,Ukraine,UKR,Serhiy REBROV,Midfielder
+28 June 1984  ,Ukraine,UKR,Andri PYATOV,Goalkeeper
+7 November 1986  ,Ukraine,UKR,Dmytro Chygrynskiy,Defender
+11 December 1972  ,Ukraine,UKR,Andriy GUSIN,Midfielder
+12 January 1985  ,Ukraine,UKR,Artem MILEVSKIY,Forward
+29 November 1978  ,Ukraine,UKR,Andriy VOROBEY,Forward
+2 January 1975  ,Ukraine,UKR,Vladyslav VASHCHUK,Defender
+16 February 1980  ,Ukraine,UKR,Sergi NAZARENKO,Midfielder
+26 January 1979  ,Ukraine,UKR,Maksym KALINICHENKO,Midfielder
+15 February 1981  ,Ukraine,UKR,Oleksiy BELIK,Forward
+29 October 1981  ,Ukraine,UKR,Ruslan Rotan,Midfielder
+1 January 1979  ,Ukraine,UKR,Vyacheslav SVIDERSKYI,Defender
+4 March 1986  ,Ukraine,UKR,Bohdan SHUST,Goalkeeper
+5 November 1952  ,Ukraine,UKR,BLOKHIN Oleg,Coach
+6 March 1979  ,USA,USA,Tim HOWARD,Goalkeeper
+14 January 1979  ,USA,USA,Chris ALBRIGHT,Defender
+25 May 1979  ,USA,USA,Carlos BOCANEGRA,Defender
+29 August 1976  ,USA,USA,Pablo MASTROENI,Defender
+29 August 1977  ,USA,USA,John O BRIEN,Midfielder
+19 February 1979  ,USA,USA,Steve CHERUNDOLO,Defender
+17 May 1974  ,USA,USA,Eddie LEWIS,Defender
+9 March 1983  ,USA,USA,Clint DEMPSEY,Midfielder
+31 March 1984  ,USA,USA,Eddie JOHNSON,Forward
+20 July 1973  ,USA,USA,Claudio REYNA,Midfielder
+24 May 1978  ,USA,USA,Brian CHING,Forward
+1 August 1973  ,USA,USA,Gregg BERHALTER,Defender
+12 February 1977  ,USA,USA,Jimmy CONRAD,Defender
+3 May 1977  ,USA,USA,Ben OLSEN,Midfielder
+27 May 1983  ,USA,USA,Bobby CONVEY,Midfielder
+25 February 1977  ,USA,USA,Josh WOLFF,Forward
+24 May 1982  ,USA,USA,DaMarcus BEASLEY,Midfielder
+29 November 1969  ,USA,USA,Kasey KELLER,Goalkeeper
+15 June 1972  ,USA,USA,Marcus HAHNEMANN,Goalkeeper
+19 June 1972  ,USA,USA,Brian McBRIDE,Forward
+4 March 1982  ,USA,USA,Landon DONOVAN,Midfielder
+13 May 1982  ,USA,USA,Oguchi ONYEWU,Defender
+24 December 1973  ,USA,USA,Eddie POPE,Defender
+21 September 1951  ,USA,USA,ARENA Bruce,Coach

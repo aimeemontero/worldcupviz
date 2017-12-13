@@ -1,0 +1,25 @@
+Country,CountryCode,MatchesPlayed,RedCards,YellowCards
+Argentina,ARG,5,2,7
+Northern Ireland,NIR,5,1,4
+Czechoslovakia,TCH,3,1,2
+Honduras,HON,3,1,1
+Italy,ITA,7,0,11
+Poland,POL,7,0,10
+Germany FR,FRG,7,0,8
+Spain,ESP,5,0,6
+Austria,AUT,5,0,6
+France,FRA,7,0,6
+El Salvador,SLV,3,0,5
+Cameroon,CMR,3,0,4
+Chile,CHI,3,0,4
+Soviet Union,URS,5,0,4
+Yugoslavia,YUG,3,0,3
+Kuwait,KUW,3,0,3
+Belgium,BEL,5,0,3
+England,ENG,5,0,3
+Hungary,HUN,3,0,2
+Algeria,ALG,3,0,2
+Peru,PER,3,0,2
+Brazil,BRA,5,0,2
+Scotland,SCO,3,0,1
+New Zealand,NZL,3,0,0

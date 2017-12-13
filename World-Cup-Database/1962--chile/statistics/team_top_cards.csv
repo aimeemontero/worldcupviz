@@ -1,0 +1,17 @@
+Country,CountryCode,MatchesPlayed,RedCards,YellowCards
+Italy,ITA,3,2,0
+Uruguay,URU,3,1,0
+Brazil,BRA,6,1,0
+Chile,CHI,6,1,0
+Yugoslavia,YUG,6,1,0
+Argentina,ARG,3,0,1
+Mexico,MEX,3,0,0
+Colombia,COL,3,0,0
+Bulgaria,BUL,3,0,0
+Spain,ESP,3,0,0
+Switzerland,SUI,3,0,0
+Germany FR,FRG,4,0,0
+Soviet Union,URS,4,0,0
+England,ENG,4,0,0
+Hungary,HUN,4,0,0
+Czechoslovakia,TCH,6,0,0

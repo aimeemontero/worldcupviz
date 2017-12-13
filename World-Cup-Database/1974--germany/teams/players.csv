@@ -1,0 +1,369 @@
+Age,Country,CountryCode,Player,Position
+4 December 1946  ,Argentina,ARG,Daniel CARNEVALI,Goalkeeper
+8 January 1950  ,Argentina,ARG,Ruben AYALA,Forward
+20 September 1949  ,Argentina,ARG,Carlos BABINGTON,Forward
+1 September 1945  ,Argentina,ARG,Augustin BALBUENA,Forward
+29 October 1946  ,Argentina,ARG,Angel BARGAS,Defender
+8 October 1950  ,Argentina,ARG,Miguel BRINDISI,Midfielder
+15 August 1948  ,Argentina,ARG,Jorge CARRASCOSA,Defender
+29 July 1947  ,Argentina,ARG,Enrique CHAZARRETA,Midfielder
+10 March 1948  ,Argentina,ARG,Ruben GLARIA,Defender
+26 February 1951  ,Argentina,ARG,Ramon HEREDIA,Defender
+19 July 1953  ,Argentina,ARG,Rene HOUSEMAN,Forward
+21 July 1950  ,Argentina,ARG,Ubaldo FILLOL,Goalkeeper
+15 July 1954  ,Argentina,ARG,Mario KEMPES,Forward
+3 October 1942  ,Argentina,ARG,Roberto PERFUMO,Defender
+14 September 1945  ,Argentina,ARG,Aldo POY,Forward
+25 October 1945  ,Argentina,ARG,Francisco SA,Defender
+4 June 1948  ,Argentina,ARG,Carlos SQUEO,Defender
+6 November 1943  ,Argentina,ARG,Roberto TELCH,Midfielder
+27 November 1942  ,Argentina,ARG,Nestor TOGNERI,Defender
+21 February 1949  ,Argentina,ARG,Enrique WOLFF,Defender
+27 February 1942  ,Argentina,ARG,Miguel SANTORO,Goalkeeper
+29 May 1946  ,Argentina,ARG,Hector YAZALDE,Forward
+5 July 1934  ,Argentina,ARG,CAP Vladislao,Coach
+27 August 1945  ,Australia,AUS,Jack REILLY,Goalkeeper
+8 October 1946  ,Australia,AUS,Doug UTJESENOVIC,Defender
+15 September 1947  ,Australia,AUS,Peter WILSON,Defender
+12 February 1943  ,Australia,AUS,Manfred SCHAEFER,Defender
+21 August 1947  ,Australia,AUS,Colin CURRAN,Defender
+18 May 1946  ,Australia,AUS,Ray RICHARDS,Midfielder
+10 October 1945  ,Australia,AUS,Jimmy ROONEY,Midfielder
+19 December 1943  ,Australia,AUS,Jimmy MACKAY,Midfielder
+17 May 1943  ,Australia,AUS,John WARREN,Midfielder
+20 February 1950  ,Australia,AUS,Gary MANUEL,Forward
+16 August 1946  ,Australia,AUS,Attila ABONYI,Forward
+6 February 1949  ,Australia,AUS,Adrian ALSTON,Forward
+20 May 1951  ,Australia,AUS,Peter OLLERTON,Forward
+18 July 1945  ,Australia,AUS,Max TOLSON,Midfielder
+7 May 1951  ,Australia,AUS,Harry WILLIAMS,Defender
+24 January 1942  ,Australia,AUS,Ivo RUDIC,Defender
+14 August 1946  ,Australia,AUS,Dave HARDING,Midfielder
+28 March 1941  ,Australia,AUS,John WATKISS,Defender
+20 October 1949  ,Australia,AUS,Ernie CAMPBELL,Forward
+6 September 1947  ,Australia,AUS,Branko BULJEVIC,Forward
+15 April 1951  ,Australia,AUS,Jimmy MILISAVLJEVIC,Goalkeeper
+21 July 1950  ,Australia,AUS,Allan MAHER,Goalkeeper
+26 December 1935  ,Australia,AUS,RASIC Rale,Coach
+11 July 1949  ,Brazil,BRA,LEAO,Goalkeeper
+21 June 1949  ,Brazil,BRA,LUIS PEREIRA,Defender
+19 March 1947  ,Brazil,BRA,MARINHO PERES,Defender
+18 May 1949  ,Brazil,BRA,ZE MARIA,Defender
+25 February 1943  ,Brazil,BRA,WILSON PIAZZA,Defender
+8 February 1952  ,Brazil,BRA,MARINHO CHAGAS,Defender
+25 December 1944  ,Brazil,BRA,JAIRZINHO,Forward
+11 September 1949  ,Brazil,BRA,LEIVINHA,Forward
+17 May 1945  ,Brazil,BRA,CESAR,Forward
+1 January 1946  ,Brazil,BRA,RIVELINO,Midfielder
+16 June 1949  ,Brazil,BRA,PAULO CESAR,Midfielder
+5 December 1944  ,Brazil,BRA,RENATO,Goalkeeper
+17 February 1946  ,Brazil,BRA,VALDOMIRO,Forward
+26 July 1950  ,Brazil,BRA,NELINHO,Defender
+18 October 1946  ,Brazil,BRA,ALFREDO,Defender
+6 February 1951  ,Brazil,BRA,MARCO ANTONIO,Defender
+7 February 1949  ,Brazil,BRA,CARPEGIANI,Midfielder
+3 April 1942  ,Brazil,BRA,ADEMIR DA GUIA,Midfielder
+26 February 1952  ,Brazil,BRA,MIRANDINHA,Forward
+6 August 1949  ,Brazil,BRA,EDU,Forward
+15 June 1952  ,Brazil,BRA,DIRCEU,Midfielder
+2 January 1951  ,Brazil,BRA,WALDIR PERES,Goalkeeper
+9 August 1931  ,Brazil,BRA,ZAGALLO Mario,Coach
+17 March 1950  ,Bulgaria,BUL,Rumen GORANOV,Goalkeeper
+30 December 1947  ,Bulgaria,BUL,Ivan ZAFIROV,Defender
+12 November 1942  ,Bulgaria,BUL,Dobromir JECHEV,Defender
+15 February 1949  ,Bulgaria,BUL,Stefan VELICHKOV,Defender
+20 May 1949  ,Bulgaria,BUL,Bozhil KOLEV,Midfielder
+12 July 1945  ,Bulgaria,BUL,Dimitar PENEV,Defender
+7 September 1952  ,Bulgaria,BUL,Voin VOINOV,Forward
+3 February 1947  ,Bulgaria,BUL,Hristo BONEV,Midfielder
+5 July 1949  ,Bulgaria,BUL,Atanas MIKHAILOV,Forward
+20 January 1949  ,Bulgaria,BUL,Ivan STOYANOV,Midfielder
+18 April 1950  ,Bulgaria,BUL,Georgi DENEV,Forward
+18 October 1947  ,Bulgaria,BUL,Stefan ALADZHOV,Defender
+29 July 1947  ,Bulgaria,BUL,Mladen VASILEV,Forward
+17 October 1948  ,Bulgaria,BUL,Kiril MILANOV,Forward
+14 September 1950  ,Bulgaria,BUL,Pavel PANOV,Forward
+27 July 1945  ,Bulgaria,BUL,Bozhidar GRIGOROV,Forward
+21 August 1945  ,Bulgaria,BUL,Asparukh NIKODIMOV,Defender
+7 January 1952  ,Bulgaria,BUL,Tsonyo VASILEV,Defender
+21 June 1946  ,Bulgaria,BUL,Kiril IVKOV,Defender
+8 April 1950  ,Bulgaria,BUL,Krasimir BORISOV,Forward
+3 October 1949  ,Bulgaria,BUL,Stefan STAIKOV,Goalkeeper
+26 April 1946  ,Bulgaria,BUL,Simeon SIMEONOV,Goalkeeper
+7 January 1928  ,Bulgaria,BUL,MLADENOV Hristo,Coach
+16 July 1944  ,Chile,CHI,Leopoldo VALLEJOS,Goalkeeper
+15 December 1942  ,Chile,CHI,Rolando GARCIA,Defender
+26 April 1946  ,Chile,CHI,Alberto QUINTANO,Defender
+9 October 1944  ,Chile,CHI,Antonio ARIAS,Defender
+25 October 1946  ,Chile,CHI,Elias FIGUEROA,Defender
+16 January 1944  ,Chile,CHI,Juan RODRIGUEZ,Defender
+5 July 1950  ,Chile,CHI,Carlos CASZELY,Forward
+19 March 1943  ,Chile,CHI,Francisco VALDES,Midfielder
+2 October 1948  ,Chile,CHI,Sergio AHUMADA,Forward
+7 March 1945  ,Chile,CHI,Carlos REINOSO,Midfielder
+3 September 1945  ,Chile,CHI,Leonardo VELIZ,Forward
+7 March 1951  ,Chile,CHI,Juan MACHUCA,Defender
+24 April 1950  ,Chile,CHI,Rafael GONZALEZ,Defender
+27 April 1946  ,Chile,CHI,Alfonso LARA,Midfielder
+10 August 1951  ,Chile,CHI,Mario GALINDO,Defender
+18 April 1945  ,Chile,CHI,Guillermo PAEZ,Midfielder
+26 March 1943  ,Chile,CHI,Guillermo YAVAR,Midfielder
+6 October 1951  ,Chile,CHI,Jorge SOCIAS,Midfielder
+13 August 1949  ,Chile,CHI,Rogelio FARIAS,Midfielder
+14 April 1947  ,Chile,CHI,Osvaldo CASTRO,Forward
+20 February 1941  ,Chile,CHI,Juan OLIVARES,Goalkeeper
+18 January 1946  ,Chile,CHI,Adolfo NEF,Goalkeeper
+25 December 1923  ,Chile,CHI,ALAMOS Luis,Coach
+19 October 1946  ,German DR,GDR,Juergen CROY,Goalkeeper
+6 November 1950  ,German DR,GDR,Lothar KURBJUWEIT,Defender
+24 September 1944  ,German DR,GDR,Bernd BRANSCH,Defender
+17 August 1951  ,German DR,GDR,Konrad WEISE,Defender
+28 October 1951  ,German DR,GDR,Joachim FRITSCHE,Defender
+23 January 1954  ,German DR,GDR,Ruediger SCHNUPHASE,Midfielder
+22 January 1953  ,German DR,GDR,Juergen POMMERENKE,Midfielder
+14 May 1945  ,German DR,GDR,Wolfram LOEWE,Forward
+14 October 1941  ,German DR,GDR,Peter DUCKE,Forward
+19 July 1947  ,German DR,GDR,Hans-Juergen KREISCHE,Midfielder
+13 April 1951  ,German DR,GDR,Joachim STREICH,Forward
+16 November 1947  ,German DR,GDR,Siegmar WAETZLICH,Defender
+16 September 1946  ,German DR,GDR,Reinhard LAUCK,Midfielder
+4 June 1948  ,German DR,GDR,Juergen SPARWASSER,Midfielder
+8 April 1943  ,German DR,GDR,Eberhard VOGEL,Forward
+12 February 1946  ,German DR,GDR,Harald IRMSCHER,Midfielder
+27 November 1944  ,German DR,GDR,Erich HAMANN,Midfielder
+23 October 1951  ,German DR,GDR,Gerd KISCHE,Defender
+14 September 1945  ,German DR,GDR,Wolfgang SEGUIN,Midfielder
+22 March 1955  ,German DR,GDR,Martin HOFFMANN,Forward
+8 February 1941  ,German DR,GDR,Wolfgang BLOCHWITZ,Goalkeeper
+30 March 1946  ,German DR,GDR,Werner FRIESE,Goalkeeper
+26 December 1925  ,German DR,GDR,BUSCHNER Georg,Coach
+28 February 1944  ,Germany FR,FRG,Sepp MAIER,Goalkeeper
+30 December 1946  ,Germany FR,FRG,Berti VOGTS,Defender
+5 September 1951  ,Germany FR,FRG,Paul BREITNER,Defender
+3 April 1948  ,Germany FR,FRG,Hans Georg SCHWARZENBECK,Defender
+11 September 1945  ,Germany FR,FRG,Franz BECKENBAUER,Defender
+10 September 1943  ,Germany FR,FRG,Horst-Dieter HOETTGES,Defender
+9 November 1944  ,Germany FR,FRG,Herbert WIMMER,Midfielder
+1 November 1949  ,Germany FR,FRG,Bernd CULLMANN,Defender
+7 July 1944  ,Germany FR,FRG,Juergen GRABOWSKI,Forward
+14 September 1944  ,Germany FR,FRG,Guenter NETZER,Midfielder
+9 May 1945  ,Germany FR,FRG,Jupp HEYNCKES,Forward
+29 September 1943  ,Germany FR,FRG,Wolfgang OVERATH,Midfielder
+3 November 1945  ,Germany FR,FRG,Gerd MUELLER,Forward
+5 January 1952  ,Germany FR,FRG,Uli HOENESS,Midfielder
+28 January 1948  ,Germany FR,FRG,Heinz FLOHE,Midfielder
+29 March 1952  ,Germany FR,FRG,Rainer BONHOF,Midfielder
+9 March 1946  ,Germany FR,FRG,Bernd HOELZENBEIN,Forward
+15 July 1946  ,Germany FR,FRG,Dieter HERZOG,Forward
+19 December 1949  ,Germany FR,FRG,Jupp KAPPELLMANN,Midfielder
+24 March 1949  ,Germany FR,FRG,Helmut KREMERS,Defender
+8 May 1948  ,Germany FR,FRG,Norbert NIGBUR,Goalkeeper
+16 November 1946  ,Germany FR,FRG,Wolfgang KLEFF,Goalkeeper
+15 September 1915  ,Germany FR,FRG,SCHOEN Helmut,Coach
+26 May 1946  ,Haiti,HAI,Henry FRANCILLON,Goalkeeper
+4 December 1951  ,Haiti,HAI,Wilner PIQUANT,Goalkeeper
+3 February 1951  ,Haiti,HAI,Arsene AUGUSTE,Defender
+18 September 1946  ,Haiti,HAI,Fritz ANDRE,Defender
+4 February 1944  ,Haiti,HAI,Serge DUCOSTE,Defender
+11 June 1949  ,Haiti,HAI,Pierre BAYONNE,Defender
+14 September 1947  ,Haiti,HAI,Philippe VORBE,Midfielder
+8 August 1946  ,Haiti,HAI,Jean Claude DESIR,Midfielder
+27 August 1949  ,Haiti,HAI,Eddy ANTOINE,Midfielder
+18 September 1947  ,Haiti,HAI,Guy FRANCOIS,Midfielder
+21 October 1942  ,Haiti,HAI,Guy SAINT-VIL,Forward
+11 June 1948  ,Haiti,HAI,Ernst JEAN-JOSEPH,Defender
+9 October 1951  ,Haiti,HAI,Serge RACINE,Midfielder
+30 March 1950  ,Haiti,HAI,Wilner NAZAIRE,Defender
+8 December 1949  ,Haiti,HAI,Roger SAINT-VIL,Forward
+13 March 1948  ,Haiti,HAI,Fritz LEANDRE,Forward
+9 May 1945  ,Haiti,HAI,Joseph-Marion LEANDRE,Defender
+9 May 1945  ,Haiti,HAI,Claude BARTHELEMY,Forward
+23 February 1950  ,Haiti,HAI,Jean-Hubert AUSTIN,Midfielder
+25 June 1951  ,Haiti,HAI,Emmanuel SANON,Forward
+25 October 1949  ,Haiti,HAI,Wilfred LOUIS,Defender
+22 October 1949  ,Haiti,HAI,Gerard JOSEPH,Goalkeeper
+26 March 1924  ,Haiti,HAI,TASSY Antoine,Coach
+28 February 1942  ,Italy,ITA,Dino ZOFF,Goalkeeper
+9 May 1950  ,Italy,ITA,Luciano SPINOSI,Defender
+18 July 1942  ,Italy,ITA,Giacinto FACCHETTI,Defender
+20 October 1945  ,Italy,ITA,Romeo BENETTI,Midfielder
+12 August 1944  ,Italy,ITA,Francesco MORINI,Defender
+25 April 1939  ,Italy,ITA,Tarcisio BURGNICH,Defender
+8 November 1942  ,Italy,ITA,Sandro MAZZOLA,Midfielder
+18 June 1946  ,Italy,ITA,Fabio CAPELLO,Midfielder
+24 January 1947  ,Italy,ITA,Giorgio CHINAGLIA,Forward
+18 August 1943  ,Italy,ITA,Gianni RIVERA,Midfielder
+7 November 1944  ,Italy,ITA,Gigi RIVA,Forward
+2 November 1939  ,Italy,ITA,Enrico ALBERTOSI,Goalkeeper
+26 March 1949  ,Italy,ITA,Giuseppe SABADINI,Defender
+7 February 1950  ,Italy,ITA,Mauro BELLUGI,Defender
+27 October 1945  ,Italy,ITA,Giuseppe WILSON,Defender
+1 January 1943  ,Italy,ITA,Antonio JULIANO,Midfielder
+1 December 1948  ,Italy,ITA,Luciano RE CECCONI,Midfielder
+1 February 1949  ,Italy,ITA,Franco CAUSIO,Midfielder
+7 April 1948  ,Italy,ITA,Pietro ANASTASI,Forward
+13 November 1943  ,Italy,ITA,Roberto BONINSEGNA,Forward
+27 April 1950  ,Italy,ITA,Paolo PULICI,Forward
+12 December 1945  ,Italy,ITA,Luciano CASTELLINI,Goalkeeper
+12 February 1919  ,Italy,ITA,VALCAREGGI Ferruccio,Coach
+28 July 1948  ,Netherlands,NED,Ruud GEELS,Forward
+16 November 1948  ,Netherlands,NED,Arie HAAN,Midfielder
+20 February 1944  ,Netherlands,NED,Wim VAN HANEGEM,Midfielder
+6 December 1945  ,Netherlands,NED,Cees VAN IERSSEL,Defender
+19 March 1942  ,Netherlands,NED,Rinus ISRAEL,Defender
+28 October 1946  ,Netherlands,NED,Wim JANSEN,Midfielder
+11 August 1947  ,Netherlands,NED,Theo DE JONG,Defender
+25 November 1940  ,Netherlands,NED,Jan JONGBLOED,Goalkeeper
+14 June 1943  ,Netherlands,NED,Piet KEIZER,Forward
+16 September 1951  ,Netherlands,NED,Rene VAN DE KERKHOF,Forward
+16 September 1951  ,Netherlands,NED,Willy VAN DE KERKHOF,Midfielder
+24 March 1949  ,Netherlands,NED,Ruud KROL,Defender
+15 September 1951  ,Netherlands,NED,Johan NEESKENS,Midfielder
+25 April 1947  ,Netherlands,NED,Johan CRUYFF,Forward
+3 July 1947  ,Netherlands,NED,Rob RENSENBRINK,Forward
+25 November 1951  ,Netherlands,NED,Johnny REP,Forward
+18 January 1952  ,Netherlands,NED,Wim RIJSBERGEN,Defender
+15 December 1946  ,Netherlands,NED,Piet SCHRIJVERS,Goalkeeper
+27 May 1944  ,Netherlands,NED,Pleun STRIK,Midfielder
+16 January 1945  ,Netherlands,NED,Wim SUURBIER,Defender
+28 May 1946  ,Netherlands,NED,Eddy TREIJTEL,Goalkeeper
+4 September 1946  ,Netherlands,NED,Harry VOS,Defender
+9 February 1928  ,Netherlands,NED,MICHELS Rinus,Coach
+15 January 1952  ,Poland,POL,Andrzej FISCHER,Goalkeeper
+9 January 1948  ,Poland,POL,Jan TOMASZEWSKI,Goalkeeper
+2 May 1949  ,Poland,POL,Zygmunt KALINOWSKI,Goalkeeper
+13 January 1951  ,Poland,POL,Antoni SZYMANOWSKI,Defender
+17 April 1949  ,Poland,POL,Zbigniew GUT,Defender
+18 July 1949  ,Poland,POL,Jerzy GORGON,Defender
+14 December 1949  ,Poland,POL,Henryk WIECZOREK,Midfielder
+23 October 1951  ,Poland,POL,Miroslaw BULZACKI,Defender
+6 June 1954  ,Poland,POL,Wladyslaw ZMUDA,Defender
+18 December 1948  ,Poland,POL,Adam MUSIAL,Defender
+25 August 1948  ,Poland,POL,Leslaw CMIKIEWICZ,Midfielder
+23 October 1947  ,Poland,POL,Kazimierz DEYNA,Midfielder
+10 July 1946  ,Poland,POL,Henryk KASPERCZAK,Midfielder
+3 May 1945  ,Poland,POL,Zygmunt MASZCZYK,Midfielder
+26 February 1946  ,Poland,POL,Roman JAKOBCZAK,Forward
+8 April 1950  ,Poland,POL,Grzegorz LATO,Forward
+3 October 1950  ,Poland,POL,Andrzej SZARMACH,Forward
+10 January 1946  ,Poland,POL,Robert GADOCHA,Forward
+28 October 1946  ,Poland,POL,Jan DOMARSKI,Forward
+7 December 1954  ,Poland,POL,Zdzislaw KAPKA,Forward
+19 September 1951  ,Poland,POL,Kazimierz KMIECIK,Forward
+29 April 1954  ,Poland,POL,Marek KUSTO,Forward
+2 March 1921  ,Poland,POL,GORSKI Kazimierz,Coach
+7 February 1948  ,Scotland,SCO,David HARVEY,Goalkeeper
+31 December 1948  ,Scotland,SCO,Sandy JARDINE,Defender
+1 May 1950  ,Scotland,SCO,Danny McGRAIN,Defender
+9 December 1942  ,Scotland,SCO,Billy BREMNER,Midfielder
+11 April 1951  ,Scotland,SCO,James HOLTON,Defender
+12 May 1948  ,Scotland,SCO,John BLACKLEY,Defender
+30 September 1944  ,Scotland,SCO,Jimmy JOHNSTONE,Midfielder
+4 March 1951  ,Scotland,SCO,Kenny DALGLISH,Forward
+15 December 1951  ,Scotland,SCO,Joe JORDAN,Forward
+29 January 1948  ,Scotland,SCO,Davie HAY,Midfielder
+14 December 1946  ,Scotland,SCO,Peter LORIMER,Forward
+5 October 1946  ,Scotland,SCO,Thomson ALLAN,Goalkeeper
+9 March 1954  ,Scotland,SCO,Jim STEWART,Goalkeeper
+6 March 1949  ,Scotland,SCO,Martin BUCHAN,Defender
+17 July 1946  ,Scotland,SCO,Peter CORMACK,Midfielder
+5 October 1951  ,Scotland,SCO,Willie DONACHIE,Defender
+25 October 1944  ,Scotland,SCO,Donald FORD,Midfielder
+22 September 1947  ,Scotland,SCO,Tommy HUTCHISON,Midfielder
+24 February 1940  ,Scotland,SCO,Denis LAW,Forward
+2 October 1944  ,Scotland,SCO,Willie MORGAN,Forward
+26 June 1952  ,Scotland,SCO,Gordon McQUEEN,Defender
+6 August 1949  ,Scotland,SCO,Erich SCHAEDLER,Defender
+23 February 1927  ,Scotland,SCO,ORMOND Willie,Coach
+21 February 1949  ,Sweden,SWE,Ronnie HELLSTROM,Goalkeeper
+30 March 1942  ,Sweden,SWE,Jan OLSSON,Defender
+25 November 1945  ,Sweden,SWE,Kent KARLSSON,Defender
+6 October 1942  ,Sweden,SWE,Bjorn NORDQVIST,Defender
+20 July 1951  ,Sweden,SWE,Bjorn ANDERSSON,Defender
+9 May 1943  ,Sweden,SWE,Ove GRAHN,Midfielder
+5 May 1944  ,Sweden,SWE,Bo LARSSON,Midfielder
+28 August 1949  ,Sweden,SWE,Conny TORSTENSSON,Forward
+16 May 1943  ,Sweden,SWE,Ove KINDVALL,Midfielder
+7 October 1952  ,Sweden,SWE,Ralf EDSTROM,Forward
+16 December 1946  ,Sweden,SWE,Roland SANDBERG,Forward
+10 May 1940  ,Sweden,SWE,Sven-Gunnar LARSSON,Goalkeeper
+1 January 1941  ,Sweden,SWE,Roland GRIP,Defender
+10 July 1948  ,Sweden,SWE,Staffan TAPPER,Midfielder
+4 February 1953  ,Sweden,SWE,Benno MAGNUSSON,Forward
+24 December 1946  ,Sweden,SWE,Inge EJDERSTEDT,Midfielder
+8 November 1947  ,Sweden,SWE,Goran HAGBERG,Goalkeeper
+28 October 1952  ,Sweden,SWE,Jorgen AUGUSTSSON,Defender
+15 October 1944  ,Sweden,SWE,Claes CRONQVIST,Midfielder
+19 April 1942  ,Sweden,SWE,Sven LINDMAN,Midfielder
+27 August 1942  ,Sweden,SWE,Orjan PERSSON,Midfielder
+17 July 1952  ,Sweden,SWE,Thomas AHLSTROM,Midfielder
+18 December 1919  ,Sweden,SWE,ERICSON Georg,Coach
+14 February 1945  ,Uruguay,URU,Ladislao MAZURKIEWICZ,Goalkeeper
+9 July 1945  ,Uruguay,URU,Baudilio JAUREGUI,Defender
+2 March 1943  ,Uruguay,URU,Juan MASNIK,Defender
+14 July 1945  ,Uruguay,URU,Pablo FORLAN,Defender
+25 April 1944  ,Uruguay,URU,Julio MONTERO CASTILLO,Defender
+8 July 1943  ,Uruguay,URU,Ricardo PAVONI,Defender
+28 March 1940  ,Uruguay,URU,Luis CUBILLA,Midfielder
+6 October 1944  ,Uruguay,URU,Victor ESPARRAGO,Midfielder
+2 February 1952  ,Uruguay,URU,Fernando MORENA,Forward
+3 December 1942  ,Uruguay,URU,Pedro ROCHA,Midfielder
+20 January 1952  ,Uruguay,URU,Ruben CORBO,Forward
+29 October 1944  ,Uruguay,URU,Hector SANTOS,Goalkeeper
+23 April 1948  ,Uruguay,URU,Gustavo DE SIMONE,Defender
+3 December 1945  ,Uruguay,URU,Luis GARISTO,Defender
+27 May 1950  ,Uruguay,URU,Mario GONZALEZ,Defender
+26 August 1949  ,Uruguay,URU,Alberto CARDACCIO,Midfielder
+27 August 1954  ,Uruguay,URU,Julio Cesar JIMENEZ,Midfielder
+17 June 1952  ,Uruguay,URU,Walter MANTEGAZZA,Midfielder
+20 June 1952  ,Uruguay,URU,Denis MILAR,Forward
+30 August 1948  ,Uruguay,URU,Juan SILVA,Forward
+23 October 1949  ,Uruguay,URU,Jose GOMEZ,Forward
+16 February 1952  ,Uruguay,URU,Gustavo FERNANDEZ,Goalkeeper
+7 June 1913  ,Uruguay,URU,PORTA Roberto,Coach
+23 April 1948  ,Yugoslavia,YUG,Enver MARIC,Goalkeeper
+11 December 1949  ,Yugoslavia,YUG,Ivan BULJAN,Defender
+6 November 1945  ,Yugoslavia,YUG,Enver HADZIABDIC,Defender
+25 January 1953  ,Yugoslavia,YUG,Drazen MUZINIC,Defender
+12 May 1948  ,Yugoslavia,YUG,Josip KATALINSKI,Defender
+7 November 1950  ,Yugoslavia,YUG,Vladislav BOGICEVIC,Defender
+22 September 1945  ,Yugoslavia,YUG,Ilija PETKOVIC,Midfielder
+27 May 1947  ,Yugoslavia,YUG,Branko OBLAK,Midfielder
+23 March 1953  ,Yugoslavia,YUG,Ivica SURJAK,Forward
+21 June 1948  ,Yugoslavia,YUG,Jovan ACIMOVIC,Midfielder
+30 May 1946  ,Yugoslavia,YUG,Dragan DZAJIC,Forward
+25 February 1950  ,Yugoslavia,YUG,Jurica JERKOVIC,Midfielder
+15 December 1942  ,Yugoslavia,YUG,Miroslav PAVLOVIC,Midfielder
+26 February 1952  ,Yugoslavia,YUG,Luka PERUZOVIC,Defender
+17 October 1943  ,Yugoslavia,YUG,Kiril DOJCINOVSKI,Defender
+19 October 1951  ,Yugoslavia,YUG,Franjo VLADIC,Midfielder
+1 May 1948  ,Yugoslavia,YUG,Danilo POPIVODA,Forward
+8 November 1946  ,Yugoslavia,YUG,Stanislav KARASI,Forward
+10 December 1948  ,Yugoslavia,YUG,Dusan BAJEVIC,Forward
+1 July 1955  ,Yugoslavia,YUG,Vladimir PETROVIC,Midfielder
+2 January 1948  ,Yugoslavia,YUG,Ognjen PETROVIC,Goalkeeper
+10 August 1947  ,Yugoslavia,YUG,Rizah MESKOVIC,Goalkeeper
+4 May 1930  ,Yugoslavia,YUG,MILJANIC Miljan,Coach
+6 March 1947  ,Zaire,ZAI,Kazadi MUAMBA,Goalkeeper
+22 August 1949  ,Zaire,ZAI,Muepu ILUNGA,Defender
+17 December 1945  ,Zaire,ZAI,Mwanza Nel MUKOMBO,Defender
+4 January 1949  ,Zaire,ZAI,Buanga TSHIMEN,Defender
+10 April 1950  ,Zaire,ZAI,Lobilo BOBA,Defender
+22 December 1950  ,Zaire,ZAI,Kilasu MASSAMBA,Midfielder
+8 May 1946  ,Zaire,ZAI,Tshinabu WA MUNDA,Midfielder
+10 October 1947  ,Zaire,ZAI,Mana MAMBUENE,Midfielder
+27 December 1947  ,Zaire,ZAI,Kembo Uba KEMBO,Midfielder
+17 November 1946  ,Zaire,ZAI,Kidumu MANTANTU,Midfielder
+4 March 1950  ,Zaire,ZAI,Kabasu BABO,Defender
+15 March 1948  ,Zaire,ZAI,Tubilandu NDIMBI,Goalkeeper
+4 November 1948  ,Zaire,ZAI,Ndaye MULAMBA,Midfielder
+31 October 1948  ,Zaire,ZAI,Mayanga MAKU,Forward
+12 February 1945  ,Zaire,ZAI,Kibonge MAFU,Midfielder
+30 December 1951  ,Zaire,ZAI,Mwape MIALO,Defender
+11 November 1945  ,Zaire,ZAI,Kafula NGOYE,Midfielder
+15 December 1949  ,Zaire,ZAI,Mavuda MAFUILA,Forward
+24 November 1948  ,Zaire,ZAI,Mbungu EKOFO,Forward
+7 January 1949  ,Zaire,ZAI,Ntumba KALALA,Forward
+22 November 1950  ,Zaire,ZAI,Kakoko ETEPE,Forward
+12 November 1948  ,Zaire,ZAI,Kalambay OTEPA,Goalkeeper
+11 June 1934  ,Zaire,ZAI,VIDINIC Blagoje,Coach
