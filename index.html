@@ -210,28 +210,15 @@
 			}
 
 			function toMap () {
-				label.transition()
-						.duration(1000)
-						.style("opacity", 0)
+
 
 				soocer.transition()
       				.duration(2000)
       				.attr("d", function(d, i) {
       				  	return path1(tocountries(d.geometry))
-      				})
-      				.on("end", function () {
-      					feature
-      						.style("visibility", function (d, i) {
-	      						return this.style.visibility = "visible"
-    	  					})
-      						.transition()
-      						.duration(1000)
-      						.style("opacity", 1)
-      						.on("end", function() {
-	      						showBackMap();
-      					})
-      				})
-      			soocer.styles(style)
+      			})
+
+      			
 			}
 
 			function played(id) {
@@ -253,7 +240,8 @@
       							//eturn !d.id.startsWith("ESP")
       							return !played(d.id)
       						})
-							.transition()
+				
+				countries.transition()
       						.duration(1000)
       						.style("opacity", 0)
       						.on("end", function() {
@@ -278,9 +266,17 @@
       						var trans = path2(tocercles(d.geometry))
       						return trans
       					 })
-      					.on("end", function () {
+      					.on("end", function (d) {
       					 	currentYear = 2014;
-      					 	translate(memBBox)
+
+      					 	var sel = d3.select(this);
+
+      					 	sel.transition()
+      							.duration(2000)
+      							.attr("transform", function (doom) {
+      								var elem = this.getBBox();
+									return translate(d,elem, memBBox)	
+      							})
       					})
 			}
 
@@ -558,7 +554,8 @@
 					currentYear = this.value;
   					output.innerHTML = currentYear;
 
-  					translate(centerBBox);
+  					//translate(centerBBox);
+  					translateAll(centerBBox);
 				}
 			}
 
@@ -586,7 +583,7 @@
 				return scale 
 			}
 
-			function translate (getBBox, scale) {
+			/*function translate (getBBox, scale) {
 				var total = (2014 - 1930);
 				
 				var pathx = rect.width / maxX;
@@ -627,35 +624,56 @@
 
       							
       				return toScale;//"translate("+x+","+y+")"
-				})/*.on("end", 
-      				 function (d, i) {
+				})
+			}*/
+
+			function translateAll(getBox) {
+				soocer.transition()
+      				.duration(2000)
+      				.attr("transform", function (d, i) {
       					var elem = this.getBBox();
-      					var center = getBBox(d, elem);
-      					var scale = scalefunc(d)
-
-      					d3.select(this)
-      						.attr("transform", function() {
-      							var scalex = scale, scaley=scale;    // your desired scale
-
-      							var saclestr=scalex+','+scaley;
-								var tx=-center[0]*(scalex-1);
-								var ty= -center[1]*(scaley-1);
-								var toScale = "translate("+tx+","+ty+") scale("+saclestr+")"
-								return "scale(1)"
-
-      						})
-
-	    				/*var scale = scalefunc(d)
-    	 				var scalex = scale, scaley=scale;    // your desired scale
-
-      					var saclestr=scalex+','+scaley;
-						var tx=-center[0]*(scalex-1);
-						var ty=-center[1]*(scaley-1);
-						var toScale = "translate("+tx+","+ty+") scale("+saclestr+")"
-						return d3.interpolate(a, 0)
-      				})*/
-      			
+      					return translate(d, elem, centerBBox);
+      				})
 			}
+
+			function translate (d, elem, getBBox) {
+				var total = (2014 - 1930);
+				//var elem = doom.getBBox();
+				
+				var pathx = rect.width / maxX;
+				var pathy = rect.height / maxY;
+
+				//elem = this.node().getBBox();
+				var country = statistics[d.id]['years'];
+      			var points = pointforYear(country, d.id, getPoints);
+      			var goals = pointforYear(country, d.id, getGoals);
+
+      			cumPoints[d.id]["Points"] = points;
+      			cumPoints[d.id]["Goals"] = goals;
+
+      			var center = getBBox(d, elem)
+
+      			var rectX = 0;
+      			var rectY = rect.height;
+
+      			var xvalue = xScale(points + 1);
+      			var yvalue = yScale(goals + 1);
+
+				x = - center[0] + xvalue;
+      			y =  - center[1] + yvalue;
+
+
+      			var scale = scalefunc(d)
+    	 		var scalex = scale, scaley=scale;    // your desired scale
+
+      			var saclestr=scalex+','+scaley;
+				var tx=-center[0]*(scalex-1) + x + xOffset;
+				var ty=-center[1]*(scaley-1) + y + yOffset;
+
+				return "translate("+tx+","+ty+"),scale("+saclestr+")"
+				
+			}
+
 
 			function originalPosition () {
 				soocer.transition()
@@ -671,9 +689,44 @@
 						var y = box.y - cy
 
 						return "translate("+x+","+y+")"
-					}).on("end", function () {
-						toMap();						
+					}).transition()
+						.duration(500)
+						.style("fill-opacity", 0)
+					.on("end", function () {
+						//toMap();
+						var selection = d3.select(this)
+						selection.transition()
+      						.duration(2000)
+      						.attr("d", function(d, i) {
+      				  			return path1(tocountries(d.geometry))
+      						})
+      						.on("end", function (d) {
+      							var sel = d3.select(this)
+								sel.transition()
+									.duration(1000)
+									.style("fill", choropleth)
+									.style("fill-opacity", 1)
+							})							
 					});
+
+				countries
+					.style("visibility", function (d, i) {
+	      				return this.style.visibility = "visible"
+    	  			})
+    	  			.style("opacity", 0)
+      				.transition()
+      				.delay(3000)
+      				.duration(1000)
+      				.style("opacity", 1)
+      				.on("end", function() {
+	      				showBackMap();
+      				})
+      			label.transition()
+      				.delay(3000)
+					.duration(1000)
+					.style("opacity", 0)
+
+      			//soocer.styles(style)
 			}
 
 			function projectPoint(x, y) {  
