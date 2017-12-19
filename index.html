@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="./d3/d3.js"></script>
+		<script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+		<!--<script src="https://d3js.org/d3-polygon.v1.min.js"></script>-->
+
+
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   			crossorigin=""/>
+   		 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   			crossorigin=""></script>
+
+	</head>
+
+</html> 
+
+<body>
+		<div class="container">
+			<div class="taps">
+   				<li class='back' onclick=onClick(event)>Hosts</li>
+   				<li class="selected" onclick=onClick(event)>Attendance</li>
+   				<li class= 'back' onclick=onClick(event)>Bubble</li>
+			</div>
+
+
+			<div id="countryMap"></div>
+			<div id="countryScale"></div>
+
+			<div id ='infoTest'> <h4>Country</h4> <b>  pepe  </b> </div>
+			
+			<div id="slidecontainer">
+  			<p>year: <span id="demo"></span></p>
+  			<input type="range" min="1930" max="2014" value="2014" step ="4" class="slider" id="myRange">
+  			
+			</div>
+		</div><!-- onclick="disableMap();" -->
+
+		<script>
+			var isMapShowed = true;
+			var access_token = "pk.eyJ1IjoibGlua2hhIiwiYSI6ImNqYW1qMnZ0MTQza3gzN3FtZWc0YnVkcjAifQ.u9VeqQqwBkvkSoqTaKqfBQ"
+			
+			var southWest = L.latLng(-89.98155760646617, -180),
+			northEast = L.latLng(89.99346179538875, 180);
+			var bounds = L.latLngBounds(southWest, northEast);
+			
+			var geoDir = "./simplemap.json"
+			var dataDir = "./data_visualization_team/team_statistics.json"
+			var geoJson;
+			var info = document.getElementById("infoTest");
+			var zoom = 2;
+			var view = [25, 2]
+			var map = L.map('countryMap', {zoomControl:false}).setView(view, zoom);
+			var cercleMap = L.map('countryScale', { zoomControl:false, crs: L.CRS.Simple}).setView(view, 1);
+
+			var svg;
+			var label;
+
+			var feature;
+			var soocer;
+			var	countries;
+
+
+			var mapContainer = document.getElementById("countryMap")
+			var slider = document.getElementById("myRange");
+			var output = document.getElementById("demo");
+			output.innerHTML = slider.value;
+
+			var rect = document.getElementById('countryScale').getBoundingClientRect();
+
+			var margin = {top: 20, right: 100, bottom: 0, left: 20},
+    		width = rect.width - margin.left - margin.right,
+    		height = rect.height - margin.top - margin.bottom;
+
+
+			var currentTap = "Attendance";
+
+			var transform = d3.geoTransform({point: projectPoint});
+    		var path1 = d3.geoPath().projection(transform);
+
+
+			var transform2 = d3.geoTransform({point: projectCercle});
+    		path2 = d3.geoPath().projection(transform2);
+
+    		var inicialBox = {};
+    		var dataSet;
+    		var statistics;
+
+    		var maxY = 80;
+    		var maxX = 80;
+
+    		var currentYear = 2014;
+    		var currentCircle = [];
+
+
+  			var epsilon = 1
+
+    		var yScale = d3.scaleLog()
+    			.domain([epsilon, 255])
+  				.range([rect.height, 40]);
+
+			var xScale = d3.scaleLog()
+    				.domain([epsilon, 250])
+    				.range([0, rect.width-50]);
+
+    		var attScale = d3.scaleSequential()
+  									.domain([0, 20])
+  									.interpolator(d3.interpolateRgb.gamma(2.2)("#bdefcb", " #095a20"));
+
+			/*var attScale = d3.scaleThreshold()
+    						.domain(d3.range(1, 20))
+    						.range(d3.interpolateCool[9]);*/
+
+    		var hostScale = d3.scaleThreshold()
+    						.domain(d3.range(0, 5))
+    						.range(d3.schemeBlues[4]);
+
+    		var winnerScale = d3.scalePow(2)
+    							.domain([1, 5])
+  			  					.range([0.4, 1.2]);
+
+  			var xOffset = 30;
+  			var yOffset = -20;
+
+  			xAxis = d3.axisBottom(xScale)
+						.tickFormat(function(d) { return Math.round(d-1); });
+
+  			yAxis = d3.axisLeft(yScale)
+  						.tickFormat(function(d) { return Math.round(d-1); });
+
+			d3.json(geoDir, function(data) {
+				dataSet = data;
+				console.log(dataSet);
+				
+				d3.json(dataDir, function(statData) {
+					statistics = statData
+					console.log(statistics);
+					showMap(statistics);
+				})
+			});
+
+			function axes (svg) {
+
+			    label = svg.append("g")
+			    				.attr("class", "axis")
+								.style("opacity",0)
+				label.append("g")
+      				.attr("class", "x-axis")
+      				.attr("transform", "translate(" + xOffset +"," + height + ")")
+      				.call(xAxis)
+    				
+    			label.append("text")
+      				.attr("class", "label")
+      				.attr("x", rect.width - xOffset)
+      				.attr("y", height - 5)
+      				.style("text-anchor", "end")
+      				.text("Points");
+
+  				// y-axis
+  				label.append("g")
+      				.attr("class", "y-axis")
+      				.attr("transform", "translate(" + xOffset +"," + yOffset + ")")
+				    .call(yAxis)
+    			label.append("text")
+      				.attr("class", "label")
+      				.attr("transform", "rotate(-90)")
+      				.attr("x", -50 )
+	   				.attr("y", 35)
+      				.attr("dy", ".75em")
+      				.style("text-anchor", "end")
+      				.text("Goals");
+			}
+
+			function onClick (event) {
+				event.preventDefault();
+
+				selected = document.getElementsByClassName("selected");
+				var lasTab = selected[0].innerHTML;
+				
+
+				selected[0].className = selected[0].className.replace("selected", "back");
+				event.currentTarget.className = "selected"
+				currentTap = event.currentTarget.innerHTML;
+
+				if (lasTab == 'Bubble' && currentTap != 'Bubble'){
+					originalPosition();
+				}
+
+				else if (lasTab != 'Bubble' && currentTap == 'Bubble') {
+					toBubbles();
+				}
+
+				else if (currentTap != lasTab) {
+					toColors();
+				}
+
+				
+			}
+
+			function toColors() {
+				feature.transition()
+						.duration(1000)
+						.style("fill", choropleth)
+			}
+
+			function toMap () {
+				label.transition()
+						.duration(1000)
+						.style("opacity", 0)
+
+				soocer.transition()
+      				.duration(2000)
+      				.attr("d", function(d, i) {
+      				  	return path1(tocountries(d.geometry))
+      				})
+      				.on("end", function () {
+      					feature
+      						.style("visibility", function (d, i) {
+	      						return this.style.visibility = "visible"
+    	  					})
+      						.transition()
+      						.duration(1000)
+      						.style("opacity", 1)
+      						.on("end", function() {
+	      						showBackMap();
+      					})
+      				})
+      			soocer.styles(style)
+			}
+
+			function played(id) {
+				return id in statistics
+			}
+
+
+			function toBubbles() {
+				label
+						.transition()
+						.duration(1000)
+						.style("opacity", 1)
+
+  				//countryMap.style.visibility = 'hidden';
+  				hiddenBackMap();
+
+				countries = feature
+      						.filter( function (d) {
+      							//eturn !d.id.startsWith("ESP")
+      							return !played(d.id)
+      						})
+							.transition()
+      						.duration(1000)
+      						.style("opacity", 0)
+      						.on("end", function() {
+      							this.style.visibility = "hidden"
+      						})
+
+				soocer = feature
+      						.filter(function (d) {
+      							//return d.id.startsWith("ESP")
+      							cumPoints[d.id] = {}
+      							return played(d.id)
+      						})
+      						.style("fill", function(d) {
+      							var isoCode = statistics[d.id]['isoCode']
+        						return "url(#country-squared/" + isoCode + ")" 
+    						})
+
+
+      			soocer.transition()
+      					.duration(1000)
+      					.attr("d", function(d, i) {
+      						var trans = path2(tocercles(d.geometry))
+      						return trans
+      					 })
+      					.on("end", function () {
+      					 	currentYear = 2014;
+      					 	translate(memBBox)
+      					})
+			}
+
+			function wonMatch(teamCode, matches, matchesNumber) {
+				return (matches.HomeScore[matchesNumber] > matches.AwayScore[matchesNumber] 
+						&& matches.HomeCode[matchesNumber] == teamCode)
+					||
+					(matches.HomeScore[matchesNumber] < matches.AwayScore[matchesNumber]
+					 	&& matches.AwayCode[matchesNumber] == teamCode);
+			}
+
+			function getWinners(code, year) {
+				var points = 0;
+				var matches = year.matches;
+				var len = matches.Description.length;
+
+				if (matches.Description.includes("Final")) {
+					var last = matches.AwayScore.length - 1;
+					if (wonMatch(code, matches, last)) 
+						points++;
+				}
+
+				else if (matches.Description[len - 1].startsWith("Final") && code == "URU") {
+					points++;
+				}
+
+				return points;
+			}
+ 
+
+			function getGoals(code, year) {
+				var totalGoals = year.teamgoals;
+				var points = 0;
+				for (var i = 0; i < totalGoals.Goals.length; i++) {
+					points += totalGoals.Goals[i]
+				}
+				return points
+			}
+
+			function getPoints(code, year) {
+				var points = 0;
+				var matches = year.matches
+				for (var i = 0; i < matches.HomeScore.length; i++) {
+					if (matches.HomeScore[i] == matches.AwayScore[i]) {
+						points += 1
+					}
+					else if (wonMatch(code, matches, i)) {
+						points += 3
+					}
+				}
+				return points
+			}
+			
+
+			function pointforYear (country, code, getPoint) {
+				var points = 0;
+				for (var year in country) {
+					if ( year <= currentYear ) {
+						points += getPoint(code, country[year])
+					}
+				}
+				return points
+			}
+
+			function goneTrans(d) {
+				if (feature.properties.name.startsWith('U'))
+					return d3.transition().duration(500).opacity(0);
+			}
+
+			function style(d, fillFunction) {    			
+        		update(d.properties);
+
+        		var style = {
+       				//fill: "rgb(214, 214, 214)",
+        			weight: 1,
+        			stroke: 'rgb(102, 102, 102)',
+        			color: 'rgb(102, 102, 102)',
+        			dashArray: '1',
+        			fillOpacity: 0.7,
+        			"stroke-width": 1,
+        		};
+        		
+        		if (currentTap != "Bubble" )
+        			style["fill"] = choropleth(d)
+
+        		
+        		return style;
+		    }
+
+		    function highlightFeatureStyle(d) {
+		    	var style = {
+		    		//fill : 'blue',
+		    		//fillColor : 'blue',
+        			stroke:'grey',
+        			color: '#666',
+        			width:5,
+        			dashArray: '',
+        			opacity:1,
+        			fillOpacity: 1
+    			};
+    			if (currentTap != "Bubble" )
+        			style["fill"] = "grey"
+
+        		else {
+        			style["stroke-width"] = 2
+        		}
+
+    			update(d.properties, d.id);
+    			return style;
+    			
+		    }
+
+		    function highlightFeature(e) {
+    			var layer = e.target;
+
+    			layer.setStyle(highlightFeatureStyle(layer.feature));
+
+    			if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+       				layer.bringToFront();
+    			}
+			}
+
+			function changeMap(leafMap, staticMap) {
+				staticMap.display = isMapShowed ? "block" : "none";
+				leafMap.display = isMapShowed ? "none" : "block";
+				isMapShowed = !isMapShowed;
+			}
+
+			function resetHighlight(e) {
+ 				geoJson.resetStyle(e.target);
+ 				update("")
+			}
+
+			function onEachFeature(feature, layer) {
+    			layer.on({
+        		mouseover: highlightFeature,
+        		mouseout: resetHighlight
+    			});
+			}
+
+			function bigCercle(coord, radius) {
+				var coordinates = getCercle(coord, radius); 
+				
+				p = {'type': 'Polygon', 'coordinates': [coordinates]	}
+				return p;
+			}
+
+			function tocercles(coord) {
+				var coordinates = getCercle(getMax(coord.coordinates)); 
+				
+				p = {'type': 'Polygon', 'coordinates': [coordinates]	}
+				return p;
+			}
+
+			function tocountries(coord) {
+				var coordinates = getMax(coord.coordinates)
+
+				p = {'type': 'Polygon', 'coordinates': [coordinates]	}
+				return p;
+			}
+
+			function togeo (coord) {
+				return path(corrd)
+			}
+
+			function loadMap () {
+
+			}
+
+			function choropleth (d) {
+				var choro =  "rgb(214, 214, 214)"
+				if (currentTap == "Attendance") {
+					if (d.id in statistics) {
+						choro = attScale(Object.keys(statistics[d.id].years).length);
+					}
+				}
+				else if (currentTap == "Hosts") {
+					if (d.id in statistics ) {
+						var len = statistics[d.id].host.length;
+						if (len > 0) {
+							choro = hostScale(len);
+						}
+					}
+				}
+				return choro
+			}
+
+			function addLayers() {
+				g = d3.select(".countries")
+
+				flags = [];
+				for (id in statistics) {
+					flags.push(statistics[id].isoCode)
+				}
+
+				var dfs = g.append("defs")
+
+				dfs.selectAll(".patterns")
+   				 .data(flags, function(d) {
+        			return d
+				})
+    			.enter().append("pattern")
+    			.attr("id", function(d) {
+        			return "country-squared/" + d
+    			})
+    			.attr("width", 1)
+    			.attr("height", 1)
+    			.append("svg:image")
+    			.attr("xlink:href", function(d) {
+        			return "./country-squared/" + d + ".svg";
+    			})
+    			.attr("width", 40)
+    			.attr("height", 40);
+
+    			feature = g.selectAll("path")
+    				.data(dataSet.features)
+  					.enter()
+  					.append("path")
+  					.attr("position", "relative")
+  					.styles(function (d) {
+  						return style(d, choropleth)
+  					})
+  					.style("opacity", 0)
+  				
+  				feature.transition()
+  						.duration(3000)
+  						.style("opacity", 1);
+
+  				feature.attr("d", function (d) {
+  						return path1(tocountries(d.geometry))
+  					})
+  					
+  					.on("mouseover", function (d, i) {
+  						if (this.style.visibility != 'hidden')
+  							d3.select(this).styles(highlightFeatureStyle(d));
+  					})
+        			.on("mouseout", function(d, i) {
+        				if (this.style.visibility != 'hidden')
+        					d3.select(this).styles(style(d));
+        			});
+
+        	}
+
+			function showMap(dataSet) {
+				showBackMap();
+				L.tileLayer('https://api.mapbox.com/styles/v1/linkha/' +
+							'cjamltxvc16k22sn1ap20xzfl/tiles/256/{z}/{x}/{y}?' +
+							'access_token=' + access_token, {
+    			id: 'mapbox://styles/linkha/cjamqpkv71b3s2sn1g0bov8xt',
+    			tileSize : 256,
+    			minZoom: 2,
+    			maxZoom:2,
+    			maxBounds: bounds
+    			
+				}).addTo(map);
+
+				map.setMaxBounds(bounds);
+				map.on('drag', function() {
+	    			map.panInsideBounds(bounds, { animate: true });
+				});
+
+				svg = d3.select("#countryScale").append("svg");
+				var g = svg.append("g")
+    				.attr("class", "countries");
+
+    			svg.attrs(
+      				{width: 1100,
+      				 height: 500});
+
+    			
+				addLayers();
+				axes(svg)
+
+				slider.oninput = function() {
+					currentYear = this.value;
+  					output.innerHTML = currentYear;
+
+  					translate(centerBBox);
+				}
+			}
+
+			function centerBBox (d, elem) {
+				var cx = elem.x + elem.width / 2;
+      			var cy = elem.y + elem.height / 2;
+
+      			return [cx, cy];
+			}
+
+			function memBBox(d, elem) {
+				inicialBox[d.id] = elem;
+
+      			return centerBBox(d, elem)
+			}
+
+			var cumPoints = {};
+
+			function scalefunc(d) {
+				var stat = statistics[d.id]["years"];
+				var nbWins = pointforYear(stat, d.id, getWinners);
+				var scale = winnerScale(nbWins + 1)
+				cumPoints[d.id]["Win"] = nbWins;
+				
+				return scale 
+			}
+
+			function translate (getBBox, scale) {
+				var total = (2014 - 1930);
+				
+				var pathx = rect.width / maxX;
+				var pathy = rect.height / maxY;
+
+				soocer.transition()
+      				.duration(2000)
+      				.attr("transform", function (d, i) {
+      				var elem = this.getBBox();
+
+      				var country = statistics[d.id]['years'];
+      				var points = pointforYear(country, d.id, getPoints);
+      				var goals = pointforYear(country, d.id, getGoals);
+
+      				cumPoints[d.id]["Points"] = points;
+      				cumPoints[d.id]["Goals"] = goals;
+
+      				var center = getBBox(d, elem)
+
+      				var rectX = 0;
+      				var rectY = rect.height;
+
+      				var xvalue = xScale(points + 1);
+      				var yvalue = yScale(goals + 1);
+
+					x = - center[0] + xvalue;
+      				y =  - center[1] + yvalue;
+
+
+      				var scale = scalefunc(d)
+    	 			var scalex = scale, scaley=scale;    // your desired scale
+
+      				var saclestr=scalex+','+scaley;
+					var tx=-center[0]*(scalex-1) + x + xOffset;
+					var ty=-center[1]*(scaley-1) + y + yOffset;
+
+					var toScale = "translate("+tx+","+ty+"),scale("+saclestr+")"
+
+      							
+      				return toScale;//"translate("+x+","+y+")"
+				})/*.on("end", 
+      				 function (d, i) {
+      					var elem = this.getBBox();
+      					var center = getBBox(d, elem);
+      					var scale = scalefunc(d)
+
+      					d3.select(this)
+      						.attr("transform", function() {
+      							var scalex = scale, scaley=scale;    // your desired scale
+
+      							var saclestr=scalex+','+scaley;
+								var tx=-center[0]*(scalex-1);
+								var ty= -center[1]*(scaley-1);
+								var toScale = "translate("+tx+","+ty+") scale("+saclestr+")"
+								return "scale(1)"
+
+      						})
+
+	    				/*var scale = scalefunc(d)
+    	 				var scalex = scale, scaley=scale;    // your desired scale
+
+      					var saclestr=scalex+','+scaley;
+						var tx=-center[0]*(scalex-1);
+						var ty=-center[1]*(scaley-1);
+						var toScale = "translate("+tx+","+ty+") scale("+saclestr+")"
+						return d3.interpolate(a, 0)
+      				})*/
+      			
+			}
+
+			function originalPosition () {
+				soocer.transition()
+      				.duration(2000)
+      				.attr("transform", function (d, i) {
+						box = inicialBox[d.id]
+
+						var elem = this.getBBox();
+						var cx = elem.x
+						var cy = elem.y
+
+						var x = box.x - cx
+						var y = box.y - cy
+
+						return "translate("+x+","+y+")"
+					}).on("end", function () {
+						toMap();						
+					});
+			}
+
+			function projectPoint(x, y) {  
+				var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+  				this.stream.point(point.x, point.y)
+			}
+
+			function projectCercle(x, y) {
+				var point = cercleMap.latLngToLayerPoint(new L.LatLng(y, x));
+  				this.stream.point(point.x, point.y)
+			}
+
+    		function update (props, id) {
+    			if (props && id) {
+    				info.visibility = 'visible';
+    				info.innerHTML = '<h4>' + props.name + '</h4> '
+    				
+
+    				if( currentTap == "Bubble") {
+    					info.innerHTML += 		  "goals: " + cumPoints[id]["Goals"] + 
+    									 '<br>' + "points: " + cumPoints[id]["Points"] +
+    									 '<br>' + "win cups: " + cumPoints[id]["Win"]
+    				}
+
+    				else {
+    					var values;
+    					var presentation;
+    					if(currentTap == "Attendance") {
+    						value = Object.keys(statistics[id].years).length;
+    						info.innerHTML += '<b> Participated </b>' + value + " times"
+    					}
+    					else {
+    						presentation = "World Cup Host in:"
+    						value = statistics[id].host;
+
+    						info.innerHTML += '<b>'+ presentation + '</b>'
+    						for (v in value) {
+    							info.innerHTML += '<p class=years>' + value[v] + '</p>'
+	    					}
+    					}
+    					
+
+    				}
+    			}
+    			else {
+    				info.visibility = 'hidden';
+    				info.innerHTML = '';
+    			}
+			};
+
+			function getMax (coord) {
+				coordinates = coord
+				circles = [];
+				var max = 0;
+				var maxCoords = [];
+
+				for (var i = 0; i < coordinates.length; i++) {
+					var coor = coordinates[i];
+					if(coor.length == 1) {
+						coor = coor[0];
+					} 
+					if (max < coor.length) {
+						maxCoords = coor;
+						max = coor.length;
+					}
+				}
+
+				//var p = {'type': 'Polygon', 'coordinates': [maxCoords] }
+				return maxCoords;
+			}
+
+			function showBackMap () {
+				mapContainer.classList.toggle("fadeIn");
+				countryMap.style.visibility = 'visible'
+			}
+
+			function hiddenBackMap() {
+				mapContainer.classList.toggle("fadeOut");
+				countryMap.style.visibility = 'hidden'
+			}
+
+			function radiusByArea(area) {
+				retrun /Math.sqrt(Math.abs(area) / Math.PI)
+			}
+
+			function getCercle(coordinate, r) {
+  				//if (coordinate.length > 1)
+  				//coordinate = coordinates[0]
+
+  				var circle = [],
+      				length = 0,
+      				lengths = [length],
+      				polygon = coordinate,//[0],
+      				p0 = polygon[0],
+      				p1,
+      				x,
+      				y,
+      				i = 0,
+      				n = polygon.length;
+
+  				// Compute the distances of each coordinate.
+  				while (++i < n) {
+    				p1 = polygon[i];
+    				x = p1[0] - p0[0];
+    				y = p1[1] - p0[1];
+    				lengths.push(length += Math.sqrt(x * x + y * y));
+    				p0 = p1;
+  				}
+
+				var area = d3.polygonArea(polygon);
+      			var radius = 5//r ? r : Math.sqrt(Math.abs(area) / Math.PI);
+      			var centroid = d3.polygonCentroid(polygon);
+      			var angleOffset = -2*Math.PI; // TODO compute automatically
+      			var angle = 0;
+      			var i = -1;
+      			var k = 2 * Math.PI / lengths[lengths.length - 1];
+
+				// Compute points along the circle’s circumference at equivalent distances.
+  				for (i = 0; i < n; i++) {
+    				angle = angleOffset + lengths[i] * k;
+    				circle.push([
+      					centroid[0] + 2*radius * Math.cos(angle),
+      					centroid[1] - 2*radius * Math.sin(angle)
+    				]);
+  				}
+
+  				currentCircle = circle;
+				return currentCircle;	
+			}
+
+
+		</script>
+		
+
+</body>
