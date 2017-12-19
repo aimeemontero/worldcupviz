@@ -31,7 +31,28 @@
 
 
 			<div id="countryMap"></div>
-			<div id="countryScale"></div>
+			<div id="countryScale">
+				<div id="selector">
+				<select id="x-selector" onchange="onChangeX()">
+ 					<option value="Points">Points</option>
+  					<option value="Goals">Goals</option>
+  					<option value="Goals Against">Goals Against</option>
+  					<option value="Yellow Cards">Yellow Cards</option>
+  					<option value="Victories">Victories</option>
+  					<option value="Played Matches">Played Matches</option>
+  				</select>
+
+
+				<select id="y-selector" onchange="onChangeY()">
+ 					<option value="Goals">Goals</option>
+  					<option value="Points">Points</option>
+  					<option value="Goals Against">Goals Against</option>
+  					<option value="Yellow Cards">Yellow Cards</option>
+  					 <option value="Victories">Victories</option>
+  					<option value="Played Matches">Played Matches</option>
+				</select>
+			</div>
+			</div>
 
 			<div id ='infoTest'> <h4>Country</h4> <b>  pepe  </b> </div>
 			
@@ -78,6 +99,16 @@
     		width = rect.width - margin.left - margin.right,
     		height = rect.height - margin.top - margin.bottom;
 
+
+    		var selector = document.getElementById("selector")
+    		var xSelector = document.getElementById("x-selector")
+    		var ySelector = document.getElementById("y-selector")
+    		selector.style.visibility = 'hidden';
+
+    		var selectorFunc = {"Points": getPoints, "Goals" : getGoals, "Yellow Cards" : getYelloGards, "Goals Against" : getGoalsAgainst, "Victories": getVictories, "Played Matches" : getMatchesPlayed};
+
+    		xfunction = getPoints;
+    		yfunction = getGoals;
 
 			var currentTap = "Attendance";
 
@@ -147,34 +178,37 @@
 
 			function axes (svg) {
 
-			    label = svg.append("g")
-			    				.attr("class", "axis")
-								.style("opacity",0)
+				label = svg.append("g")
+			    	.attr("class", "axis")
+					.style("opacity",0)
 				label.append("g")
       				.attr("class", "x-axis")
       				.attr("transform", "translate(" + xOffset +"," + height + ")")
       				.call(xAxis)
     				
-    			label.append("text")
-      				.attr("class", "label")
-      				.attr("x", rect.width - xOffset)
-      				.attr("y", height - 5)
-      				.style("text-anchor", "end")
-      				.text("Points");
-
   				// y-axis
   				label.append("g")
       				.attr("class", "y-axis")
       				.attr("transform", "translate(" + xOffset +"," + yOffset + ")")
 				    .call(yAxis)
-    			label.append("text")
-      				.attr("class", "label")
-      				.attr("transform", "rotate(-90)")
-      				.attr("x", -50 )
-	   				.attr("y", 35)
-      				.attr("dy", ".75em")
-      				.style("text-anchor", "end")
-      				.text("Goals");
+			}
+
+			function onChangeX() {
+				var currentvalue = xSelector.value;
+
+				if ( currentvalue in selectorFunc ) {
+					xfunction = selectorFunc[currentvalue];
+					translateAll(centerBBox)
+				}
+			}
+
+			function onChangeY() {
+				var currentvalue = ySelector.value;
+
+				if ( currentvalue in selectorFunc ) {
+					yfunction = selectorFunc[currentvalue];
+					translateAll(centerBBox)
+				}
 			}
 
 			function onClick (event) {
@@ -225,13 +259,22 @@
 				return id in statistics
 			}
 
+			function addAxis() {
+				label.transition()
+					 .duration(1000)
+					 .style("opacity", 1)
+				selector.style.visibility = "visible"
+			}
+
+			function deleteAxis() {
+				label.transition()
+					 .duration(1000)
+					 .style("opacity", 0)
+				selector.style.visibility = "hidden"
+			}
 
 			function toBubbles() {
-				label
-						.transition()
-						.duration(1000)
-						.style("opacity", 1)
-
+				addAxis()
   				//countryMap.style.visibility = 'hidden';
   				hiddenBackMap();
 
@@ -301,6 +344,49 @@
 
 				else if (matches.Description[len - 1].startsWith("Final") && code == "URU") {
 					points++;
+				}
+
+				return points;
+			}
+
+			function getGoalsAgainst (code, year) {
+				var points = 0;
+				var teamGoals = year.teamgoals;
+
+				for (var i = 0; i < teamGoals.GoalsAgainst.length; i++) {
+					points += teamGoals.GoalsAgainst[i]
+				}
+
+				return points;
+			}
+
+			function getVictories(code, year) {
+				var points = 0;
+				var matches = year.matches;
+				for (var i = 0; i < matches.HomeScore.length; i++) {
+					if (wonMatch(code, matches, i) ) {
+						points += 1
+					}
+				}
+				return points;
+			}
+
+			function getMatchesPlayed (code, year) {
+				var points = 0;
+				var teams = year.teamcards;
+
+				for (var i = 0; i < teams.MatchesPlayed.length; i++) {
+					points += teams.MatchesPlayed[i]
+				}
+				return points
+			}
+
+			function getYelloGards(code, year) {
+				var points = 0;
+				var cards = year.teamcards;
+
+				for (var i = 0; i < cards.YellowCards.length; i++) {
+					points += cards.YellowCards.length;
 				}
 
 				return points;
@@ -645,19 +731,20 @@
 
 				//elem = this.node().getBBox();
 				var country = statistics[d.id]['years'];
-      			var points = pointforYear(country, d.id, getPoints);
-      			var goals = pointforYear(country, d.id, getGoals);
 
-      			cumPoints[d.id]["Points"] = points;
-      			cumPoints[d.id]["Goals"] = goals;
+      			var ypoints = pointforYear(country, d.id, yfunction);
+      			var xpoints = pointforYear(country, d.id, xfunction);
+
+      			cumPoints[d.id]["x"] = xpoints;
+      			cumPoints[d.id]["y"] = ypoints;
 
       			var center = getBBox(d, elem)
 
       			var rectX = 0;
       			var rectY = rect.height;
 
-      			var xvalue = xScale(points + 1);
-      			var yvalue = yScale(goals + 1);
+      			var xvalue = xScale(xpoints + 1);
+      			var yvalue = yScale(ypoints + 1);
 
 				x = - center[0] + xvalue;
       			y =  - center[1] + yvalue;
@@ -677,7 +764,7 @@
 
 			function originalPosition () {
 				soocer.transition()
-      				.duration(2000)
+      				.duration(1000)
       				.attr("transform", function (d, i) {
 						box = inicialBox[d.id]
 
@@ -692,11 +779,12 @@
 					}).transition()
 						.duration(500)
 						.style("fill-opacity", 0)
+						
 					.on("end", function () {
 						//toMap();
 						var selection = d3.select(this)
 						selection.transition()
-      						.duration(2000)
+      						.duration(1000)
       						.attr("d", function(d, i) {
       				  			return path1(tocountries(d.geometry))
       						})
@@ -720,12 +808,15 @@
       				.style("opacity", 1)
       				.on("end", function() {
 	      				showBackMap();
-      				})
+      				});
+      			deleteAxis();
+
+      			/*	
       			label.transition()
       				.delay(3000)
 					.duration(1000)
 					.style("opacity", 0)
-
+				*/
       			//soocer.styles(style)
 			}
 
@@ -743,11 +834,13 @@
     			if (props && id) {
     				info.visibility = 'visible';
     				info.innerHTML = '<h4>' + props.name + '</h4> '
-    				
 
     				if( currentTap == "Bubble") {
-    					info.innerHTML += 		  "goals: " + cumPoints[id]["Goals"] + 
-    									 '<br>' + "points: " + cumPoints[id]["Points"] +
+    					var xlabel = xSelector.value;
+    					var ylabel = ySelector.value;
+    					
+    					info.innerHTML += 		  xlabel + ": " + cumPoints[id]["x"] + 
+    									 '<br>' + ylabel + ": " + cumPoints[id]["y"] +
     									 '<br>' + "win cups: " + cumPoints[id]["Win"]
     				}
 

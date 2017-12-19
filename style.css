@@ -3,7 +3,7 @@ body {
 }
 
 p {
-	color: blue;
+	color: grey;
 	font-size: 12pt
 }
 
@@ -35,6 +35,31 @@ svg .groupText {
 
 }
 
+#x-selector,
+#y-selector  {
+    z-index: 15;
+    position:absolute;
+
+    background: rgba(255,255,255, 0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+#y-selector {
+    left: 4%;
+    top: 5%;
+}
+
+#x-selector {
+    right: 2%;
+    bottom:7%;
+    dropdownDirection:up;
+}
+
 #infoTest p,
 #infoTest h4 {
     margin: 0px 0px 5px;
@@ -42,6 +67,7 @@ svg .groupText {
 }
 
 #infoTest p.years{
+  bottom: 10%
   text-align: center;
 }
 
@@ -148,6 +174,11 @@ svg .y-axis { font: 8px sans-serif; }
   background-color: grey;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+#slidecontainer p {
+  margin : 2px;
+  padding: 0 10px;
 }
 
 #slidecontainer {
