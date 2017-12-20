@@ -1,0 +1,83 @@
+"name"
+JPNJapan
+ECUEcuador
+CANCanada
+BULBulgaria
+ARGArgentina
+TURTurkey
+CRCCosta Rica
+BELBelgium
+GDRGerman DR
+HONHonduras
+GREGreece
+ENGEngland
+CIVIvory Coast
+TCHCzechoslovakia
+UKRUkraine
+SVKSlovakia
+TOGTogo
+PORPortugal
+ESPSpain
+BIHBosnia and Herzegovina
+IRNIran
+RUSRussia
+CROCroatia
+BOLBolivia
+SCOScotland
+PRKKorea DPR
+ITAItaly
+TRITrinidad and Tobago
+MEXMexico
+MARMorocco
+JAMJamaica
+KUWKuwait
+FRAFrance
+PERPeru
+FRGGermany FR
+CMRCameroon
+ROURomania
+SVNSlovenia
+GHAGhana
+URUUruguay
+IRQIraq
+POLPoland
+CUBCuba
+YUGYugoslavia
+ALGAlgeria
+CHIChile
+INHDutch East Indies
+USAUSA
+PARParaguay
+NZLNew Zealand
+SCGSerbia and Montenegro
+ANGAngola
+ISRIsrael
+SENSenegal
+RSASouth Africa
+HAIHaiti
+CZECzech Republic
+UAEUnited Arab Emirates
+ZAIZaire
+SUISwitzerland
+KSASaudi Arabia
+HUNHungary
+GERGermany
+NIRNorthern Ireland
+COLColombia
+BRABrazil
+KORKorea Republic
+EGYEgypt
+NORNorway
+DENDenmark
+NEDNetherlands
+URSSoviet Union
+AUTAustria
+SLVEl Salvador
+CHNChina PR
+AUSAustralia
+IRLRepublic of Ireland
+SRBSerbia
+TUNTunisia
+NGANigeria
+SWESweden
+WALWales
