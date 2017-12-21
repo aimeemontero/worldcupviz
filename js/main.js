@@ -1,5 +1,11 @@
+// Run in firefox: http-server & => http://localhost:8080
+
 // Data read from file
 let countryNames;
+
+// Global variable for resizing legend
+let xStatsLegend ;
+let xAxisStatsLegend;
 
 // Global variable for resizing strikers chart
 let xStriker;   // x scale
@@ -15,6 +21,8 @@ let xSquads;
 let xAxisSquads;
 const nbCol = 3;
 
+
+
 // Color scale for treemap
 const color = d3.scaleLinear()
               .domain([0,1])
@@ -23,17 +31,14 @@ const color = d3.scaleLinear()
 const years =['1930','1934','1938','1950','1954','1958','1962','1966','1970','1974',
               '1978','1982','1986','1990','1994','1998','2002','2006','2010','2014']
 
-
-let CURRENT_COUNTRY = 'BRA'
-let CURRENT_YEAR = '2014'
-
+//Pass argument receive from main html to function go
 go()
 
-function go(countrycode='BRA', year='1994'){
+function go(countrycode='BRA', year='2014'){
 
   d3.csv("data/teams.txt", function(error, data) {
 
-    //  Alphabetically
+    //  Team name alphabetically
     data.sort((a, b) => a.name.substring(3,) < b.name.substring(3,) ? -1 :
                         a.name.substring(3,) > b.name.substring(3,) ? 1 : 0)
     countryNames = data;
@@ -41,6 +46,8 @@ function go(countrycode='BRA', year='1994'){
     title(countrycode);
     // Build a list of country
     create_list_countries();
+    // Legend
+    legend();
     // Build a bar chart of ccode
     stats_chart(countrycode);
     // Build a list of nearest matches of ccode
@@ -52,6 +59,65 @@ function go(countrycode='BRA', year='1994'){
     // Build a sumary over all participated years
     squad(countrycode, year)
   });
+}
+
+// A function that takes the last match of a team and check if this team is Champion/Runner-up/3rd place....
+function isWinner(ccode, lastMatch){
+  let description = lastMatch[6]
+  let date = lastMatch[5]
+
+  if (date == '16 July 1950') { // A special case for 1950 (see database for more information)
+    if (ccode=='BRA')
+      return 'Runner-up'
+    else if (ccode == 'URU')
+      return 'Champion'
+    else if (ccode == 'SWE')
+      return 'Third-place'
+    else
+      return 'Fourth-place'
+  } else { // Normal cases
+    const away_code  = lastMatch[1];
+    const home_code  = lastMatch[7];
+    let away_score = parseInt(lastMatch[2]);
+    let home_score = parseInt(lastMatch[8]);
+
+    if (description == 'Final') { // Final
+      if ((home_code == ccode & home_score > away_score) ||
+          (away_code == ccode & away_score > home_score)) { // ccode wins
+        return 'Champion'
+      } else if (away_score==home_score) { // Draw => analyse penalty score
+          const pen = lastMatch[10];
+          const scores = pen.split('-');
+          home_score = parseInt(scores[0]);
+          away_score = parseInt(scores[1]);
+          if ((home_code == ccode & home_score > away_score) ||
+             (away_code == ccode & away_score > home_score)) { // ccode wins on penalty
+              return 'Champion'
+          } else {
+            return 'Runner-up'
+          }
+      } else
+        return 'Runner-up'
+
+    } else if (description.includes('hird place')) {
+      if ((home_code == ccode & home_score > away_score) ||
+          (away_code == ccode & away_score > home_score)) { // ccode wins
+        return 'Third-place'
+      } else if (away_score==home_score) { // Draw => analyse penalty score
+          const pen = lastMatch[10];
+          const scores = pen.split('-');
+          home_score = parseInt(scores[0]);
+          away_score = parseInt(scores[1]);
+          if ((home_code == ccode & home_score > away_score) ||
+             (away_code == ccode & away_score > home_score)) { // ccode wins on penalty
+              return 'Third-place'
+          }
+      } else
+        return 'Fourth-place'
+    } else {
+        return 'Group-stage'
+    }
+  }
 }
 
 
@@ -89,6 +155,7 @@ function create_list_countries() {
 	     .append('li')
        .attr('id', (d,i) => names[i])
              .append('a')
+             // a trick on href: do not jump
              .attr('href', 'javascript: return false;')
              .attr('class', 'list-group-item')
              .html((d, i) => d)
@@ -117,6 +184,83 @@ function searchCountry() {
             li[i].style.display = "none";
         }
     }
+}
+
+
+
+function legend(){
+  const chartDiv = document.getElementById('legend');
+  const margin = {top: 20, right: 10, bottom: 20, left: 60};
+  const width  = chartDiv.clientWidth  - margin.left - margin.right;
+  const height = chartDiv.clientHeight - margin.top - margin.bottom;
+
+  // Remove chart if it exists
+  //d3.select('#svg_barchart').remove();
+  console.log(height)
+  let svg = d3.select(chartDiv)
+                .append("svg")
+                .attr('width', width  + margin.left + margin.right )
+                .attr('height',height + margin.top  + margin.bottom )
+                .attr("id","svg_legend")
+                .append('g')
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  const legends = ['Champion', 'Runner-up', 'Third-place', 'Fourth-place', 'Group-stage']
+  const colors = ['#0a290a','#145214','#1f7a1f','#29a329','#33cc33'];
+  xStatsLegend = d3.scaleBand()
+                   .domain(legends)
+                   .rangeRound([0, width]);
+  xAxisStatsLegend = d3.axisBottom(xStatsLegend);
+
+
+  svg.selectAll('something')
+     .data(colors)
+     .enter()
+     .append('rect')
+     .attr("class","rect_legends")
+     .attr('height', 20)
+     .attr('width', 20)
+     .attr('x', (d, i) => xStatsLegend(legends[i]) + 20)
+     .attr('y', 0)
+     .attr('fill',(d,i) => d);
+
+  svg.selectAll('something')
+     .data(legends)
+     .enter()
+     .append('text')
+     .attr('class','text_legends')
+     .attr('font-size', (d, i) => width/50)
+     .attr('x', (d, i) => xStatsLegend(legends[i]))
+     .attr('y', 35)
+     .text((d,i) => d);
+
+}
+
+function resize_legend(){
+  const chartDiv = document.getElementById('legend');
+  const margin = {top: 20, right: 10, bottom: 20, left: 60};
+
+  //Get the width of the window
+  const new_width = chartDiv.clientWidth - margin.right - margin.left;
+  //Change the width of the svg
+  d3.select("#svg_legend")
+    .attr("width", chartDiv.clientWidth);
+
+  const legends = ['Champion', 'Runner-up', 'Third-place', 'Fourth-place', 'Group-stage']
+  // re-scale x axis
+  console.log(xStatsLegend)
+  xStatsLegend.rangeRound([0, new_width]);
+  console.log(xStatsLegend)
+  // set new x position and new width for each rect
+  d3.selectAll('.rect_legends')
+    .attr("x", (d, i) =>  xStatsLegend(legends[i])+20);
+
+  d3.selectAll('.text_legends')
+     .attr('x', (d, i) => xStatsLegend(legends[i])+10)
+     .attr('font-size', (d, i) => new_width/50)
+
+  xAxisStatsLegend.scale(xStatsLegend);
+
 }
 
 
@@ -166,13 +310,20 @@ function stats_chart(ccode){
           goalsA[i]      = 0;
           points[i]      = 0;
           attendances[i] = 0;
-
+          records[i]     = 'not'
         } else {
-          let year_team_data = team_data[year];
-          team_cards = year_team_data['teamcards'];
-          team_goals = year_team_data['teamgoals'];
-          matches    = year_team_data['matches'];
-          team_age   = year_team_data['squads'];
+          /*
+          Data structure in Database: (more detail in Team_Statistics.ipynb)
+          match = tuple ('Attendance', 'AwayCode', 'AwayScore','AwayTeam', 'City', 'Date',
+                        'Description', 'HomeCode', 'HomeScore','HomeTeam', 'Penalty', MatchReport)
+          team_card = tuple ('RedCards', 'YellowCards', 'MatchesPlayed')
+          team_goal = tuple ('Goals', 'GoalsAgainst','MatchesPlayed')
+          */
+          const year_team_data = team_data[year];
+          const team_cards = year_team_data['teamcards'];
+          const team_goals = year_team_data['teamgoals'];
+          const matches    = year_team_data['matches'];
+          //team_age   = year_team_data['squads'];
 
           if (team_cards.length == 0) {
               rcards[i] = 0;
@@ -188,6 +339,8 @@ function stats_chart(ccode){
               goals[i]  = team_goals[0][0]
               goalsA[i] = team_goals[0][1]
           }
+          records[i]     = isWinner(ccode, matches[matches.length - 1])
+          //console.log(year + '-' +isWinner(ccode, matches[matches.length - 1]))
           let attendance = 0;
           let point = 0;
           // Number of point: win = 3pts, draw = 1pt, lose = 0pt.
@@ -198,8 +351,8 @@ function stats_chart(ccode){
 
               const away_code  = match[1];
               const home_code  = match[7];
-              const away_score = parseInt(match[2]);
-              const home_score = parseInt(match[8]);
+              let away_score = parseInt(match[2]);
+              let home_score = parseInt(match[8]);
               if ((home_code == ccode & home_score > away_score) ||
                   (away_code == ccode & away_score > home_score)) {
                 point += 3;
@@ -209,8 +362,8 @@ function stats_chart(ccode){
                     point += 1;
                   else {
                     const scores = pen.split('-');
-                    const home_score = parseInt(scores[0]);
-                    const away_score = parseInt(scores[1]);
+                    home_score = parseInt(scores[0]);
+                    away_score = parseInt(scores[1]);
                     if ((home_code == ccode & home_score > away_score) ||
                         (away_code == ccode & away_score > home_score)) {
                           point += 3;
@@ -233,12 +386,13 @@ function stats_chart(ccode){
       dict['Red cards per WC'] = rcards[i];
       dict['Goals agaist per WC'] = goalsA[i];
       dict['Points per WC'] = points[i];
-      dict['Avg attendances per match'] = attendances[i];
+      dict['Avg attendances per WC'] = attendances[i];
+      dict['Records'] = records[i];
       Data.push(dict);
     }
 
 
-    const choices = Object.keys(Data[0]).filter( d => d != 'Year');
+    const choices = Object.keys(Data[0]).filter( d => d != 'Year' & d!= 'Records');
     let choice = choices[0];
 
     let yStats = d3.scaleLinear()
@@ -251,6 +405,11 @@ function stats_chart(ccode){
 
     xAxisStats = d3.axisBottom(xStats);
     let yAxisStats  = d3.axisLeft(yStats);
+
+
+
+
+
 
     svg.append("g")
        .attr("class", "xStats")
@@ -272,9 +431,9 @@ function stats_chart(ccode){
                                 squad(ccode, d);
                               });
 
-
     svg.append("g")
        .attr('class', "yStats")
+       //.attr("transform", "translate(0," + 30 + ")")
        .call(yAxisStats)
        .style("font-size", "14px");
 
@@ -282,7 +441,8 @@ function stats_chart(ccode){
        .data(Data)
        .enter()
        .append("rect")
-       .attr("class","rect_stats")
+       //.attr("class","rect_stats")
+       .attr("class",(d, i) => `rect_stats  ${d.Records}`)
        .attr("width", width/Data.length - 1)
        //.attr("height",(d, i) => 0)//height - yStats(d[choice])) // function(d){return height - y(+d[choice]);}
        .attr("x",     (d, i) => (width/Data.length) * i )
@@ -305,6 +465,7 @@ function stats_chart(ccode){
                      .attr('height',(d, i) => height - yStats(d[choice]))
                      .attr("y",     (d, i) => yStats(+d[choice]))
 /**/
+
 
     d3.select("#dropdown_chart").remove();
     let selector = d3.select("#drop")
@@ -776,7 +937,8 @@ function treemap(countrycode){
                      .enter()
                      .append('div')
                      .attr("class", (d, i) => "node level-" + d.depth)
-                     .attr("title", (d, i) => d.data.name.split(' ')[1] + "\n" + 'Number of match(es) played: '+ format(d.value));
+                     //.attr("title", (d, i) => `${d.data.name.split(' ')[1]} + "\n" + 'Number of match(es) played: '+ format(d.value));
+                     .attr("title", (d, i) => `${d.data.name.split(' ')[1]} \n Number of match(es) played: ${format(d.value)}`);
 
     cell.style("left",  (d, i) => x(d.x0) + "%")
 	      .style("top",   (d, i) => y(d.y0) + "%")
@@ -784,8 +946,8 @@ function treemap(countrycode){
 	      .style("height",(d, i) => y(d.y1 - d.y0) + "%")
 	      .style("background-color", (d, i) => color(parseInt(d.data.name.split('%')[0])/100))
         .append("text")
-        .text((d, i) => { text = d.data.name.split(' ');
-                          return text[1] + '\n' + text[0]});
+        .text((d, i) => { text = d.data.name.split('% ');
+                          return text[1] + '\n' + text[0] + '%'});
   });
 
 }
@@ -967,6 +1129,7 @@ d3.select(window).on("resize", (d, i) => {
                                               resize_striker();
                                               resize_result();
                                               resize_squad();
+                                              resize_legend();
                                          });
 d3.select(window).on('reload', (d, i) => console.log('true'))
 

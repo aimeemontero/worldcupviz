@@ -156,7 +156,7 @@ table#svg_squad tr:hover {
 }
 
 .show_a_part {
-    max-height:600px;
+    max-height:660px;
     overflow-y:auto;
 }
 .chart text {
@@ -173,6 +173,38 @@ table#svg_squad tr:hover {
 .rect_stats:hover {
 	fill: var(--COLOR-HOVER);
 }
+.Champion {
+	fill: #0a290a;
+}
+.Champion:hover {
+	fill: #b3ffb3;
+}
+.Runner-up {
+	fill: #145214;
+}
+.Runner-up:hover {
+	fill: #b3ffb3;
+}
+.Third-place {
+	fill: #1f7a1f;
+}
+.Third-place:hover {
+	fill: #b3ffb3;
+}
+.Fourth-place {
+	fill: #29a329;
+}
+.Fourth-place:hover {
+	fill: #b3ffb3;
+}
+.Group-stage {
+	fill: #33cc33;
+}
+.Group-stage:hover {
+	fill: #b3ffb3;
+}
+
+
 .axis {
   font: 10px sans-serif;
 }
