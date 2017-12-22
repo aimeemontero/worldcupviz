@@ -2,7 +2,7 @@
 	var isMapShowed = true;
 	var access_token = "pk.eyJ1IjoibGlua2hhIiwiYSI6ImNqYW1qMnZ0MTQza3gzN3FtZWc0YnVkcjAifQ.u9VeqQqwBkvkSoqTaKqfBQ"
 	
-	//TODO disable scrolling, responsive, buttom bar, disable zoom
+	//TODO responsive, buttom bar, legend
 
 	var southWest = L.latLng(-89.98155760646617, -180);
 	var northEast = L.latLng(89.99346179538875, 180);
@@ -16,7 +16,9 @@
 	var view = [25, 0]
 	var map = L.map('countryMap', {zoomControl:false}).setView(view, zoom);
 	var cercleMap = L.map('countryScale', { zoomControl:false, crs: L.CRS.Simple}).setView(view, 1);
-	cercleMap.scrollWheelZoom.disable();
+
+	disableZoon(cercleMap);
+	disableZoon(map);
 
 	var svg;
 	var label;
@@ -109,10 +111,21 @@
 		})
 	});
 
+	function disableZoon(map) {
+		map.scrollWheelZoom.disable();
+		map.dragging.disable();
+    	map.touchZoom.disable();
+    	map.doubleClickZoom.disable();
+    	map.scrollWheelZoom.disable();
+    	map.invalidateSize();
+
+	}
+
+
 	function axes (svg) {
 
 	label = svg.append("g")
-	   	.attr("class", "axis")
+		.attr("class", "axis")
 		.style("opacity",0)
 			label.append("g")
     			.attr("class", "x-axis")
@@ -494,7 +507,6 @@
 		.attr("height", 1)
 		.append("svg:image")
 		.attr("xlink:href", (d) => {
-
 			return "./country-squared/" + d.toLowerCase() + ".svg";
 		})
 		.attr("width", 40)
@@ -544,15 +556,13 @@
 		map.setMaxBounds(bounds);
 		
 
-		svg = d3.select("#countryScale").append("svg");
+		svg = d3.select("#countryScale")
+			.append("svg")
+			.attr("preserveAspectRatio", "xMinYMin meet")
+
 		var g = svg.append("g")
 			.attr("class", "countries");
 
-		svg.attrs(
-				{width: 1500,
-				 height: 600});
-
-		
 		addLayers();
 		axes(svg)
 
