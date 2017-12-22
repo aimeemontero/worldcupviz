@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team statistics</title>
+
+    <script tyle = "text/javascript" src="js/d3.v4.js"></script>
+    <script tyle = "text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  </head>
+  <body>
+
+    <div class = 'l-wrap'>
+
+        <div class = 'grid-item l-stats' style="height: 200px">
+            <h1 id = 'title' align=center> </h1>
+        </div> <!-- end of div TITLE-->
+
+
+
+        <div class = 'grid-item l-stats'style="height: 100px">
+            <h1 id = 'title_barchart' align=center> </h1>
+        </div> <!-- end of div TITLE BARCHART-->
+
+
+
+        <div>
+              <div id = '11' class = "grid-item l-country show_a_part">
+                  <input type="text" id="countryInput" onkeyup="searchCountry()" placeholder="Search for countries..">
+              </div>
+              <div id = '12' class = "grid-item l-chart" style="height: 800px">
+                  <div id = "drop" align=center></div>
+                  <div id = "legend" align=center style="height: 60px"></div>
+          		</div>
+        </div> <!-- end of div BARCHART-->
+
+
+
+        <div class='container'>
+  				<div id = '2' class = "grid-item l-result table-responsive" style="height: 500px">
+            <h1 id = 'title_result' align=center style="height: 100px"> </h1>
+  				</div> <!-- end of div id 2-->
+        </div> <!-- end of div RESULT-->
+
+        <div id = '5' class = "grid-item l-squad">
+          <h1 id = '#SOME_ESPACES#' align=center style="height: 100px"> </h1>
+          <h1 id = 'title_squad' align=center style="height: 70px"> </h1>
+        </div> <!-- end of div SQUAD -->
+
+
+        <div id = '3' class = "grid-item l-striker" style="height: 900px">
+            <h1 id = 'title_striker' align=center style="height: 70px"> </h1>
+            <div id = "drop_striker" align=center></div>
+            <div id = "#SOME_ESPACES#" align=center></div>
+        </div><!-- end of div TOP STRIKERS-->
+
+
+
+        <h1 id = 'title_treemap' align=center> </h1>
+        <h1 id = '#SOME_ESPACES#' align=center style="height: 70px"> </h1>
+        <div id = "treemap" class = 'grid-item l-treemap' style="height: 700px">
+        </div> <!-- end of div TREEMAP-->
+
+        <div id = "#SOME_ESPACES#" align=center style="height: 800px"></div>
+
+
+    </div> <!-- end of div l-wrap-->
+  </body>
+</html>
