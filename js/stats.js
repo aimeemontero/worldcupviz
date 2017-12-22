@@ -74,7 +74,7 @@ function isWinner(ccode, lastMatch){
     else if (ccode == 'SWE')
       return 'Third-place'
     else
-      return 'Fourth-place'
+      return 'Group-stage'
   } else { // Normal cases
     const away_code  = lastMatch[1];
     const home_code  = lastMatch[7];
@@ -113,7 +113,7 @@ function isWinner(ccode, lastMatch){
               return 'Third-place'
           }
       } else
-        return 'Fourth-place'
+        return 'Group-stage'
     } else {
         return 'Group-stage'
     }
@@ -194,9 +194,6 @@ function legend(){
   const width  = chartDiv.clientWidth  - margin.left - margin.right;
   const height = chartDiv.clientHeight - margin.top - margin.bottom;
 
-  // Remove chart if it exists
-  //d3.select('#svg_barchart').remove();
-  console.log(height)
   let svg = d3.select(chartDiv)
                 .append("svg")
                 .attr('width', width  + margin.left + margin.right )
@@ -205,8 +202,8 @@ function legend(){
                 .append('g')
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  const legends = ['Champion', 'Runner-up', 'Third-place', 'Fourth-place', 'Group-stage']
-  const colors = ['#0a290a','#145214','#1f7a1f','#29a329','#33cc33'];
+  const legends = ['Champion', 'Runner-up', 'Third-place', 'No medal']
+  const colors = ['#006d2c','#31a354','#74c476','#bae4b3'];
   xStatsLegend = d3.scaleBand()
                    .domain(legends)
                    .rangeRound([0, width]);
@@ -246,11 +243,9 @@ function resize_legend(){
   d3.select("#svg_legend")
     .attr("width", chartDiv.clientWidth);
 
-  const legends = ['Champion', 'Runner-up', 'Third-place', 'Fourth-place', 'Group-stage']
+  const legends = ['Champion', 'Runner-up', 'Third-place','No medal']
   // re-scale x axis
-  console.log(xStatsLegend)
   xStatsLegend.rangeRound([0, new_width]);
-  console.log(xStatsLegend)
   // set new x position and new width for each rect
   d3.selectAll('.rect_legends')
     .attr("x", (d, i) =>  xStatsLegend(legends[i])+20);
@@ -310,7 +305,7 @@ function stats_chart(ccode){
           goalsA[i]      = 0;
           points[i]      = 0;
           attendances[i] = 0;
-          records[i]     = 'not'
+          records[i]     = 'Did not participate'
         } else {
           /*
           Data structure in Database: (more detail in Team_Statistics.ipynb)
@@ -445,7 +440,7 @@ function stats_chart(ccode){
        .attr("class",(d, i) => `rect_stats  ${d.Records}`)
        .attr("width", width/Data.length - 1)
        //.attr("height",(d, i) => 0)//height - yStats(d[choice])) // function(d){return height - y(+d[choice]);}
-       .attr("x",     (d, i) => (width/Data.length) * i )
+       .attr("x",     (d, i) => (width/Data.length) * i + 2)
        //.attr("y",     (d, i) => yStats(+d[choice]))
 
        .on('click',  (d, i) => {
@@ -484,7 +479,7 @@ function stats_chart(ccode){
 
 
                                   d3.selectAll(".rect_stats")
-                                    .attr("x",      (d, i) => (width / Data.length) * i)
+                                    .attr("x",      (d, i) => (width / Data.length) * i + 2)
                                     .transition()
                                     .duration(700)
                                     .attr("y",      (d, i) => yStats(d[choice.value]))
@@ -520,7 +515,7 @@ function resize_stats() {
     // set new x position and new width for each rect
     d3.selectAll('.rect_stats')
       .attr('width', (d, i) => new_width/years.length - 1)
-      .attr("x", (d, i) =>    new_width/years.length * i );
+      .attr("x", (d, i) =>    new_width/years.length * i +2);
 
     xAxisStats.scale(xStats);
     d3.select('.xStats')
@@ -716,7 +711,7 @@ function top_striker(countrycode){
     let yAxisStriker = d3.axisLeft(yStriker)
                          .tickFormat((d, i) => (top_ten_strikers[i]))
                          .tickSize(0)
-                        // .tickPadding(10);
+                         .tickPadding(20);
 
 
     let svg  = d3.select(trikerDiv)
@@ -757,7 +752,7 @@ function top_striker(countrycode){
                       .attr("class","rect_strikers")
                       .attr('height', barHeight)
                       .attr('width', 0)//(d, i) => xStriker(d.Goals))
-                      .attr('x', 0)
+                      .attr('x', 1)
                       .attr('y', (d, i) => yStriker(i));
 
 

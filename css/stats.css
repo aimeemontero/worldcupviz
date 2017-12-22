@@ -57,7 +57,7 @@ html body{
 }
 }
 .l-wrap {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -167,43 +167,42 @@ table#svg_squad tr:hover {
 .intro_text {
 
 }
+
+.Champion {
+	fill: #006d2c;
+}
+
+.Runner-up {
+	fill:  #31a354;
+}
+
+.Third-place {
+	fill: #74c476;
+}
+
+.Group-stage {
+	fill: #bae4b3;
+}
+/*
 .rect_stats {
 	fill: var(--COLOR-RECT);
 }
 .rect_stats:hover {
 	fill: var(--COLOR-HOVER);
 }
-.Champion {
-	fill: #0a290a;
-}
 .Champion:hover {
-	fill: #b3ffb3;
-}
-.Runner-up {
-	fill: #145214;
+	fill: var(--COLOR-HOVER);
 }
 .Runner-up:hover {
-	fill: #b3ffb3;
-}
-.Third-place {
-	fill: #1f7a1f;
+	fill: var(--COLOR-HOVER);
 }
 .Third-place:hover {
-	fill: #b3ffb3;
-}
-.Fourth-place {
-	fill: #29a329;
-}
-.Fourth-place:hover {
-	fill: #b3ffb3;
-}
-.Group-stage {
-	fill: #33cc33;
+	fill: var(--COLOR-HOVER);
 }
 .Group-stage:hover {
-	fill: #b3ffb3;
+	fill: var(--COLOR-HOVER);
 }
-
+*/
 
 .axis {
   font: 10px sans-serif;
