@@ -194,6 +194,9 @@ function legend(){
   const width  = chartDiv.clientWidth  - margin.left - margin.right;
   const height = chartDiv.clientHeight - margin.top - margin.bottom;
 
+  // Remove legend if it exists
+  d3.select('#svg_legend').remove();
+
   let svg = d3.select(chartDiv)
                 .append("svg")
                 .attr('width', width  + margin.left + margin.right )
