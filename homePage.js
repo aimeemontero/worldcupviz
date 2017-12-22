@@ -545,7 +545,20 @@
 			})
 			.on("mouseout", (d, i) => {
 				d3.select(this).styles( function() { style(d) });
-			});
+			})
+			.on("click", (d, i) => {
+
+				let iframeWindow = document.getElementById('stats_iframe').contentWindow;
+				
+				if (d.id in statistics) {
+					iframeWindow.go(d.id, currentYear);
+				}
+				
+				$('html, body').animate({scrollTop: $('#four').offset().top + 55}, 1000);
+				
+				var selection = d3.select(this)
+				selection.styles( function() { highlightFeatureStyle(d)});
+			});	
 
 	}
 
