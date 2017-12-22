@@ -212,16 +212,14 @@ function legend(){
                    .rangeRound([0, width]);
   xAxisStatsLegend = d3.axisBottom(xStatsLegend);
 
-
   svg.selectAll('something')
      .data(colors)
      .enter()
-     .append('rect')
-     .attr("class","rect_legends")
-     .attr('height', 20)
-     .attr('width', 20)
-     .attr('x', (d, i) => xStatsLegend(legends[i]) + 20)
-     .attr('y', 0)
+     .append('circle')
+     .attr("class","circle_legends")
+     .attr('cx', (d, i) => xStatsLegend(legends[i])+width/25)
+     .attr('cy', 0)
+     .attr('r', 10)
      .attr('fill',(d,i) => d);
 
   svg.selectAll('something')
@@ -231,7 +229,7 @@ function legend(){
      .attr('class','text_legends')
      .attr('font-size', (d, i) => width/50)
      .attr('x', (d, i) => xStatsLegend(legends[i]))
-     .attr('y', 35)
+     .attr('y', 25)
      .text((d,i) => d);
 
 }
@@ -250,11 +248,11 @@ function resize_legend(){
   // re-scale x axis
   xStatsLegend.rangeRound([0, new_width]);
   // set new x position and new width for each rect
-  d3.selectAll('.rect_legends')
-    .attr("x", (d, i) =>  xStatsLegend(legends[i])+20);
+  d3.selectAll('.circle_legends')
+    .attr("cx", (d, i) =>  xStatsLegend(legends[i])+new_width/25);
 
   d3.selectAll('.text_legends')
-     .attr('x', (d, i) => xStatsLegend(legends[i])+10)
+     .attr('x', (d, i) => xStatsLegend(legends[i]))
      .attr('font-size', (d, i) => new_width/50)
 
   xAxisStatsLegend.scale(xStatsLegend);
@@ -584,7 +582,7 @@ function matches_result(countrycode, year) {
                      .enter()
                         .append('tr')
                         .attr('id',(d,i) => 'row'+i)
-                        .on('click', (d, i) => window.location.assign(d.MatchReport))
+                        //.on('click', (d, i) => window.location.assign(d.MatchReport))
 
     let cells = rows.selectAll('td')
                     .data(
