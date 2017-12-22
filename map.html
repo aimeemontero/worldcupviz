@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="./d3/d3.js"></script>
+		<script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+		<!--<script src="https://d3js.org/d3-polygon.v1.min.js"></script>-->
+
+
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   			crossorigin=""/>
+   		 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   			crossorigin=""></script>
+   		
+	</head>
+
+</html> 
+
+<body>
+		<div class="container">
+			<div class="taps">
+   				<li class='back' onclick=onClick(event)>Hosts</li>
+   				<li class="selected" onclick=onClick(event)>Attendance</li>
+   				<li class= 'back' onclick=onClick(event)>Bubble</li>
+			</div>
+
+
+			<div id="countryMap"></div>
+			<div id="countryScale">
+				<div id="selector">
+				<select id="x-selector" onchange="onChangeX()">
+ 					<option value="Points">Points</option>
+  					<option value="Goals">Goals</option>
+  					<option value="Goals Against">Goals Against</option>
+  					<option value="Yellow Cards">Yellow Cards</option>
+  					<option value="Victories">Victories</option>
+  					<option value="Played Matches">Played Matches</option>
+  				</select>
+
+
+				<select id="y-selector" onchange="onChangeY()">
+ 					<option value="Goals">Goals</option>
+  					<option value="Points">Points</option>
+  					<option value="Goals Against">Goals Against</option>
+  					<option value="Yellow Cards">Yellow Cards</option>
+  					 <option value="Victories">Victories</option>
+  					<option value="Played Matches">Played Matches</option>
+				</select>
+			</div>
+			</div>
+
+			<div id ='infoTest'> <h4>Country</h4> <b>  pepe  </b> </div>
+			
+			<div id="slidecontainer">
+  			<p>year: <span id="demo"></span></p>
+  			<input type="range" min="1930" max="2014" value="2014" step ="4" class="slider" id="myRange">
+  			
+			</div>
+		</div>		
+		<script src="homePage.js"></script>
+</body>
