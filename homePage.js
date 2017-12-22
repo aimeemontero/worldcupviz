@@ -31,6 +31,7 @@
 	var slider = document.getElementById("myRange");
 	var output = document.getElementById("demo");
 	output.innerHTML = slider.value;
+	currentYear = slider.value;
 
 	var rect = document.getElementById('countryScale').getBoundingClientRect();
 
@@ -64,10 +65,6 @@
 
     var maxY = 80;
     var maxX = 80;
-
-    var currentYear = 2014;
-    var currentCircle = [];
-
 
   	var epsilon = 1
 
@@ -179,7 +176,6 @@
 		else if (currentTap != lasTab) {
 			toColors();
 		}
-
 				
 	}
 
@@ -250,8 +246,6 @@
       				return trans
       			})
       			.on("end", function (d) {
-      			 	currentYear = 2014;
-
       			 	var sel = d3.select(this);
 				 	sel.transition()
 						.duration(2000)
@@ -467,18 +461,33 @@
 
 	}
 
+	attendance = {}
+
+	function getYears(years) {
+		var count = 0;
+		for (var i = 0; i < years.length; i++) {
+			if (years[i] <= currentYear)
+				count++;
+		}
+		return count;
+	}
+
 	function choropleth (d) {
 		var choro =  "rgb(214, 214, 214)"
 		if (currentTap == "Attendance") {
 			if (d.id in statistics) {
-				choro = attScale(Object.keys(statistics[d.id].years).length);
+				var years = getYears(Object.keys(statistics[d.id].years));
+				attendance[d.id] = years;
+				if (years > 0)
+					choro = attScale(years);
 			}
 		}
 		else if (currentTap == "Hosts") {
 			if (d.id in statistics ) {
-				var len = statistics[d.id].host.length;
-				if (len > 0) {
-					choro = hostScale(len);
+				var hostYears = getYears(statistics[d.id].host);
+				
+				if (hostYears > 0) {
+					choro = hostScale(hostYears);
 				}
 			}
 		}
@@ -568,10 +577,13 @@
 
 		slider.oninput = function() {
 			currentYear = this.value;
-				output.innerHTML = currentYear;
+			output.innerHTML = currentYear;
 
-				//translate(centerBBox);
+			if (currentTap == "Bubble")
 				translateAll(centerBBox);
+			else {
+				toColors();
+			}
 		}
 	}
 
@@ -609,13 +621,10 @@
 	}
 
 	function translate (d, elem, getBBox) {
-		var total = (2014 - 1930);
-		//var elem = doom.getBBox();
 		
 		var pathx = rect.width / maxX;
 		var pathy = rect.height / maxY;
 
-		//elem = this.node().getBBox();
 		var country = statistics[d.id]['years'];
 
 			var ypoints = pointforYear(country, d.id, yfunction);
@@ -632,12 +641,12 @@
 			var xvalue = xScale(xpoints + 1);
 			var yvalue = yScale(ypoints + 1);
 
-		x = - center[0] + xvalue;
+			x = - center[0] + xvalue;
 			y =  - center[1] + yvalue;
 
 
 			var scale = scalefunc(d)
- 		var scalex = scale, scaley=scale;    // your desired scale
+ 		var scalex = scale, scaley=scale;
 
 			var saclestr=scalex+','+scaley;
 		var tx=-center[0]*(scalex-1) + x + xOffset;
@@ -728,15 +737,17 @@
 				var presentation;
 				if(currentTap == "Attendance" ) {
 					value = Object.keys(statistics[id].years).length;
-					info.innerHTML += '<b> Participated </b>' + value + " times"
+					info.innerHTML += '<b> Up to ' + currentYear + '</b>'
+					info.innerHTML += '<b> Participated </b>' + attendance[id] + " times"
 				}
 				else {
-					presentation = "World Cup Host in:"
+					presentation = "World Cup Host up to " + currentYear + " in :"
 					value = statistics[id].host;
 
 					info.innerHTML += '<b>'+ presentation + '</b>'
 					for (v in value) {
-						info.innerHTML += '<p class=years>' + value[v] + '</p>'
+						if(value[v] <= currentYear)
+							info.innerHTML += '<p class=years>' + value[v] + '</p>'
 					}
 				}
 			}
@@ -820,7 +831,6 @@
 			]);
 			}
 
-			currentCircle = circle;
-		return currentCircle;	
+		return circle;	
 	}
 
