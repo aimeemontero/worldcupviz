@@ -14,8 +14,9 @@ svg .groupText {
 
 /*******************************************Info box*************************/
 #infoTest {
-    right: 2%;
-    top:8%;
+    right: 50%;
+    top:50%;
+    
     z-index: 15;
     position:absolute;
 
@@ -25,7 +26,7 @@ svg .groupText {
     display:inline-block;
 
     padding: 6px 10px;
-    pointer-events: none;
+     pointer-events: none;
     font: 14px/16px Arial, Helvetica, sans-serif;
 
 }
@@ -34,6 +35,7 @@ svg .groupText {
 #y-selector  {
     z-index: 15;
     position:absolute;
+    width: auto;
 
     background: rgba(255,255,255, 0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -62,7 +64,7 @@ svg .groupText {
 }
 
 #infoTest p.years{
-  bottom: 10%
+  bottom: 10%;
   text-align: center;
 }
 
@@ -232,15 +234,13 @@ svg .y-axis { font: 8px sans-serif; }
   list-style: none;
   margin: 0;
   padding: 0;
-  line-height: 24px;
+  line-height: 32px;
 }
 .taps li.selected,
 .taps li.back {
   width: 300px;
   margin: 0 10px;
-  padding: 0 10px;
   border: 1px solid #AAA;
-  background: #ECECEC;
   display: inline-block;
 
   border-top-left-radius: 6px;
@@ -249,10 +249,9 @@ svg .y-axis { font: 8px sans-serif; }
   position: relative;
   z-index: 0;
 
-  background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);
+  background: #CCCCCC;
   /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;*/
   text-shadow: 0 1px #FFF;
-  margin: 0 -5px;
   padding: 0 20px;
 
 }
