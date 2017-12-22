@@ -40,9 +40,11 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2>WorldCupViz</h2>
-				<p>Statistics for the FIFA World Cups<br /></p>
+				<p>Football is the most watched sports event in the world<br />
+					Welcome to the world of football statistics
+				</p>
 				<ul class="actions">
-					<li><a class="button special big"
+					<li><a class="button special big icon fa-arrow-down"
 					onclick="$('html, body').animate({scrollTop: $('#three').offset().top + 55}, 1000);">Get Started</a></li>
 				</ul>
 			</section>
@@ -101,7 +103,6 @@
 				<section id="three" class="wrapper style1">
 					<div class="row 100%">
 						<div class="-1u 10u 12u$(medium)">
-							<p>Select country for stats<p>
 							<div class="taps">
 								<li class='back' onclick=onClick(event)>Hosts</li>
 								<li class="selected" onclick=onClick(event)>Attendance</li>
@@ -110,7 +111,7 @@
 
 							<div id="countryMap" style="width: 1100; text-align: center; margin: 0 auto;"></div>
 							
-								<div style="position:absolute; right: 120px;"> 
+								<div style="position:absolute; right: 150px;"> 
 									<div id ='infoTest'><h4>Country</h4> <b></b> </div>
 								</div>
 							
@@ -125,7 +126,6 @@
 												<option value="Victories">Victories</option>
 												<option value="Played Matches">Played Matches</option>
 											</select>
-
 										<select id="y-selector" onchange="onChangeY()">
 											<option value="Goals">Goals</option>
 											<option value="Points">Points</option>
@@ -136,7 +136,6 @@
 										</select>
 									</div>
 							</div>
-				
 							<div id="slidecontainer">
 								<h2>Year <span id="demo"></span></h2>
 								<input type="range" min="1930" max="2014" value="2014" step ="4" class="slider" id="myRange">

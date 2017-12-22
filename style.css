@@ -14,8 +14,6 @@ svg .groupText {
 
 /*******************************************Info box*************************/
 #infoTest {
-    right: 50%;
-    top:50%;
     
     z-index: 15;
     position:absolute;
